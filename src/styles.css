@@ -48,3 +48,11 @@
 .appointment-panel .button{width:100%;white-space:normal;text-align:center}
 @media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fabric-calculator{gap:28px}.location-section{margin-left:24px;margin-right:24px}.appointment-section{margin-left:24px;margin-right:24px;padding:32px;gap:25px}}
 @media(max-width:680px){.service-categories{padding-top:50px}.service-grid,.blog-grid{grid-template-columns:1fr}.service-card,.blog-card{padding:23px}.work-section{padding-top:15px}.work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.work-tile{min-height:190px;padding:13px}.work-tile strong{font-size:16px}.fabric-calculator{grid-template-columns:1fr;gap:25px;padding-top:45px;padding-bottom:55px}.calculator-copy h2,.appointment-section h2{font-size:40px}.calculator-panel,.appointment-panel{padding:21px}.location-section{margin:0 20px 60px;display:grid;grid-template-columns:55px 1fr;padding:22px;gap:14px}.location-section>div:nth-child(2){min-width:0}.location-section h2{font-size:23px}.location-section .button{grid-column:1/-1;width:100%}.blog-section{padding-top:5px;padding-bottom:60px}.appointment-section{margin:0 20px 65px;padding:27px 21px;grid-template-columns:1fr;gap:24px}}
+
+.about-section{display:grid;grid-template-columns:.7fr 1.3fr;align-items:center;gap:55px;padding-top:75px;padding-bottom:75px}
+.about-badge{min-height:250px;background:linear-gradient(145deg,#f9e4ed,#fff4f8);border:1px solid #f0cfdd;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;color:var(--pink)}
+.about-badge span{font-size:9px;line-height:1.8;letter-spacing:.2em;text-align:center;font-weight:700}
+.about-copy h2{font-family:'Playfair Display',serif;font-size:44px;line-height:1.12;letter-spacing:-.035em;font-weight:500;margin:18px 0;color:#392832}
+.about-copy h2 em{color:var(--pink);font-weight:500}
+.about-copy>p{font-size:12px;line-height:2;color:var(--muted);max-width:620px;margin:0 0 18px}
+@media(max-width:680px){.about-section{grid-template-columns:1fr;gap:25px;padding-top:50px;padding-bottom:50px}.about-badge{min-height:170px}.about-copy h2{font-size:39px}}

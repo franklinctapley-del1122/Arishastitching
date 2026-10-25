@@ -185,7 +185,7 @@ function App() {
               <div className="rate-list-card"><h3>Extra Services</h3><div className="rate-row"><span>Alteration / Fitting</span><strong>Rs. 300–500</strong></div></div>
             </div>
           </div>
-          <div className="rate-contact-cta"><div><h3>Need a custom quote?</h3><p>Send your dress reference on WhatsApp to discuss design and final price.</p></div><a className="button button-primary" href="https://wa.me/923707526041?text=Assalam-o-Alaikum%21%20Please%20confirm%20the%20latest%20stitching%20rates." target="_blank" rel="noreferrer"><MessageCircle size={17}/> Confirm rates on WhatsApp <ArrowRight size={16}/></a></div>
+          <div className="rate-contact-cta"><div><h3>Need a custom quote?</h3><p>Send your dress reference on WhatsApp to discuss design and final price.</p></div><a className="button button-primary" href="https://wa.me/923081042020?text=Assalam-o-Alaikum%21%20Please%20confirm%20the%20latest%20stitching%20rates." target="_blank" rel="noreferrer"><MessageCircle size={17}/> Confirm rates on WhatsApp <ArrowRight size={16}/></a></div>
         </section>
         <section className="section service-categories" id="stitching-services">
           <div className="section-heading">
@@ -205,10 +205,10 @@ function App() {
         <section className="work-section section" id="our-work">
           <div className="center-heading"><div className="eyebrow"><span className="eyebrow-line" /> STYLE INSPIRATION <span className="eyebrow-line" /></div><h2>Ideas to make <em>your own.</em></h2><p>These are illustrative style panels, not photos of completed customer orders. Share a reference image on WhatsApp to discuss your preferred look.</p></div>
           <div className="work-grid">
-            <a className="work-tile work-casual" href="#casual-wear"><span>01 / EVERYDAY</span><strong>Soft & simple</strong></a>
-            <a className="work-tile work-party" href="#party-wear"><span>02 / OCCASION</span><strong>Details that shine</strong></a>
-            <a className="work-tile work-bridal" href="#bridal-wear"><span>03 / CELEBRATION</span><strong>Made for your moment</strong></a>
-            <a className="work-tile work-western" href="#western-wear"><span>04 / MODERN</span><strong>Your own silhouette</strong></a>
+            <a className="work-tile work-casual" href="#casual-wear"><img className="work-image" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85" alt="Traditional embroidered outfit inspiration" loading="lazy" /><span>01 / EVERYDAY</span><strong>Soft & simple</strong></a>
+            <a className="work-tile work-party" href="#party-wear"><img className="work-image" src="https://images.unsplash.com/photo-1583391733956-6c78276477e3?auto=format&fit=crop&w=900&q=85" alt="Elegant occasion wear inspiration" loading="lazy" /><span>02 / OCCASION</span><strong>Details that shine</strong></a>
+            <a className="work-tile work-bridal" href="#bridal-wear"><img className="work-image" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=85" alt="Special occasion dress inspiration" loading="lazy" /><span>03 / CELEBRATION</span><strong>Made for your moment</strong></a>
+            <a className="work-tile work-western" href="#western-wear"><img className="work-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Modern fashion outfit inspiration" loading="lazy" /><span>04 / MODERN</span><strong>Your own silhouette</strong></a>
           </div>
         </section>
 

@@ -83,7 +83,7 @@ function App() {
       <main>
         <section className="hero" id="home">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="eyebrow-line" /> MADE WITH CARE, STITCHED FOR YOU</div>
+            <div className="eyebrow"><span className="eyebrow-line" /> LADIES TAILORING &amp; CUSTOM STITCHING</div>
             <h1>Wear the feeling<br />of <em>being you.</em></h1>
             <p className="hero-intro">Thoughtful stitching for your everyday wardrobe, special occasions and the designs you’ve been dreaming of.</p>
             <div className="hero-actions">

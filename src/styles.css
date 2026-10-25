@@ -161,3 +161,21 @@ body{background:#fffafc;color:var(--ink)}
 .rate-row strong{font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 .rate-contact-cta .button{box-shadow:0 9px 22px rgba(150,52,95,.18)}
 @media(max-width:680px){.work-tile{min-height:225px}.work-tile strong{font-size:16px}}
+
+
+/* Compact homepage, calmer motion, and responsive embedded map */
+html{scroll-padding-top:82px}
+.hero{padding-bottom:22px}
+.hero-art,.art-sun,.art-stamp,.final-flower{animation:none!important}
+.fabric-calculator,.about-section,.service-categories,.work-section,.blog-section,.process-section,.faq-section{animation:none!important;animation-timeline:auto!important}
+.collection-card:hover,.service-card:hover,.step-card:hover,.blog-card:hover,.rate-list-card:hover{transform:translateY(-2px)}
+.work-tile:hover{transform:translateY(-3px)}
+.location-section{display:grid;grid-template-columns:55px minmax(0,1fr);align-items:start;gap:18px}
+.location-copy{min-width:0}
+.location-section .button{margin-top:16px}
+.map-frame{grid-column:1/-1;overflow:hidden;border-radius:8px;border:1px solid #f0dce5;box-shadow:0 12px 28px rgba(100,52,75,.08);height:320px;background:#fff5f9}
+.map-frame iframe{width:100%;height:100%;border:0;display:block}
+.local-seo{max-width:1100px;margin:0 auto 65px;padding:0 30px}
+.local-seo h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,34px);font-weight:500;color:#412e38;margin:0 0 12px}
+.local-seo p{font-size:12px;line-height:1.9;color:var(--muted);max-width:920px;margin:0}
+@media(max-width:680px){.location-section{margin:0 20px 48px;grid-template-columns:42px minmax(0,1fr);padding:20px;gap:12px}.map-frame{height:260px}.local-seo{padding:0 20px;margin-bottom:48px}.hero-art{animation:none!important}}

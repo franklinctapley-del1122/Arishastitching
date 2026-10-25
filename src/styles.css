@@ -72,3 +72,77 @@
 .rate-contact-cta p{margin:0;color:var(--muted);font-size:11px;line-height:1.7}
 .rate-contact-cta .button{white-space:normal}
 @media(max-width:700px){.rate-list-section{padding-top:48px;padding-bottom:52px}.rate-list-grid{grid-template-columns:1fr;gap:14px}.rate-list-card{padding:20px}.rate-list-card h3{font-size:23px}.rate-row{font-size:12px}.rate-contact-cta{align-items:stretch;flex-direction:column;padding:22px}.rate-contact-cta .button{width:100%;justify-content:center;text-align:center}}
+
+
+/* ===== ARISHA STITCHING: premium visual polish ===== */
+:root{--pink:#c65387;--pink-dark:#96345f;--pink-pale:#fff0f7;--ink:#2e2029;--muted:#786571;--line:#eedde6;--cream:#fff9fc;--gold:#c5a16c}
+html{scroll-behavior:smooth;scroll-padding-top:105px}
+body{background:#fffafc;color:var(--ink)}
+::selection{background:#eac0d5;color:#3b2030}
+.site-shell{background:radial-gradient(ellipse at 5% 14%,#fff0f7 0,transparent 28%),radial-gradient(ellipse at 96% 42%,#fbf0f6 0,transparent 24%),#fffdfd}
+.announcement{background:linear-gradient(90deg,#f9e4ee,#fff6fa,#f9e4ee);font-size:10px;letter-spacing:.12em;font-weight:700}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,253,254,.88);backdrop-filter:blur(18px);border-bottom:1px solid #f1e3ea;transition:box-shadow .3s}
+.brand-copy strong{letter-spacing:-.055em}
+.brand-mark{transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.brand:hover .brand-mark{transform:rotate(-12deg) scale(1.08)}
+.main-nav a:not(.button){position:relative;transition:color .25s}
+.main-nav a:not(.button):after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:2px;background:var(--pink);transition:right .28s}
+.main-nav a:not(.button):hover:after{right:0}
+.button{border-radius:3px;transition:transform .25s,box-shadow .25s,background .25s}
+.button-primary{background:linear-gradient(115deg,#c65387,#a43c70);box-shadow:0 8px 20px #bd4d8026}
+.button-primary:hover{transform:translateY(-3px);box-shadow:0 13px 28px #bd4d8040}
+.hero{position:relative}
+.hero-copy{animation:arishaRise .8s both}
+.hero h1{letter-spacing:-.065em}
+.hero-art{filter:drop-shadow(0 22px 26px #5c28341c);animation:arishaFloat 7s ease-in-out infinite}
+.art-sun{animation:arishaPulse 6s ease-in-out infinite}
+.art-stamp{animation:arishaFloat 6s ease-in-out infinite reverse}
+.eyebrow{letter-spacing:.17em}
+.section-heading h2,.center-heading h2,.about-copy h2,.calculator-copy h2,.appointment-section h2,.faq-intro h2,.final-cta h2{letter-spacing:-.045em}
+.collection-card,.service-card,.step-card,.blog-card,.rate-list-card,.faq-item,.work-tile{transition:transform .32s cubic-bezier(.2,.75,.25,1),box-shadow .32s,border-color .32s}
+.collection-card:hover,.service-card:hover,.step-card:hover,.blog-card:hover,.rate-list-card:hover{transform:translateY(-6px);box-shadow:0 18px 42px #64344b12;border-color:#e3b4ca}
+.collection-art{transition:filter .35s}
+.collection-card:hover .collection-art{filter:saturate(1.12)}
+.service-icon,.blog-icon,.step-icon,.measure-icon,.location-mark{transition:transform .35s,background .35s}
+.service-card:hover .service-icon,.blog-card:hover .blog-icon{transform:rotate(-8deg) scale(1.08);background:#f8dce9}
+.text-link{transition:gap .25s,color .25s}
+.text-link:hover{gap:12px;color:var(--pink-dark)}
+/* Price list reads like a refined, easy-to-scan pricing table */
+.rate-list-section{position:relative;isolation:isolate;background:linear-gradient(145deg,#fff8fb,#fff 52%,#fff4f9);overflow:hidden}
+.rate-list-section:before{content:"";position:absolute;width:330px;height:330px;border:1px solid #f0d4e1;border-radius:50%;right:-150px;top:-160px;z-index:-1;box-shadow:0 0 0 25px #fff7fa,0 0 0 26px #f4e3eb,0 0 0 52px #fffafd,0 0 0 53px #f6e6ed}
+.rate-list-card{border-radius:8px;overflow:hidden;box-shadow:0 12px 35px #4e26370a}
+.rate-list-card h3{display:flex;align-items:center;gap:10px;font-size:25px;color:#96345f}
+.rate-list-card h3:before{content:"✦";font-family:serif;color:var(--gold);font-size:15px}
+.rate-row{grid-template-columns:22px minmax(0,1fr) auto;align-items:center;gap:10px;padding:10px 8px;border-bottom:1px solid #f3e8ee;border-radius:3px;transition:background .2s,transform .2s}
+.rate-row:before{content:"✓";color:#bc6590;font-size:11px;font-weight:700}
+.rate-row:hover{background:#fff2f8;transform:translateX(3px)}
+.rate-row strong{background:#fff4f8;color:#88345b;padding:5px 8px;border-radius:4px;font-size:11px}
+.rate-contact-cta{border-radius:8px;box-shadow:0 12px 30px #a3427010}
+.rate-contact-cta h3{letter-spacing:-.025em}
+.rate-contact-cta .button{flex-shrink:0}
+/* Gallery tiles get depth without pretending they are real customer photographs */
+.work-tile{border-radius:5px;box-shadow:0 12px 25px #3d233010}
+.work-tile:hover{transform:translateY(-7px);box-shadow:0 22px 35px #3d233022}
+.work-tile:before{transition:transform .5s}
+.work-tile:hover:before{transform:scale(1.06) rotate(1deg)}
+.fabric-calculator,.about-section,.service-categories,.work-section,.blog-section,.process-section,.faq-section{animation:arishaRise .7s both;animation-timeline:view();animation-range:entry 0% entry 20%}
+.calculator-panel,.appointment-panel{border-radius:8px;box-shadow:0 18px 45px #64344b0c}
+.calculator-panel select:focus,.appointment-panel select:focus,.appointment-panel input:focus{outline:2px solid #d98bb0;outline-offset:2px}
+.location-section{border-radius:8px;box-shadow:0 12px 35px #64344b0b}
+.appointment-section{border-radius:8px;position:relative;overflow:hidden}
+.appointment-section:after{content:"✧";position:absolute;right:25px;top:5px;font-size:110px;color:#efd0df;opacity:.6;pointer-events:none}
+.faq-item{border-radius:5px}
+.faq-item:hover{border-color:#e6b5cb}
+.final-cta{position:relative;overflow:hidden}
+.final-flower{animation:arishaSpin 24s linear infinite}
+.floating-whatsapp{box-shadow:0 10px 28px #25854d40;transition:transform .25s,box-shadow .25s}
+.floating-whatsapp:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 14px 34px #25854d50}
+.site-footer{background:linear-gradient(130deg,#fff7fb,#fffdfd 60%,#fdf0f6)}
+.footer-links a{transition:color .2s,transform .2s}
+.footer-links a:hover{color:var(--pink-dark);transform:translateY(-2px)}
+@keyframes arishaRise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes arishaFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes arishaPulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.05);opacity:1}}
+@keyframes arishaSpin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+@media(max-width:700px){.rate-row{grid-template-columns:17px minmax(0,1fr) auto;gap:7px;padding:10px 4px}.rate-row strong{padding:5px 6px;font-size:10px}.rate-list-card h3{font-size:22px}.rate-list-section:before{width:200px;height:200px;right:-120px;top:-110px}.rate-contact-cta .button{width:100%}.hero-art{animation-duration:9s}}

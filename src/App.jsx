@@ -171,7 +171,7 @@ function App() {
       <footer className="site-footer">
         <a className="brand footer-brand" href="#home"><span className="brand-mark"><Scissors size={23} /></span><span className="brand-copy"><strong>arisha</strong><small>STITCHING STUDIO</small></span></a>
         <p>Thoughtful stitching, made personal.</p>
-        <div className="footer-links"><a href="#collections">Collections</a><a href="#custom">Custom stitching</a><a href="#process">How to order</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a></div>
+        <div className="footer-links"><a href="#collections">Collections</a><a href="#custom">Custom stitching</a><a href="#process">How to order</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} Arisha Stitching. Made with care.</span><span>Every stitch tells a story.</span></div>
       </footer>
       <a className="floating-whatsapp" href={whatsappLink('Assalam-o-Alaikum! I’d like to enquire about stitching.')} target="_blank" rel="noreferrer" aria-label="Chat with Arisha Stitching on WhatsApp"><MessageCircle size={23} /><span>Chat with us</span></a>

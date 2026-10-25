@@ -81,6 +81,7 @@ function App() {
         <nav className={menuOpen ? 'main-nav nav-open' : 'main-nav'}>
           <a href="#about" onClick={closeMenu}>About</a>
           <a href="#stitching" onClick={closeMenu}>Stitching</a>
+          <a href="#rate-list" onClick={closeMenu}>Rate List</a>
           <a href="#collections" onClick={closeMenu}>Collections</a>
           <a href="#our-work" onClick={closeMenu}>Our work</a>
           <a href="#book-appointment" onClick={closeMenu}>Appointment</a>
@@ -259,7 +260,7 @@ function App() {
       <footer className="site-footer">
         <a className="brand footer-brand" href="#home"><span className="brand-mark"><Scissors size={23} /></span><span className="brand-copy"><strong>arisha</strong><small>STITCHING STUDIO</small></span></a>
         <p>Thoughtful stitching, made personal.</p>
-        <div className="footer-links"><a href="#about">About</a><a href="#stitching">Stitching</a><a href="#party-wear">Party wear</a><a href="#bridal-wear">Bridal wear</a><a href="#casual-wear">Casual wear</a><a href="#western-wear">Western wear</a><a href="#alteration">Alterations</a><a href="#our-work">Our work</a><a href="#fabric-calc">Fabric calculator</a><a href="#blog">Blog</a><a href="#location">Location</a><a href="#book-appointment">Book appointment</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
+        <div className="footer-links"><a href="#about">About</a><a href="#stitching">Stitching</a><a href="#rate-list">Rate List</a><a href="#party-wear">Party wear</a><a href="#bridal-wear">Bridal wear</a><a href="#casual-wear">Casual wear</a><a href="#western-wear">Western wear</a><a href="#alteration">Alterations</a><a href="#our-work">Our work</a><a href="#fabric-calc">Fabric calculator</a><a href="#blog">Blog</a><a href="#location">Location</a><a href="#book-appointment">Book appointment</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} Arisha Stitching. Made with care.</span><span>Every stitch tells a story.</span></div>
       </footer>
       <a className="floating-whatsapp" href={whatsappLink('Assalam-o-Alaikum! I’d like to enquire about stitching.')} target="_blank" rel="noreferrer" aria-label="Chat with Arisha Stitching on WhatsApp"><MessageCircle size={23} /><span>Chat with us</span></a>

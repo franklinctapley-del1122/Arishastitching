@@ -68,7 +68,7 @@ function App() {
     { q: 'How long will stitching take?', a: 'Timing depends on the outfit, design details and current orders. Message us with your requirements so we can discuss an estimated completion date.' },
   ];
 
-  if (window.location.pathname.replace(/\\/$/, '') === '/services') return <ServicesPage />;
+  if (window.location.pathname === '/services' || window.location.pathname === '/services/') return <ServicesPage />;
 
   return (
     <div className="site-shell">

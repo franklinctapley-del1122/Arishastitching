@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ServicesPage from './ServicesPage.jsx';
 import { ArrowDown, ArrowRight, Check, ChevronDown, Menu, MessageCircle, Scissors, Sparkles, Ruler, Heart, MapPin, Calculator, CalendarDays, Images, BookOpen, Shirt, X } from 'lucide-react';
 
 const WA_NUMBER = '923081042020';
@@ -67,6 +68,8 @@ function App() {
     { q: 'How long will stitching take?', a: 'Timing depends on the outfit, design details and current orders. Message us with your requirements so we can discuss an estimated completion date.' },
   ];
 
+  if (window.location.pathname.replace(/\\/$/, '') === '/services') return <ServicesPage />;
+
   return (
     <div className="site-shell">
       <div className="announcement"><Sparkles size={14} /> A little care in every stitch <span className="announcement-dot">·</span> Custom orders welcome</div>
@@ -79,8 +82,8 @@ function App() {
           {menuOpen ? <X /> : <Menu />}
         </button>
         <nav className={menuOpen ? 'main-nav nav-open' : 'main-nav'}>
-          <a href="#stitching" onClick={closeMenu}>Services</a>
-          <a href="#stitching" onClick={closeMenu}>Stitching</a>
+          <a href="/services" onClick={closeMenu}>Services</a>
+          <a href="/services" onClick={closeMenu}>Stitching</a>
           <a href="#rate-list" onClick={closeMenu}>Rate List</a>
           <a href="#our-work" onClick={closeMenu}>Gallery</a>
           <a href="#our-work" onClick={closeMenu}>Our work</a>
@@ -188,7 +191,7 @@ function App() {
       <footer className="site-footer">
         <a className="brand footer-brand" href="#home"><span className="brand-mark"><Scissors size={23} /></span><span className="brand-copy"><strong>arisha</strong><small>STITCHING STUDIO</small></span></a>
         <p>Thoughtful stitching, made personal.</p>
-        <div className="footer-links"><a href="#stitching">Services</a><a href="#stitching">Stitching</a><a href="#rate-list">Rate List</a><a href="#party-wear">Party wear</a><a href="#bridal-wear">Bridal wear</a><a href="#casual-wear">Casual wear</a><a href="#western-wear">Western wear</a><a href="#alteration">Alterations</a><a href="#our-work">Our work</a><a href="#location">Location</a><a href="#location">Book appointment</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
+        <div className="footer-links"><a href="/services">Services</a><a href="/services">Stitching</a><a href="#rate-list">Rate List</a><a href="#party-wear">Party wear</a><a href="#bridal-wear">Bridal wear</a><a href="#casual-wear">Casual wear</a><a href="#western-wear">Western wear</a><a href="#alteration">Alterations</a><a href="#our-work">Our work</a><a href="#location">Location</a><a href="#location">Book appointment</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} Arisha Stitching. Made with care.</span><span>Every stitch tells a story.</span></div>
       </footer>
       <a className="floating-whatsapp" href={whatsappLink('Assalam-o-Alaikum! I’d like to enquire about stitching.')} target="_blank" rel="noreferrer" aria-label="Chat with Arisha Stitching on WhatsApp"><MessageCircle size={23} /><span>Chat with us</span></a>

@@ -79,12 +79,12 @@ function App() {
           {menuOpen ? <X /> : <Menu />}
         </button>
         <nav className={menuOpen ? 'main-nav nav-open' : 'main-nav'}>
-          <a href="#about" onClick={closeMenu}>About</a>
+          <a href="#stitching" onClick={closeMenu}>Services</a>
           <a href="#stitching" onClick={closeMenu}>Stitching</a>
           <a href="#rate-list" onClick={closeMenu}>Rate List</a>
-          <a href="#collections" onClick={closeMenu}>Collections</a>
+          <a href="#our-work" onClick={closeMenu}>Gallery</a>
           <a href="#our-work" onClick={closeMenu}>Our work</a>
-          <a href="#book-appointment" onClick={closeMenu}>Appointment</a>
+          <a href="#location" onClick={closeMenu}>Location</a>
           <WhatsAppButton className="nav-cta" message="Assalam-o-Alaikum! I’d like to enquire about an order at Arisha Stitching.">Let’s talk</WhatsAppButton>
         </nav>
       </header>
@@ -97,7 +97,7 @@ function App() {
             <p className="hero-intro">Thoughtful stitching for your everyday wardrobe, special occasions and the designs you’ve been dreaming of.</p>
             <div className="hero-actions">
               <WhatsAppButton message="Assalam-o-Alaikum! I’d like to discuss an outfit with Arisha Stitching." />
-              <a href="#collections" className="text-link">Explore collections <ArrowDown size={16} /></a>
+              <a href="#rate-list" className="text-link">View stitching rates <ArrowDown size={16} /></a>
             </div>
             <div className="hero-note"><span className="note-icon"><Heart size={16} /></span><span><strong>Your style comes first.</strong><br />Made around your ideas and preferences.</span></div>
           </div>
@@ -117,36 +117,6 @@ function App() {
           <div className="hero-bottom"><span>DETAILS MATTER</span><span className="bottom-line" /><span>FROM FIRST IDEA TO FINAL STITCH</span></div>
         </section>
 
-        <section className="about-section section" id="about">
-          <div className="about-badge"><Scissors size={26}/><span>ARISHA<br/>STITCHING STUDIO</span></div>
-          <div className="about-copy"><div className="eyebrow"><span className="eyebrow-line" /> ABOUT ARISHA STITCHING</div><h2>Good stitching starts<br/>with <em>listening.</em></h2><p>Arisha Stitching is a ladies tailoring and custom-stitching service where you can discuss your outfit idea, fabric, preferred fit and finishing before confirming an order. Whether you have a clear reference or need to talk through the options, start with a WhatsApp enquiry.</p><a href="#book-appointment" className="text-link">Plan your enquiry <ArrowRight size={16}/></a></div>
-        </section>
-        <section className="trust-strip" aria-label="Our approach">
-          <div><Scissors /><span>Thoughtful stitching</span></div><i />
-          <div><Heart /><span>Personal style first</span></div><i />
-          <div><MessageCircle /><span>Easy WhatsApp enquiries</span></div>
-        </section>
-
-        <section className="section collections-section" id="collections">
-          <div className="section-heading">
-            <div><div className="eyebrow"><span className="eyebrow-line" /> FIND YOUR FIT</div><h2>A collection for<br /><em>every kind of day.</em></h2></div>
-            <p>Whether you’re keeping it simple or dressing up for a moment that matters, start with the style that feels right to you.</p>
-          </div>
-          <div className="collection-grid">
-            {collections.map((item) => (
-              <article className={`collection-card ${item.className}`} key={item.number}>
-                <div className="collection-art">
-                  <span className="collection-number">{item.number}</span>
-                  <span className="collection-symbol">{item.symbol}</span>
-                  <div className="swatch swatch-one" /><div className="swatch swatch-two" /><div className="swatch swatch-three" />
-                  <span className="collection-tag">{item.tag}</span>
-                </div>
-                <div className="collection-info"><div><h3>{item.title}</h3><p>{item.description}</p></div><a href={whatsappLink(`Assalam-o-Alaikum! I’m interested in ${item.title.toLowerCase()} at Arisha Stitching. Please share the details.`)} target="_blank" rel="noreferrer" aria-label={`Enquire about ${item.title}`}><ArrowRight size={20} /></a></div>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section className="custom-section" id="stitching">
           <div className="custom-visual">
             <div className="custom-circle circle-back" /><div className="custom-circle circle-front" />
@@ -162,18 +132,6 @@ function App() {
             <span className="small-note">Every design is discussed individually before an order is confirmed.</span>
           </div>
         </section>
-
-        <section className="process-section section" id="process">
-          <div className="center-heading"><div className="eyebrow"><span className="eyebrow-line" /> SIMPLE FROM THE START <span className="eyebrow-line" /></div><h2>Three steps to <em>your outfit.</em></h2><p>No complicated forms. Just a conversation about what you want made.</p></div>
-          <div className="steps-grid">{steps.map((step) => <article className="step-card" key={step.number}><span className="step-number">{step.number}</span><div className="step-icon">{step.number === '01' ? <MessageCircle /> : step.number === '02' ? <Ruler /> : <Check />}</div><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
-          <div className="process-cta"><span>Have a question before you order?</span><WhatsAppButton message="Assalam-o-Alaikum! I have a question about placing a stitching order." >Ask us on WhatsApp</WhatsAppButton></div>
-        </section>
-
-        <section className="measurement-banner">
-          <div className="measure-icon"><Ruler size={27} /></div><div><span className="eyebrow">A BETTER FIT STARTS WITH THE DETAILS</span><h2>Not sure about measurements?</h2><p>That’s okay. Message us and we’ll guide you through the next steps before you confirm your order.</p></div><WhatsAppButton message="Assalam-o-Alaikum! Please guide me about measurements for a stitching order.">Ask about measurements</WhatsAppButton>
-        </section>
-
-
 
         <section className="rate-list-section section" id="rate-list">
           <div className="section-heading"><div><div className="eyebrow"><span className="eyebrow-line" /> ARISHA STITCHING</div><h2>Stitching <em>rate list.</em></h2></div><p>Prices are in Pakistani rupees. Please confirm the final rate and availability before placing your order.</p></div>
@@ -212,42 +170,12 @@ function App() {
           </div>
         </section>
 
-        <section className="fabric-calculator section" id="fabric-calc">
-          <div className="calculator-copy"><div className="eyebrow"><span className="eyebrow-line" /> PLAN YOUR FABRIC</div><h2>Fabric calculator<br /><em>quick estimate.</em></h2><p>Use this as a starting point when planning fabric. Actual requirements depend on measurements, garment design, sleeves, lining, embroidery, print direction and fabric width.</p></div>
-          <div className="calculator-panel">
-            <label>Outfit type<select value={fabricOutfit} onChange={e=>setFabricOutfit(e.target.value)}><option value="shirt">Shirt / kurti</option><option value="two-piece">Two-piece suit</option><option value="three-piece">Three-piece suit</option><option value="party-wear">Party wear</option><option value="bridal-wear">Bridal outfit</option></select></label>
-            <label>Fabric width<select value={fabricWidth} onChange={e=>setFabricWidth(e.target.value)}><option value="standard">Standard / wide</option><option value="narrow">Narrow width</option></select></label>
-            <label>Approximate size<select value={fabricSize} onChange={e=>setFabricSize(e.target.value)}><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large / extra room</option></select></label>
-            <div className="fabric-result"><Calculator size={23}/><div><span>Rough fabric estimate</span><strong>{fabricEstimate} metres</strong></div></div>
-            <p className="calculator-note">Planning guide only — confirm the final quantity with your tailor before buying fabric.</p>
-            <WhatsAppButton message={`Assalam-o-Alaikum! I used the Arisha Stitching fabric calculator. Outfit: ${fabricOutfit.replace('-', ' ')}; fabric width: ${fabricWidth}; size: ${fabricSize}; rough estimate: ${fabricEstimate} metres. Please help me confirm the required fabric.`}>Confirm fabric quantity</WhatsAppButton>
-          </div>
-        </section>
-
         <section className="location-section" id="location">
           <div className="location-mark"><MapPin size={27}/></div>
-          <div><div className="eyebrow"><span className="eyebrow-line" /> FIND ARISHA STITCHING</div><h2>Location & enquiries</h2><p>Open our Google Business Profile for the latest available location details, directions and business information. Please message us before visiting to confirm availability.</p></div>
-          <a className="button button-primary" href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer"><MapPin size={17}/> View Google profile <ArrowRight size={16}/></a>
+          <div className="location-copy"><div className="eyebrow"><span className="eyebrow-line" /> LADIES TAILOR IN LAHORE</div><h2>Arisha Stitching — Lahore</h2><p>Looking for a ladies tailor in Lahore, ladies suit stitching, custom dress stitching, alterations or party-wear tailoring? Contact Arisha Stitching to discuss your design, measurements, stitching rates and order availability before visiting.</p><a className="button button-primary" href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer"><MapPin size={17}/> Open Google Maps <ArrowRight size={16}/></a></div>
+          <div className="map-frame"><iframe title="Arisha Stitching Lahore map" src="https://www.google.com/maps?q=Arisha%20Stitching%20Lahore%20Pakistan&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /></div>
         </section>
-
-        <section className="section blog-section" id="blog">
-          <div className="section-heading"><div><div className="eyebrow"><span className="eyebrow-line" /> FROM THE STITCHING DESK</div><h2>Helpful notes for<br /><em>your next outfit.</em></h2></div><p>Practical topics to help you prepare before choosing a design, buying fabric or booking a stitching discussion.</p></div>
-          <div className="blog-grid">
-            <article className="blog-card"><span className="blog-icon"><BookOpen/></span><span className="service-kicker">FABRIC GUIDE</span><h3>How to choose fabric for a stitched suit</h3><p>Consider season, drape, transparency, care instructions and the shape you want before buying.</p><a href="#fabric-calc" className="text-link">Estimate fabric <ArrowRight size={15}/></a></article>
-            <article className="blog-card"><span className="blog-icon"><Ruler/></span><span className="service-kicker">FIT GUIDE</span><h3>Measurements to discuss before stitching</h3><p>Ask which measurements are needed for your chosen cut and whether a fitting or adjustment may be required.</p><a href="#book-appointment" className="text-link">Plan an enquiry <ArrowRight size={15}/></a></article>
-            <article className="blog-card"><span className="blog-icon"><Sparkles/></span><span className="service-kicker">DESIGN GUIDE</span><h3>How to prepare a design reference</h3><p>Save clear front, back and detail views, then note the changes you would like to make to the design.</p><a href="#book-appointment" className="text-link">Discuss your idea <ArrowRight size={15}/></a></article>
-          </div>
-        </section>
-
-        <section className="appointment-section" id="book-appointment">
-          <div><div className="eyebrow"><span className="eyebrow-line" /> LET’S TALK THROUGH YOUR ORDER</div><h2>Book an enquiry<br /><em>with Arisha.</em></h2><p>Choose what you want to discuss and optionally add a preferred date. This sends an enquiry through WhatsApp; it does not confirm a booking until we reply.</p></div>
-          <div className="appointment-panel">
-            <label>What would you like to discuss?<select value={appointmentOutfit} onChange={e=>setAppointmentOutfit(e.target.value)}><option>Custom suit</option><option>Casual wear</option><option>Party wear</option><option>Bridal wear</option><option>Western wear</option><option>Alteration</option><option>Measurements</option></select></label>
-            <label>Preferred date (optional)<input type="date" value={appointmentDate} onChange={e=>setAppointmentDate(e.target.value)} min={new Date().toISOString().slice(0,10)}/></label>
-            <WhatsAppButton message={`Assalam-o-Alaikum! I would like to book an enquiry with Arisha Stitching. Topic: ${appointmentOutfit}.${appointmentDate ? ` Preferred date: ${appointmentDate}.` : ''} Please let me know availability and next steps.`}>Request appointment on WhatsApp</WhatsAppButton>
-            <p className="calculator-note">Your request opens WhatsApp so you can review and send the message.</p>
-          </div>
-        </section>
+        <section className="local-seo" aria-label="Ladies tailoring services in Lahore"><h2>Ladies tailoring and suit stitching in Lahore</h2><p>Arisha Stitching helps customers enquire about ladies tailor services in Lahore, Pakistani suit stitching, shalwar kameez stitching, custom ladies suits, shirt and trouser stitching, casual wear, formal wear, party wear, frocks, maxi dresses, pishwas, anarkali dresses, kaftans, dupatta finishing, lace work, dori piping and clothing alterations. Share a reference photo on WhatsApp to discuss your preferred design, fitting, fabric details, estimated cost and timeline. Service availability and final prices should be confirmed directly before ordering.</p></section>
 
         <section className="faq-section section" id="faq">
           <div className="faq-intro"><div className="eyebrow"><span className="eyebrow-line" /> GOOD TO KNOW</div><h2>A few things<br /><em>you might wonder.</em></h2><p>Still have a question? We’re just a WhatsApp message away.</p><a href={whatsappLink('Assalam-o-Alaikum! I have a question about Arisha Stitching.')} target="_blank" rel="noreferrer" className="text-link">Ask a question <ArrowRight size={16} /></a></div>
@@ -260,7 +188,7 @@ function App() {
       <footer className="site-footer">
         <a className="brand footer-brand" href="#home"><span className="brand-mark"><Scissors size={23} /></span><span className="brand-copy"><strong>arisha</strong><small>STITCHING STUDIO</small></span></a>
         <p>Thoughtful stitching, made personal.</p>
-        <div className="footer-links"><a href="#about">About</a><a href="#stitching">Stitching</a><a href="#rate-list">Rate List</a><a href="#party-wear">Party wear</a><a href="#bridal-wear">Bridal wear</a><a href="#casual-wear">Casual wear</a><a href="#western-wear">Western wear</a><a href="#alteration">Alterations</a><a href="#our-work">Our work</a><a href="#fabric-calc">Fabric calculator</a><a href="#blog">Blog</a><a href="#location">Location</a><a href="#book-appointment">Book appointment</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
+        <div className="footer-links"><a href="#stitching">Services</a><a href="#stitching">Stitching</a><a href="#rate-list">Rate List</a><a href="#party-wear">Party wear</a><a href="#bridal-wear">Bridal wear</a><a href="#casual-wear">Casual wear</a><a href="#western-wear">Western wear</a><a href="#alteration">Alterations</a><a href="#our-work">Our work</a><a href="#location">Location</a><a href="#location">Book appointment</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} Arisha Stitching. Made with care.</span><span>Every stitch tells a story.</span></div>
       </footer>
       <a className="floating-whatsapp" href={whatsappLink('Assalam-o-Alaikum! I’d like to enquire about stitching.')} target="_blank" rel="noreferrer" aria-label="Chat with Arisha Stitching on WhatsApp"><MessageCircle size={23} /><span>Chat with us</span></a>

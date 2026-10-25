@@ -116,7 +116,11 @@ function App() {
           <div className="hero-bottom"><span>DETAILS MATTER</span><span className="bottom-line" /><span>FROM FIRST IDEA TO FINAL STITCH</span></div>
         </section>
 
-        <section className="trust-strip" id="about" aria-label="Our approach">
+        <section className="about-section section" id="about">
+          <div className="about-badge"><Scissors size={26}/><span>ARISHA<br/>STITCHING STUDIO</span></div>
+          <div className="about-copy"><div className="eyebrow"><span className="eyebrow-line" /> ABOUT ARISHA STITCHING</div><h2>Good stitching starts<br/>with <em>listening.</em></h2><p>Arisha Stitching is a ladies tailoring and custom-stitching service where you can discuss your outfit idea, fabric, preferred fit and finishing before confirming an order. Whether you have a clear reference or need to talk through the options, start with a WhatsApp enquiry.</p><a href="#book-appointment" className="text-link">Plan your enquiry <ArrowRight size={16}/></a></div>
+        </section>
+        <section className="trust-strip" aria-label="Our approach">
           <div><Scissors /><span>Thoughtful stitching</span></div><i />
           <div><Heart /><span>Personal style first</span></div><i />
           <div><MessageCircle /><span>Easy WhatsApp enquiries</span></div>

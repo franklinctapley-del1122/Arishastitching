@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ServicesPage from './ServicesPage.jsx';
 import { ArrowDown, ArrowRight, Check, ChevronDown, Menu, MessageCircle, Scissors, Sparkles, Ruler, Heart, MapPin, Calculator, CalendarDays, Images, BookOpen, Shirt, X } from 'lucide-react';
 
@@ -61,6 +61,19 @@ function App() {
   const fabricEstimate = (fabricBase[fabricOutfit] * (fabricWidth === 'narrow' ? 1.2 : 1) + (fabricSize === 'large' ? 0.5 : fabricSize === 'small' ? -0.25 : 0)).toFixed(1);
 
   const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    const routeTargets = {
+      '/rate-list': 'rate-list',
+      '/gallery': 'our-work',
+      '/location': 'location',
+      '/reviews': 'google-reviews',
+    };
+    const targetId = routeTargets[window.location.pathname.replace(/\\/$/, '')];
+    if (targetId) {
+      requestAnimationFrame(() => document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    }
+  }, []);
   const faqs = [
     { q: 'How do I place an order?', a: 'Tap any WhatsApp order button. Tell us what you have in mind and we’ll discuss the design, measurements and next steps with you.' },
     { q: 'Can I bring my own design or reference picture?', a: 'Yes! You can share a reference photo, a sketch or simply describe the look you want. We’ll talk through the details before confirming.' },
@@ -84,10 +97,10 @@ function App() {
         <nav className={menuOpen ? 'main-nav nav-open' : 'main-nav'}>
           <a href="/services" onClick={closeMenu}>Services</a>
           <a href="/services" onClick={closeMenu}>Stitching</a>
-          <a href="#rate-list" onClick={closeMenu}>Rate List</a>
-          <a href="#our-work" onClick={closeMenu}>Gallery</a>
-          <a href="#our-work" onClick={closeMenu}>Our work</a>
-          <a href="#location" onClick={closeMenu}>Location</a>
+          <a href="/rate-list" onClick={closeMenu}>Rate List</a>
+          <a href="/gallery" onClick={closeMenu}>Gallery</a>
+          <a href="/gallery" onClick={closeMenu}>Our work</a>
+          <a href="/location" onClick={closeMenu}>Location</a>
           <WhatsAppButton className="nav-cta" message="Assalam-o-Alaikum! I’d like to enquire about an order at Arisha Stitching.">Let’s talk</WhatsAppButton>
         </nav>
       </header>
@@ -171,6 +184,20 @@ function App() {
           <div className="location-copy"><div className="eyebrow"><span className="eyebrow-line" /> LADIES TAILOR IN LAHORE</div><h2>Arisha Stitching — Lahore</h2><p>Looking for a ladies tailor in Lahore, ladies suit stitching, custom dress stitching, alterations or party-wear tailoring? Contact Arisha Stitching to discuss your design, measurements, stitching rates and order availability before visiting.</p><a className="button button-primary" href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer"><MapPin size={17}/> Open Google Maps <ArrowRight size={16}/></a></div>
           <div className="map-frame"><iframe title="Arisha Stitching Lahore map" src="https://www.google.com/maps?q=Arisha%20Stitching%20Lahore%20Pakistan&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /></div>
         </section>
+        <section className="google-reviews-section section" id="google-reviews">
+          <div className="google-reviews-copy">
+            <div className="eyebrow"><span className="eyebrow-line" /> CUSTOMER FEEDBACK</div>
+            <h2>See our <em>Google reviews.</em></h2>
+            <p>Want to check customer feedback before contacting us? Open Arisha Stitching’s Google Business Profile to read the reviews shown on Google. We don’t publish made-up testimonials on this website.</p>
+            <div className="google-review-actions">
+              <a className="button button-primary" href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer"><MapPin size={17}/> Read Google reviews <ArrowRight size={16}/></a>
+              <a className="text-link" href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer">Open business profile <ArrowRight size={15}/></a>
+            </div>
+            <p className="google-review-note">Google’s own listing opens in a new tab. To display individual review cards directly on this page, we’ll need the exact public Google Maps listing URL or Place ID.</p>
+          </div>
+          <div className="google-review-visual" aria-hidden="true"><div className="google-review-g">G</div><div className="google-review-stars">★★★★★</div><strong>Reviews on Google</strong><span>Read feedback on the original listing</span><MapPin size={23}/></div>
+        </section>
+
         <section className="local-seo" aria-label="Ladies tailoring services in Lahore"><h2>Ladies tailoring and suit stitching in Lahore</h2><p>Arisha Stitching helps customers enquire about ladies tailor services in Lahore, Pakistani suit stitching, shalwar kameez stitching, custom ladies suits, shirt and trouser stitching, casual wear, formal wear, party wear, frocks, maxi dresses, pishwas, anarkali dresses, kaftans, dupatta finishing, lace work, dori piping and clothing alterations. Share a reference photo on WhatsApp to discuss your preferred design, fitting, fabric details, estimated cost and timeline. Service availability and final prices should be confirmed directly before ordering.</p></section>
 
         <section className="faq-section section" id="faq">

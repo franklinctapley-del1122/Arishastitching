@@ -101,6 +101,7 @@ function App() {
           <a href="/gallery" onClick={closeMenu}>Gallery</a>
           <a href="/gallery" onClick={closeMenu}>Our work</a>
           <a href="/location" onClick={closeMenu}>Location</a>
+          <a href="/reviews" onClick={closeMenu}>Google Reviews</a>
           <WhatsAppButton className="nav-cta" message="Assalam-o-Alaikum! I’d like to enquire about an order at Arisha Stitching.">Let’s talk</WhatsAppButton>
         </nav>
       </header>

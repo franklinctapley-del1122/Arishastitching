@@ -286,3 +286,19 @@ html{scroll-padding-top:82px}
 .homepage-hero-photo-wrap .art-caption{left:22px;right:22px;bottom:22px;color:#fff;border-color:rgba(255,255,255,.45)}
 .homepage-hero-photo-wrap .art-caption span{color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.35)}
 @media(max-width:700px){.homepage-hero-photo-wrap{min-height:390px}.homepage-hero-photo-wrap .art-stamp{top:15px;right:15px}.homepage-hero-photo-wrap .art-caption{left:15px;right:15px;bottom:15px}}
+
+
+/* Dedicated section routes and Google reviews callout */
+.google-reviews-section{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(250px,.75fr);align-items:center;gap:35px;margin:0 auto 65px;max-width:1120px;padding:48px 30px;background:linear-gradient(120deg,#fff5f9,#fffdfd);border:1px solid #f0dce5;border-radius:8px}
+.google-reviews-copy h2{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:clamp(30px,4vw,43px);letter-spacing:-.04em;margin:17px 0 12px;color:#412e38}
+.google-reviews-copy h2 em{color:var(--pink);font-weight:500}
+.google-reviews-copy>p{max-width:650px;font-size:12px;line-height:1.9;color:var(--muted)}
+.google-review-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin:20px 0 14px}
+.google-review-note{font-size:10px!important;color:#947d89!important}
+.google-review-visual{min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border:1px solid #f0dce5;border-radius:7px;background:rgba(255,255,255,.8);box-shadow:0 14px 35px rgba(100,52,75,.06);text-align:center;padding:24px}
+.google-review-g{font-family:Arial,sans-serif;font-weight:800;font-size:48px;line-height:1;color:#4285f4;text-shadow:2px 2px 0 #34a853,-1px -1px 0 #ea4335}
+.google-review-stars{letter-spacing:5px;color:#d4a14b;font-size:20px}
+.google-review-visual strong{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:500}
+.google-review-visual span{font-size:10px;color:var(--muted)}
+.google-review-visual>svg{color:var(--pink)}
+@media(max-width:700px){.google-reviews-section{grid-template-columns:1fr;margin:0 18px 45px;padding:27px 20px;gap:20px}.google-review-actions{align-items:flex-start;flex-direction:column;gap:15px}.google-review-visual{min-height:180px}}

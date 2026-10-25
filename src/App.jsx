@@ -173,6 +173,19 @@ function App() {
         </section>
 
 
+
+        <section className="rate-list-section section" id="rate-list">
+          <div className="section-heading"><div><div className="eyebrow"><span className="eyebrow-line" /> ARISHA STITCHING</div><h2>Stitching <em>rate list.</em></h2></div><p>Prices are in Pakistani rupees. Please confirm the final rate and availability before placing your order.</p></div>
+          <div className="rate-list-grid">
+            <div className="rate-list-card"><h3>Stitching Rates</h3>{[['Simple Suit','1,000'],['Dori Piping Suit','1,200'],['Lining Suit / Party Wear','2,000'],['Frock','1,500'],['Short Frock','1,300'],['Angrakha Suit','1,800'],['Pishwas','1,800'],['Anarkali Dress','1,800'],['Kaftan','1,500'],['Gown Style (Full-Length)','2,500'],['Simple Shirt','800'],['Dori Piping Shirt','1,000'],['Lining Shirt','1,500'],['Open Shirt','1,200'],['Peplum Top','1,500'],['Jacket Style Suit','1,600'],['Ghagra + Shirt','2,000'],['Ghagra + Shirt with Lining','2,500']].map(([n,p])=><div className="rate-row" key={n}><span>{n}</span><strong>Rs. {p}</strong></div>)}</div>
+            <div className="rate-list-side">
+              <div className="rate-list-card"><h3>Bottoms Collection</h3>{[['Simple Trouser','200'],['Simple Shalwar','200'],['Bell Bottom','250'],['Sharara','450'],['Farshi Shalwar','500'],['Flazo','300'],['Designing Trouser','500'],['Tulip Shalwar','350'],['Cigarette Pants','400'],['Churidar Pajama','300'],['Capri','300'],['Dhoti Shalwar','500'],['Garara','800'],['Culottes','400'],['Patiala Shalwar','450']].map(([n,p])=><div className="rate-row" key={n}><span>{n}</span><strong>Rs. {p}</strong></div>)}</div>
+              <div className="rate-list-card"><h3>Dupatta &amp; Finishing Work</h3>{[['Dori Piping Dupatta','350'],['Lace Work Dupatta','400'],['Gotapati Work Dupatta','500'],['Stone Work Dupatta','600'],['Tassel Finishing','250']].map(([n,p])=><div className="rate-row" key={n}><span>{n}</span><strong>Rs. {p}</strong></div>)}</div>
+              <div className="rate-list-card"><h3>Extra Services</h3><div className="rate-row"><span>Alteration / Fitting</span><strong>Rs. 300–500</strong></div></div>
+            </div>
+          </div>
+          <div className="rate-contact-cta"><div><h3>Need a custom quote?</h3><p>Send your dress reference on WhatsApp to discuss design and final price.</p></div><a className="button button-primary" href="https://wa.me/923707526041?text=Assalam-o-Alaikum%21%20Please%20confirm%20the%20latest%20stitching%20rates." target="_blank" rel="noreferrer"><MessageCircle size={17}/> Confirm rates on WhatsApp <ArrowRight size={16}/></a></div>
+        </section>
         <section className="section service-categories" id="stitching-services">
           <div className="section-heading">
             <div><div className="eyebrow"><span className="eyebrow-line" /> STITCHING SERVICES</div><h2>Made for your<br /><em>kind of occasion.</em></h2></div>

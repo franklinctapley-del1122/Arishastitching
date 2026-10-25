@@ -104,18 +104,11 @@ function App() {
             </div>
             <div className="hero-note"><span className="note-icon"><Heart size={16} /></span><span><strong>Your style comes first.</strong><br />Made around your ideas and preferences.</span></div>
           </div>
-          <div className="hero-art" aria-label="Decorative fashion illustration">
-            <div className="art-sun" />
+          <div className="hero-art homepage-hero-photo-wrap" aria-label="Ladies fashion and stitching inspiration">
+            <img className="homepage-hero-photo" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=90" alt="Traditional embroidered ladies outfit inspiration" fetchPriority="high" />
+            <div className="homepage-hero-photo-shade" />
             <div className="art-stamp">MADE<br />WITH LOVE <Heart size={15} fill="currentColor" /></div>
-            <div className="fabric fabric-back" />
-            <div className="fabric fabric-main">
-              <div className="fabric-neck" />
-              <div className="fabric-embroidery embroidery-one">✿　✧　✿</div>
-              <div className="fabric-embroidery embroidery-two">✧　✿　✧</div>
-              <div className="fabric-border" />
-            </div>
-            <div className="art-flower flower-one">✿</div><div className="art-flower flower-two">✧</div>
-            <div className="art-caption"><span>01 / 03</span><span>THE ART OF A PERFECT FIT</span></div>
+            <div className="art-caption"><span>ARISHA STITCHING</span><span>THE ART OF A PERFECT FIT</span></div>
           </div>
           <div className="hero-bottom"><span>DETAILS MATTER</span><span className="bottom-line" /><span>FROM FIRST IDEA TO FINAL STITCH</span></div>
         </section>

@@ -182,7 +182,7 @@ function App() {
 
         <section className="location-section" id="location">
           <div className="location-mark"><MapPin size={27}/></div>
-          <div className="location-copy"><div className="eyebrow"><span className="eyebrow-line" /> LADIES TAILOR IN LAHORE</div><h2>Arisha Stitching — Lahore</h2><p>Looking for a ladies tailor in Lahore, ladies suit stitching, custom dress stitching, alterations or party-wear tailoring? Contact Arisha Stitching to discuss your design, measurements, stitching rates and order availability before visiting.</p><a className="button button-primary" href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer"><MapPin size={17}/> Open Google Maps <ArrowRight size={16}/></a></div>
+          <div className="location-copy"><div className="eyebrow"><span className="eyebrow-line" /> LADIES TAILOR IN LAHORE</div><h2>Arisha Stitching — Lahore</h2><p>Looking for a ladies tailor in Lahore, ladies suit stitching, custom dress stitching, alterations or party-wear tailoring? Contact Arisha Stitching to discuss your design, measurements, stitching rates and order availability before visiting.</p><a className="button button-primary" href="https://maps.app.goo.gl/84PrCTQYYGeZT22k8" target="_blank" rel="noreferrer"><MapPin size={17}/> Open Google Maps <ArrowRight size={16}/></a></div>
           <div className="map-frame"><iframe title="Arisha Stitching Lahore map" src="https://www.google.com/maps?q=Arisha%20Stitching%20Lahore%20Pakistan&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /></div>
         </section>
         <section className="google-reviews-section section" id="google-reviews">
@@ -191,8 +191,8 @@ function App() {
             <h2>See our <em>Google reviews.</em></h2>
             <p>Want to check customer feedback before contacting us? Open Arisha Stitching’s Google Business Profile to read the reviews shown on Google. We don’t publish made-up testimonials on this website.</p>
             <div className="google-review-actions">
-              <a className="button button-primary" href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer"><MapPin size={17}/> Read Google reviews <ArrowRight size={16}/></a>
-              <a className="text-link" href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer">Open business profile <ArrowRight size={15}/></a>
+              <a className="button button-primary" href="https://maps.app.goo.gl/84PrCTQYYGeZT22k8" target="_blank" rel="noreferrer"><MapPin size={17}/> Read Google reviews <ArrowRight size={16}/></a>
+              <a className="text-link" href="https://maps.app.goo.gl/84PrCTQYYGeZT22k8" target="_blank" rel="noreferrer">Open business profile <ArrowRight size={15}/></a>
             </div>
             <p className="google-review-note">Google’s own listing opens in a new tab. To display individual review cards directly on this page, we’ll need the exact public Google Maps listing URL or Place ID.</p>
           </div>
@@ -212,7 +212,7 @@ function App() {
       <footer className="site-footer">
         <a className="brand footer-brand" href="#home"><span className="brand-mark"><Scissors size={23} /></span><span className="brand-copy"><strong>arisha</strong><small>STITCHING STUDIO</small></span></a>
         <p>Thoughtful stitching, made personal.</p>
-        <div className="footer-links"><a href="/services">Services</a><a href="/services">Stitching</a><a href="#rate-list">Rate List</a><a href="#party-wear">Party wear</a><a href="#bridal-wear">Bridal wear</a><a href="#casual-wear">Casual wear</a><a href="#western-wear">Western wear</a><a href="#alteration">Alterations</a><a href="#our-work">Our work</a><a href="#location">Location</a><a href="#location">Book appointment</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://share.google/3DraUMLWvVehAA4rL" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
+        <div className="footer-links"><a href="/services">Services</a><a href="/services">Stitching</a><a href="#rate-list">Rate List</a><a href="#party-wear">Party wear</a><a href="#bridal-wear">Bridal wear</a><a href="#casual-wear">Casual wear</a><a href="#western-wear">Western wear</a><a href="#alteration">Alterations</a><a href="#our-work">Our work</a><a href="#location">Location</a><a href="#location">Book appointment</a><a href="#faq">FAQs</a><a href={whatsappLink()} target="_blank" rel="noreferrer"><MessageCircle size={15} /> WhatsApp</a><a href="https://maps.app.goo.gl/84PrCTQYYGeZT22k8" target="_blank" rel="noreferrer" aria-label="View Arisha Stitching on Google">Google Business Profile</a></div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} Arisha Stitching. Made with care.</span><span>Every stitch tells a story.</span></div>
       </footer>
       <a className="floating-whatsapp" href={whatsappLink('Assalam-o-Alaikum! I’d like to enquire about stitching.')} target="_blank" rel="noreferrer" aria-label="Chat with Arisha Stitching on WhatsApp"><MessageCircle size={23} /><span>Chat with us</span></a>

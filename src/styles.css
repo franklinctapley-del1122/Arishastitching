@@ -56,3 +56,19 @@
 .about-copy h2 em{color:var(--pink);font-weight:500}
 .about-copy>p{font-size:12px;line-height:2;color:var(--muted);max-width:620px;margin:0 0 18px}
 @media(max-width:680px){.about-section{grid-template-columns:1fr;gap:25px;padding-top:50px;padding-bottom:50px}.about-badge{min-height:170px}.about-copy h2{font-size:39px}}
+
+
+/* Dedicated public stitching price list */
+.rate-list-section{padding-top:72px;padding-bottom:78px;background:linear-gradient(180deg,#fffafd 0%,#fff 100%)}
+.rate-list-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.rate-list-side{display:grid;gap:18px}
+.rate-list-card{padding:24px;background:#fff;border:1px solid #f0dce5;box-shadow:0 12px 35px #6c30400a}
+.rate-list-card h3{font-family:'Playfair Display',serif;font-weight:500;font-size:25px;color:#9c4770;margin:0 0 17px;padding-bottom:13px;border-bottom:1px solid #f1dce5}
+.rate-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;padding:9px 0;border-bottom:1px dashed #f0e3e9;font-size:12px;line-height:1.55;color:#5c4852}
+.rate-row:last-child{border-bottom:0;padding-bottom:0}
+.rate-row strong{font-size:12px;color:#372631;white-space:nowrap;font-weight:700}
+.rate-contact-cta{margin-top:24px;padding:25px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#fff0f6;border:1px solid #f0d5e2}
+.rate-contact-cta h3{font-family:'Playfair Display',serif;font-size:25px;font-weight:500;margin:0 0 7px;color:#412e38}
+.rate-contact-cta p{margin:0;color:var(--muted);font-size:11px;line-height:1.7}
+.rate-contact-cta .button{white-space:normal}
+@media(max-width:700px){.rate-list-section{padding-top:48px;padding-bottom:52px}.rate-list-grid{grid-template-columns:1fr;gap:14px}.rate-list-card{padding:20px}.rate-list-card h3{font-size:23px}.rate-row{font-size:12px}.rate-contact-cta{align-items:stretch;flex-direction:column;padding:22px}.rate-contact-cta .button{width:100%;justify-content:center;text-align:center}}

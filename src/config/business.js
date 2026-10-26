@@ -10,7 +10,7 @@ export const BUSINESS = {
   turnaround: 'Confirm when ordering',
   siteUrl: 'https://arishaladiesstitching.vercel.app',
   mapsUrl: 'https://maps.app.goo.gl/84PrCTQYYGeZT22k8',
-  mapEmbed: 'https://www.google.com/maps?q=Arisha%20Ladies%20Stitching%20Lahore%20Pakistan&output=embed',
+  mapEmbed: 'https://www.google.com/maps?q=Arisha%20Ladies%20Stitching%20%26%20Boutique%20Lahore%20Pakistan&output=embed',
 };
 export const waLink = (message='Assalam-o-Alaikum! I would like to enquire about stitching.') => `https://wa.me/${BUSINESS.phoneInternational}?text=${encodeURIComponent(message)}`;
 export const WHATSAPP_URL = waLink();

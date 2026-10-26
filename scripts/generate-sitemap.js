@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 
 const base = 'https://arishaladiesstitching.vercel.app';
 const routes = [
-  '/', '/about', '/rate-list', '/stitching', '/party-wear', '/bridal-wear',
+  '/', '/about', '/services', '/rate-list', '/stitching', '/party-wear', '/bridal-wear',
   '/casual-wear', '/western-wear', '/alteration', '/blog',
   '/blog/choose-fabric-bridal-wear', '/blog/eid-dress-stitching-tips',
   '/blog/shalwar-kameez-measurements', '/blog/party-wear-design-details',

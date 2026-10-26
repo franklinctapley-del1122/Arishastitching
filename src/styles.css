@@ -32,3 +32,5 @@
 .article-tip .btn{margin-top:8px}
 .article-body>.text-link{display:inline-flex;margin:10px 0 20px}
 @media(max-width:600px){.article-body{padding:28px 18px}.article-section p,.article-quick-answer p,.article-faq-item p,.article-tip p{font-size:14px;line-height:1.85}.article-quick-answer,.article-tip{padding:18px}}
+
+.article-related{margin:36px 0;padding:24px;border:1px solid var(--line);background:#fffdf9}.article-related h2{font:600 22px 'Playfair Display',serif;color:var(--maroon);margin:0 0 14px}.article-related>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.article-related a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 13px;background:#f7f0e7;color:var(--maroon);font-size:12px;text-decoration:none}.article-related a:hover{background:#eee0d0}@media(max-width:520px){.article-related>div{grid-template-columns:1fr}}

@@ -52,7 +52,128 @@ function PriceHighlights(){return <section className="price-strip"><div><span cl
 function HowItWorks(){const steps=[['01','Measure','We discuss measurements, fit and your preferred style.'],['02','Stitch','Your design and fabric details guide the stitching.'],['03','Trial','Allow time for a fitting check and agreed adjustments.'],['04','Delivery','Confirm finishing and collection timing with us.']];return <section className="section process-section"><SectionTitle eyebrow="SIMPLE, PERSONAL, CLEAR" title={<>From first measure to <em>final stitch.</em></>} copy="A clear process helps your outfit feel like yours from the very beginning." center/><div className="process-grid">{steps.map(([n,t,d])=><div className="process-step" key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></div>)}</div></section>}
 function CTA({title="Have an outfit in mind?",copy="Send us your reference picture and let’s discuss your stitching requirements."}){return <section className="cta-band"><div><span className="eyebrow">LET’S MAKE SOMETHING LOVELY</span><h2>{title}</h2><p>{copy}</p></div><div className="cta-actions"><Link className="btn btn-light" to="/book-appointment"><CalendarDays size={17}/> Book Appointment</Link><WhatsAppButton message="Assalam-o-Alaikum! I would like to discuss an outfit with Arisha Stitching."/></div></section>}
 function ServicesIndex(){return <><SEO path="/services"/><main><section className="section services-index-hero"><SectionTitle eyebrow="ARISHA STITCHING STUDIO · LAHORE" title={<>Tailoring services for <em>every occasion.</em></>} copy="Explore our stitching options, compare starting prices and tell us what you have in mind. Shadi ka joda ho ya rozana ka suit—we’ll discuss your design and fit with care." center/><div className="service-grid">{SERVICES.map(s=><ServiceCard key={s.path} service={s}/>)}</div><div className="services-index-cta"><div><span className="eyebrow">NOT SURE WHERE TO START?</span><h2>Let’s plan your outfit together.</h2><p>Share a reference photo and your event date. We’ll help you discuss fabric, finishing and a suitable appointment.</p></div><div className="hero-actions"><Link to="/book-appointment" className="btn btn-primary">Book Appointment <ArrowRight size={16}/></Link><WhatsAppButton message="Assalam-o-Alaikum! I need help choosing the right stitching service.">Ask on WhatsApp</WhatsAppButton></div></div></main></>}
-function Home(){return <><SEO path="/"/><main><section className="hero"><div className="hero-copy"><span className="eyebrow"><span className="eyebrow-dash"/> LADIES TAILORING · LAHORE</span><h1>Your style.<br/>Your fabric.<br/><em>Your perfect fit.</em></h1><p>Thoughtful stitching for everyday wear, celebrations and the outfit you’ve been imagining. Bring your design—we’ll discuss the details together.</p><div className="hero-actions"><Link to="/book-appointment" className="btn btn-primary">Book Appointment <ArrowRight size={17}/></Link><WhatsAppButton message="Assalam-o-Alaikum! I would like to discuss a stitching order." >Chat on WhatsApp</WhatsAppButton></div><div className="hero-trust"><span><CheckCircle2 size={16}/> Custom designs welcome</span><span><MapPin size={16}/> Lahore, Pakistan</span></div></div><div className="hero-image-wrap"><img src={IMAGES.hero} alt="Pakistani traditional outfit inspiration" fetchPriority="high"/><div className="hero-image-caption"><span>ARISHA STITCHING STUDIO</span><strong>Har stitch mein pyaar <span>✦</span></strong></div><div className="hero-seal"><Scissors size={18}/><span>MADE<br/>FOR YOU</span></div></div></section><PriceHighlights/><section className="section rate-preview"><div className="section-heading-row"><SectionTitle eyebrow="CLEAR STARTING PRICES" title={<>Stitching rates, <em>at a glance.</em></>} copy="These are indicative prices in Pakistani rupees. Confirm the latest rate and final design quote before placing an order."/><Link to="/rate-list" className="text-link">View full rate list <ArrowRight size={16}/></Link></div><div className="price-preview-grid">{PRICES.slice(0,6).map(item=><div key={item.name}><span>{item.name}</span><strong>Rs. {item.price.toLocaleString()}</strong></div>)}</div></section><section className="section"><SectionTitle eyebrow="WHAT WE DO" title={<>Stitching for every <em>occasion.</em></>} copy="From a simple daily suit to a detailed event outfit, let’s work out the style and finishing that suit you."/><motion.div className="service-grid" variants={{show:{transition:{staggerChildren:.08}}}} initial="hidden" whileInView="show" viewport={{once:true,amount:.1}}>{SERVICES.map(s=><ServiceCard key={s.path} service={s}/>)}</motion.div><div className="center-link"><Link className="text-link" to="/stitching">Explore all stitching services <ArrowRight size={16}/></Link></div></section><HowItWorks/><section className="section gallery-preview"><div className="section-heading-row"><SectionTitle eyebrow="STYLE INSPIRATION" title={<>Ideas to make <em>your own.</em></>} copy="These images are design inspiration, not photographs of completed customer orders."/><Link className="text-link" to="/our-work">View gallery <ArrowRight size={16}/></Link></div><div className="preview-grid">{[IMAGES.casual,IMAGES.party,IMAGES.bridal,IMAGES.western].map((src,i)=><Link to="/our-work" className={'preview-image preview-'+i} key={src}><img src={src} loading="lazy" alt={['Casual Pakistani outfit inspiration','Party wear dress inspiration','Bridal outfit inspiration','Modern western outfit inspiration'][i]}/><span>{['Casual wear','Party wear','Bridal inspiration','Western wear'][i]}</span></Link>)}</div></section><section className="review-panel section"><div><span className="eyebrow">CUSTOMER FEEDBACK</span><h2>Choose with <em>confidence.</em></h2><p>Read customer feedback directly on our Google Business listing. We don’t publish invented testimonials or ratings.</p><a className="btn btn-outline" href={BUSINESS.mapsUrl} target="_blank" rel="noreferrer">Read Google reviews <ExternalLink size={16}/></a></div><div className="review-mark"><span className="google-g">G</span><strong>Reviews on Google</strong><small>Open the original listing for current feedback.</small></div></section><section className="section blog-preview"><div className="section-heading-row"><SectionTitle eyebrow="FROM THE STUDIO" title={<>Notes on fabric, fit <em>& style.</em></>}/><Link to="/blog" className="text-link">All articles <ArrowRight size={16}/></Link></div><div className="blog-grid">{blogPosts.slice(0,3).map(p=><BlogCard key={p.slug} post={p}/>)}</div></section><CTA/></main></>}
+function Home() {
+  return (
+    <>
+      <SEO path="/" />
+      <main>
+        <section className="hero">
+          <div className="hero-copy">
+            <span className="eyebrow"><span className="eyebrow-dash" /> LADIES TAILORING · LAHORE</span>
+            <h1>Your style.<br />Your fabric.<br /><em>Your perfect fit.</em></h1>
+            <p>Thoughtful stitching for everyday wear, celebrations and the outfit you’ve been imagining. Bring your design—we’ll discuss the details together.</p>
+            <div className="hero-actions">
+              <Link to="/book-appointment" className="btn btn-primary">Book Appointment <ArrowRight size={17} /></Link>
+              <WhatsAppButton message="Assalam-o-Alaikum! I would like to discuss a stitching order.">Chat on WhatsApp</WhatsAppButton>
+            </div>
+            <div className="hero-trust">
+              <span><CheckCircle2 size={16} /> Custom designs welcome</span>
+              <span><MapPin size={16} /> Lahore, Pakistan</span>
+            </div>
+          </div>
+          <div className="hero-image-wrap">
+            <img src={IMAGES.hero} alt="Pakistani traditional outfit inspiration" fetchPriority="high" />
+            <div className="hero-image-caption">
+              <span>ARISHA STITCHING STUDIO</span>
+              <strong>Har stitch mein pyaar <span>✦</span></strong>
+            </div>
+            <div className="hero-seal">
+              <Scissors size={18} />
+              <span>MADE<br />FOR YOU</span>
+            </div>
+          </div>
+        </section>
+        <PriceHighlights />
+        <section className="section rate-preview">
+          <div className="section-heading-row">
+            <SectionTitle
+              eyebrow="CLEAR STARTING PRICES"
+              title={<>Stitching rates, <em>at a glance.</em></>}
+              copy="These are indicative prices in Pakistani rupees. Confirm the latest rate and final design quote before placing an order."
+            />
+            <Link to="/rate-list" className="text-link">View full rate list <ArrowRight size={16} /></Link>
+          </div>
+          <div className="price-preview-grid">
+            {PRICES.slice(0, 6).map(item => (
+              <div key={item.name}>
+                <span>{item.name}</span>
+                <strong>Rs. {item.price.toLocaleString()}</strong>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="section">
+          <SectionTitle
+            eyebrow="WHAT WE DO"
+            title={<>Stitching for every <em>occasion.</em></>}
+            copy="From a simple daily suit to a detailed event outfit, let’s work out the style and finishing that suit you."
+          />
+          <motion.div
+            className="service-grid"
+            variants={{ show: { transition: { staggerChildren: 0.08 } } }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            {SERVICES.map(service => <ServiceCard key={service.path} service={service} />)}
+          </motion.div>
+          <div className="center-link">
+            <Link className="text-link" to="/stitching">Explore all stitching services <ArrowRight size={16} /></Link>
+          </div>
+        </section>
+        <HowItWorks />
+        <section className="section gallery-preview">
+          <div className="section-heading-row">
+            <SectionTitle
+              eyebrow="STYLE INSPIRATION"
+              title={<>Ideas to make <em>your own.</em></>}
+              copy="These images are design inspiration, not photographs of completed customer orders."
+            />
+            <Link className="text-link" to="/our-work">View gallery <ArrowRight size={16} /></Link>
+          </div>
+          <div className="preview-grid">
+            {[IMAGES.casual, IMAGES.party, IMAGES.bridal, IMAGES.western].map((src, i) => (
+              <Link to="/our-work" className={'preview-image preview-' + i} key={src}>
+                <img
+                  src={src}
+                  loading="lazy"
+                  alt={['Casual Pakistani outfit inspiration', 'Party wear dress inspiration', 'Bridal outfit inspiration', 'Modern western outfit inspiration'][i]}
+                />
+                <span>{['Casual wear', 'Party wear', 'Bridal inspiration', 'Western wear'][i]}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+        <section className="review-panel section">
+          <div>
+            <span className="eyebrow">CUSTOMER FEEDBACK</span>
+            <h2>Choose with <em>confidence.</em></h2>
+            <p>Read customer feedback directly on our Google Business listing. We don’t publish invented testimonials or ratings.</p>
+            <a className="btn btn-outline" href={BUSINESS.mapsUrl} target="_blank" rel="noreferrer">Read Google reviews <ExternalLink size={16} /></a>
+          </div>
+          <div className="review-mark">
+            <span className="google-g">G</span>
+            <strong>Reviews on Google</strong>
+            <small>Open the original listing for current feedback.</small>
+          </div>
+        </section>
+        <section className="section blog-preview">
+          <div className="section-heading-row">
+            <SectionTitle
+              eyebrow="FROM THE STUDIO"
+              title={<>Notes on fabric, fit <em>&amp; style.</em></>}
+            />
+            <Link to="/blog" className="text-link">All articles <ArrowRight size={16} /></Link>
+          </div>
+          <div className="blog-grid">
+            {blogPosts.slice(0, 3).map(post => <BlogCard key={post.slug} post={post} />)}
+          </div>
+        </section>
+        <CTA />
+      </main>
+    </>
+  );
+}
 function BlogCard({post}){return <article className="blog-card"><Link to={'/blog/'+post.slug} className="blog-image"><img src={post.image} alt={post.title} loading="lazy"/></Link><div className="blog-content"><span className="eyebrow">{post.category} · {post.date}</span><h3><Link to={'/blog/'+post.slug}>{post.title}</Link></h3><p>{post.excerpt}</p><Link to={'/blog/'+post.slug} className="text-link">Read article <ArrowRight size={15}/></Link></div></article>}
 const categoryDetails={
  '/stitching':{eyebrow:'TAILORING SERVICES',title:'Ladies suit stitching in Lahore',intro:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline, sleeves, shirt length and trouser style.',image:IMAGES.stitching,faq:[['What should I bring?','Bring your fabric, a reference photo if you have one, and any notes about your preferred fit. Message us first to confirm the best way to arrange your order.'],['Can I request a custom design?','Yes. Share a photo, sketch or description so we can discuss the style, fabric requirements and finishing.'],['How much does stitching cost?','Prices depend on the garment and design details. The rate list is a starting guide; confirm the final quote before work begins.']]},

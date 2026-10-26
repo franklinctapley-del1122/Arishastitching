@@ -39,7 +39,7 @@ function WhatsAppButton({ children='Order on WhatsApp', message='Assalam-o-Alaik
 }
 function Navbar() {
   const [open,setOpen]=useState(false); const loc=useLocation();
-  const links=[['About','/about'],['Stitching','/stitching'],['Party Wear','/party-wear'],['Bridal Wear','/bridal-wear'],['Our Work','/our-work'],['Blog','/blog']];
+  const links=[['About','/about'],['Stitching','/stitching'],['Rate List','/rate-list'],['Party Wear','/party-wear'],['Bridal Wear','/bridal-wear'],['Our Work','/our-work'],['Blog','/blog']];
   return <><div className="topline">Made with care in Lahore <span>·</span> Har stitch mein pyaar</div><header className="navbar"><Link to="/" className="brand" onClick={()=>setOpen(false)}><span className="brand-icon"><Scissors size={23}/></span><span><strong>arisha</strong><small>STITCHING STUDIO · LAHORE</small></span></Link><button className="menu-toggle" aria-label="Toggle navigation" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button><nav className={open?'nav-links nav-open':'nav-links'}>{links.map(([label,path])=><NavLink key={path} to={path} onClick={()=>setOpen(false)}>{label}</NavLink>)}<Link to="/fabric-calculator" onClick={()=>setOpen(false)}>Fabric Calculator</Link><Link to="/location" onClick={()=>setOpen(false)}>Location</Link><Link className="btn btn-primary nav-book" to="/book-appointment" onClick={()=>setOpen(false)}>Book Now <ArrowRight size={15}/></Link></nav></header>{loc.pathname!=='/'&&<div className="breadcrumb"><Link to="/">Home</Link><span>/</span><span>{loc.pathname.split('/').filter(Boolean).join(' / ').replaceAll('-',' ')}</span></div>}</>;
 }
 function Footer() {

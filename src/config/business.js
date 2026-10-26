@@ -1,0 +1,55 @@
+export const BUSINESS = {
+  name: 'Arisha Stitching Studio',
+  city: 'Lahore',
+  country: 'Pakistan',
+  phoneDisplay: '0308 1042020',
+  phoneInternational: '923081042020',
+  address: 'Lahore, Punjab, Pakistan',
+  hours: 'Please message us to confirm current hours',
+  startingPrice: 800,
+  turnaround: 'Confirm when ordering',
+  siteUrl: 'https://arishaladiesstitching.vercel.app',
+  mapsUrl: 'https://maps.app.goo.gl/84PrCTQYYGeZT22k8',
+  mapEmbed: 'https://www.google.com/maps?q=Arisha%20Stitching%20Lahore%20Pakistan&output=embed',
+};
+export const waLink = (message='Assalam-o-Alaikum! I would like to enquire about stitching.') => `https://wa.me/${BUSINESS.phoneInternational}?text=${encodeURIComponent(message)}`;
+export const WHATSAPP_URL = waLink();
+export const IMAGES = {
+  hero: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1300&q=85',
+  casual: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=82',
+  party: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=82',
+  bridal: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=82',
+  western: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=82',
+  stitching: 'https://images.unsplash.com/photo-1583391733956-6c78276477e3?auto=format&fit=crop&w=900&q=82',
+  fabric: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=82',
+};
+export const PRICES = [
+  { name: 'Simple Suit', price: 1000 }, { name: 'Dori Piping Suit', price: 1200 },
+  { name: 'Lining Suit / Party Wear', price: 2000 }, { name: 'Frock', price: 1500 },
+  { name: 'Short Frock', price: 1300 }, { name: 'Angrakha Suit', price: 1800 },
+  { name: 'Pishwas', price: 1800 }, { name: 'Anarkali Dress', price: 1800 },
+  { name: 'Kaftan', price: 1500 }, { name: 'Gown Style (Full-Length)', price: 2500 },
+  { name: 'Simple Shirt', price: 800 }, { name: 'Dori Piping Shirt', price: 1000 },
+  { name: 'Lining Shirt', price: 1500 }, { name: 'Open Shirt', price: 1200 },
+  { name: 'Peplum Top', price: 1500 }, { name: 'Jacket Style Suit', price: 1600 },
+  { name: 'Ghagra + Shirt', price: 2000 }, { name: 'Ghagra + Shirt with Lining', price: 2500 },
+  { name: 'Simple Trouser', price: 200 }, { name: 'Simple Shalwar', price: 200 },
+  { name: 'Bell Bottom', price: 250 }, { name: 'Sharara', price: 450 },
+  { name: 'Farshi Shalwar', price: 500 }, { name: 'Flazo', price: 300 },
+  { name: 'Designing Trouser', price: 500 }, { name: 'Tulip Shalwar', price: 350 },
+  { name: 'Cigarette Pants', price: 400 }, { name: 'Churidar Pajama', price: 300 },
+  { name: 'Capri', price: 300 }, { name: 'Dhoti Shalwar', price: 500 },
+  { name: 'Garara', price: 800 }, { name: 'Culottes', price: 400 },
+  { name: 'Patiala Shalwar', price: 450 }, { name: 'Dori Piping Dupatta', price: 350 },
+  { name: 'Lace Work Dupatta', price: 400 }, { name: 'Gotapati Work Dupatta', price: 500 },
+  { name: 'Stone Work Dupatta', price: 600 }, { name: 'Tassel Finishing', price: 250 },
+  { name: 'Alteration / Fitting', price: 300 },
+];
+export const SERVICES = [
+ {number:'01',kicker:'EVERYDAY STYLE',title:'Ladies Suit Stitching',path:'/stitching',description:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline and trouser style.',price:1000,image:IMAGES.casual,alt:'Ladies suit stitching inspiration'},
+ {number:'02',kicker:'CELEBRATIONS',title:'Party Wear',path:'/party-wear',description:'Formal suits, frocks and occasion outfits with thoughtful finishing details.',price:1500,image:IMAGES.party,alt:'Party wear dress inspiration'},
+ {number:'03',kicker:'YOUR SPECIAL DAY',title:'Bridal Wear',path:'/bridal-wear',description:'Discuss bridal lehenga, gharara, sharara and gown ideas with a custom quote.',price:8000,image:IMAGES.bridal,alt:'Bridal outfit inspiration'},
+ {number:'04',kicker:'DAILY FAVOURITES',title:'Casual Wear',path:'/casual-wear',description:'Comfortable daily suits and kurtas made around your preferred style.',price:1000,image:IMAGES.casual,alt:'Casual Pakistani clothing inspiration'},
+ {number:'05',kicker:'MODERN SILHOUETTES',title:'Western Wear',path:'/western-wear',description:'Discuss co-ords, dresses, trousers and western-inspired custom outfits.',price:1200,image:IMAGES.western,alt:'Western fashion outfit inspiration'},
+ {number:'06',kicker:'FIT & FINISH',title:'Alterations',path:'/alteration',description:'Ask about length, sleeve, waist and fit adjustments for your garment.',price:300,image:IMAGES.stitching,alt:'Tailoring and fitting inspiration'},
+];

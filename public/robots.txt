@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://arishaladiesstitching.vercel.app/sitemap.xml

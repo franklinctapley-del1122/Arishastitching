@@ -1,5 +1,5 @@
 export const BUSINESS = {
-  name: 'Arisha Ladies Stitching',
+  name: 'Arisha Ladies Stitching & Boutique',
   city: 'Lahore',
   country: 'Pakistan',
   phoneDisplay: '03081042020',

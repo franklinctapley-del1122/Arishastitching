@@ -5,9 +5,9 @@ const base = 'https://arishaladiesstitching.vercel.app';
 const routes = [
   '/', '/about/', '/services/', '/rate-list/', '/stitching/', '/party-wear/', '/bridal-wear/',
   '/casual-wear/', '/western-wear/', '/alteration/', '/blog/',
-  '/blog/choose-fabric-bridal-wear', '/blog/eid-dress-stitching-tips',
-  '/blog/shalwar-kameez-measurements', '/blog/party-wear-design-details',
-  '/blog/how-much-fabric-do-i-need', '/blog/care-for-embroidered-clothes',
+  '/blog/choose-fabric-bridal-wear/', '/blog/eid-dress-stitching-tips/',
+  '/blog/shalwar-kameez-measurements/', '/blog/party-wear-design-details/',
+  '/blog/how-much-fabric-do-i-need/', '/blog/care-for-embroidered-clothes/',
   '/our-work/', '/fabric-calculator/', '/book-appointment/', '/location/'
 ];
 const urls = routes.map(path => `  <url><loc>${base}${path}</loc></url>`).join('\n');

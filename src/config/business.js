@@ -46,10 +46,10 @@ export const PRICES = [
   { name: 'Alteration / Fitting', price: 300 },
 ];
 export const SERVICES = [
- {number:'01',kicker:'EVERYDAY STYLE',title:'Ladies Suit Stitching',path:'/stitching',description:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline and trouser style.',price:1000,image:IMAGES.casual,alt:'Ladies suit stitching inspiration'},
- {number:'02',kicker:'CELEBRATIONS',title:'Party Wear',path:'/party-wear',description:'Formal suits, frocks and occasion outfits with thoughtful finishing details.',price:1500,image:IMAGES.party,alt:'Party wear dress inspiration'},
- {number:'03',kicker:'YOUR SPECIAL DAY',title:'Bridal Wear',path:'/bridal-wear',description:'Discuss bridal lehenga, gharara, sharara and gown ideas with a custom quote.',price:8000,image:IMAGES.bridal,alt:'Bridal outfit inspiration'},
- {number:'04',kicker:'DAILY FAVOURITES',title:'Casual Wear',path:'/casual-wear',description:'Comfortable daily suits and kurtas made around your preferred style.',price:1000,image:IMAGES.casual,alt:'Casual Pakistani clothing inspiration'},
- {number:'05',kicker:'MODERN SILHOUETTES',title:'Western Wear',path:'/western-wear',description:'Discuss co-ords, dresses, trousers and western-inspired custom outfits.',price:1200,image:IMAGES.western,alt:'Western fashion outfit inspiration'},
- {number:'06',kicker:'FIT & FINISH',title:'Alterations',path:'/alteration',description:'Ask about length, sleeve, waist and fit adjustments for your garment.',price:300,image:IMAGES.stitching,alt:'Tailoring and fitting inspiration'},
+ {number:'01',kicker:'EVERYDAY STYLE',title:'Ladies Suit Stitching',path:'/stitching/',description:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline and trouser style.',price:1000,image:IMAGES.casual,alt:'Ladies suit stitching inspiration'},
+ {number:'02',kicker:'CELEBRATIONS',title:'Party Wear',path:'/party-wear/',description:'Formal suits, frocks and occasion outfits with thoughtful finishing details.',price:1500,image:IMAGES.party,alt:'Party wear dress inspiration'},
+ {number:'03',kicker:'YOUR SPECIAL DAY',title:'Bridal Wear',path:'/bridal-wear/',description:'Discuss bridal lehenga, gharara, sharara and gown ideas with a custom quote.',price:8000,image:IMAGES.bridal,alt:'Bridal outfit inspiration'},
+ {number:'04',kicker:'DAILY FAVOURITES',title:'Casual Wear',path:'/casual-wear/',description:'Comfortable daily suits and kurtas made around your preferred style.',price:1000,image:IMAGES.casual,alt:'Casual Pakistani clothing inspiration'},
+ {number:'05',kicker:'MODERN SILHOUETTES',title:'Western Wear',path:'/western-wear/',description:'Discuss co-ords, dresses, trousers and western-inspired custom outfits.',price:1200,image:IMAGES.western,alt:'Western fashion outfit inspiration'},
+ {number:'06',kicker:'FIT & FINISH',title:'Alterations',path:'/alteration/',description:'Ask about length, sleeve, waist and fit adjustments for your garment.',price:300,image:IMAGES.stitching,alt:'Tailoring and fitting inspiration'},
 ];

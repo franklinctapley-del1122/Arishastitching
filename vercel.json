@@ -1,4 +1,81 @@
 {
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/rate-list",
+      "destination": "/rate-list/",
+      "permanent": true
+    },
+    {
+      "source": "/stitching",
+      "destination": "/stitching/",
+      "permanent": true
+    },
+    {
+      "source": "/party-wear",
+      "destination": "/party-wear/",
+      "permanent": true
+    },
+    {
+      "source": "/bridal-wear",
+      "destination": "/bridal-wear/",
+      "permanent": true
+    },
+    {
+      "source": "/casual-wear",
+      "destination": "/casual-wear/",
+      "permanent": true
+    },
+    {
+      "source": "/western-wear",
+      "destination": "/western-wear/",
+      "permanent": true
+    },
+    {
+      "source": "/alteration",
+      "destination": "/alteration/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/our-work",
+      "destination": "/our-work/",
+      "permanent": true
+    },
+    {
+      "source": "/fabric-calculator",
+      "destination": "/fabric-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/book-appointment",
+      "destination": "/book-appointment/",
+      "permanent": true
+    },
+    {
+      "source": "/location",
+      "destination": "/location/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/blog/:slug/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

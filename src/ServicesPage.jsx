@@ -29,7 +29,7 @@ export default function ServicesPage() {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://arishaladiesstitching.vercel.app/services';
+    canonical.href = 'https://arishaladiesstitching.vercel.app/services/';
   }, []);
 
   return <div className="services-page">

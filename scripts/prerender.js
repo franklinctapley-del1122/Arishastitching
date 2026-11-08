@@ -2,9 +2,6 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { StaticRouter } from 'react-router';
-import helmetAsync from 'react-helmet-async';
-const { HelmetProvider } = helmetAsync;
 import { createServer } from 'vite';
 
 const routes = [
@@ -28,6 +25,8 @@ const vite = await createServer({
 
 try {
   const { default: App } = await vite.ssrLoadModule('/src/App.jsx');
+  const { StaticRouter } = await vite.ssrLoadModule('react-router');
+  const { HelmetProvider } = await vite.ssrLoadModule('react-helmet-async');
   const shell = readFileSync(resolve('dist/index.html'), 'utf8');
 
   for (const route of routes) {

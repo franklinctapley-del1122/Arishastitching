@@ -56,16 +56,16 @@ function Home() {
       <main>
         <section className="hero">
           <div className="hero-copy">
-            <span className="eyebrow"><span className="eyebrow-dash" /> LADIES TAILOR IN LAHORE</span>
-            <h1>Ladies Tailor in <em>Lahore</em> for Custom Stitching</h1>
-            <p>Arisha is a female-owned ladies tailoring boutique in Pak-Arab Housing Scheme, Ferozepur Road, Lahore, proudly serving customers since 2021. We offer custom ladies suit stitching, bridal wear, party wear and alterations, with home delivery across our Lahore service areas.</p>
+            <span className="eyebrow"><span className="eyebrow-dash" /> THE ART OF PERSONAL TAILORING · LAHORE</span>
+            <h1>Elegance, <em>stitched</em> around you.</h1>
+            <p>Thoughtful ladies tailoring, made personal. At our Pak-Arab Housing Scheme boutique, we bring your everyday, occasion and bridal looks together with care, detail and a fit that feels like you. Serving Lahore since 2021.</p>
             <div className="hero-actions">
               <Link to="/book-appointment/" className="btn btn-primary">Book Appointment <ArrowRight size={17} /></Link>
               <WhatsAppButton message="Assalam-o-Alaikum! I would like to discuss a stitching order.">Chat on WhatsApp</WhatsAppButton>
             </div>
             <div className="hero-trust">
-              <span><CheckCircle2 size={16} /> Shop or self-provided measurements</span>
-              <span><MapPin size={16} /> Serving Lahore only</span>
+              <span><CheckCircle2 size={16} /> Personal measurement options</span>
+              <span><MapPin size={16} /> One boutique · Lahore service</span>
             </div>
           </div>
           <div className="hero-image-wrap">

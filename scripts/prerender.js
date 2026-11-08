@@ -26,8 +26,7 @@ const vite = await createServer({
 
 try {
   const { default: App } = await vite.ssrLoadModule('/src/App.jsx');
-  const shellPath = resolve('dist/index.html');
-  const shell = readFileSync(shellPath, 'utf8');
+  const shell = readFileSync(resolve('dist/index.html'), 'utf8');
 
   for (const route of routes) {
     const helmetContext = {};
@@ -46,7 +45,12 @@ try {
     const helmet = helmetContext.helmet;
     let html = shell.replace('<div id="root"></div>', '<div id="root">' + appHtml + '</div>');
 
-    html = html.replace(/<title>.*?<\\/title>/s, '');
+    const titleStart = html.indexOf('<title>');
+    const titleEnd = html.indexOf('</title>');
+    if (titleStart !== -1 && titleEnd !== -1) {
+      html = html.slice(0, titleStart) + html.slice(titleEnd + 8);
+    }
+
     html = html.replace(/<meta name="description"[^>]*>/, '');
     html = html.replace(/<meta property="og:title"[^>]*>/, '');
     html = html.replace(/<meta property="og:description"[^>]*>/, '');
@@ -59,9 +63,9 @@ try {
       helmet.meta.toString(),
       helmet.link.toString(),
       helmet.script.toString()
-    ].filter(Boolean).join('\\n  ');
+    ].filter(Boolean).join('\n  ');
 
-    html = html.replace('</head>', '  ' + headTags + '\\n</head>');
+    html = html.replace('</head>', '  ' + headTags + '\n</head>');
 
     const outputPath = resolve('dist' + (route === '/' ? '/index.html' : route + 'index.html'));
     mkdirSync(dirname(outputPath), { recursive: true });

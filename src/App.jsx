@@ -9,7 +9,7 @@ import { blogPosts } from './data/blogPosts.js';
 const fade = { hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.45 } } };
 
 const pageMeta = {
-  '/': ['Ladies Tailor in Lahore | Arisha Ladies Stitching & Boutique', 'Looking for a ladies tailor in Lahore? Arisha Ladies Stitching & Boutique offers custom ladies suit stitching, party wear, bridal wear and alterations. Discuss your design on WhatsApp.'],
+  '/': ['Ladies Tailor in Lahore | Arisha Ladies Stitching & Boutique', 'Looking for a ladies tailor in Lahore? Explore custom ladies suit stitching, party wear, bridal wear and alterations. Arrange measurements at the shop or provide your own, then ask about collection or home delivery.'], 
   '/about/': ['About Arisha Ladies Stitching & Boutique | Lahore', 'Learn about Arisha Ladies Stitching & Boutique and our personal approach to custom tailoring in Lahore.'],
   '/rate-list/': ['Stitching Rates | Arisha Ladies Stitching & Boutique Lahore', 'Explore indicative ladies tailoring prices in Lahore. Confirm current rates and final quotes on WhatsApp.'],
   '/stitching/': ['Ladies Suit Stitching in Lahore | Arisha Ladies Stitching & Boutique', 'Explore ladies suit stitching, shalwar kameez, custom outfits and finishing services in Lahore.'],
@@ -55,15 +55,15 @@ function Home() {
         <section className="hero">
           <div className="hero-copy">
             <span className="eyebrow"><span className="eyebrow-dash" /> LADIES TAILOR IN LAHORE</span>
-            <h1>Ladies tailor<br />in <em>Lahore.</em></h1>
-            <p>Arisha Ladies Stitching &amp; Boutique offers custom ladies suit stitching, party wear, bridal wear and alterations in Lahore. Bring your design—we’ll discuss the details together.</p>
+            <h1>Ladies Tailor in <em>Lahore</em> for Custom Stitching</h1>
+            <p>Arisha Ladies Stitching &amp; Boutique offers custom ladies suit stitching, party wear, bridal wear and alterations in Lahore. Discuss your design and fabric with us, arrange measurements at the shop or provide your own, and ask about finished-clothes collection or home delivery.</p>
             <div className="hero-actions">
               <Link to="/book-appointment/" className="btn btn-primary">Book Appointment <ArrowRight size={17} /></Link>
               <WhatsAppButton message="Assalam-o-Alaikum! I would like to discuss a stitching order.">Chat on WhatsApp</WhatsAppButton>
             </div>
             <div className="hero-trust">
-              <span><CheckCircle2 size={16} /> Custom designs welcome</span>
-              <span><MapPin size={16} /> Lahore, Pakistan</span>
+              <span><CheckCircle2 size={16} /> Shop or self-provided measurements</span>
+              <span><MapPin size={16} /> Serving Lahore only</span>
             </div>
           </div>
           <div className="hero-image-wrap">
@@ -117,6 +117,31 @@ function Home() {
           </div>
         </section>
         <HowItWorks />
+        <section className="section measurement-section">
+          <SectionTitle
+            eyebrow="MEASUREMENTS & DELIVERY"
+            title={<>A simple way to arrange <em>your order.</em></>}
+            copy="Arisha serves customers in Lahore. Choose the measurement arrangement that works for you, then confirm how you would like to receive your finished outfit."
+          />
+          <div className="process-grid">
+            <article className="process-step"><span>01</span><h3>Visit for measurements</h3><p>You can visit the shop to discuss your outfit and have your measurements taken.</p></article>
+            <article className="process-step"><span>02</span><h3>Provide your measurements</h3><p>If you already have your measurements, share them with us and confirm the details before stitching.</p></article>
+            <article className="process-step"><span>03</span><h3>Collect your outfit</h3><p>You can arrange to collect the completed outfit after the agreed finishing and timing.</p></article>
+            <article className="process-step"><span>04</span><h3>Ask about home delivery</h3><p>Home delivery is available. Confirm delivery coverage, charges and timing when placing your order.</p></article>
+          </div>
+          <p className="service-area-note">Service area: Lahore only. Doorstep fabric pickup is not available.</p>
+          <div className="center-link"><Link className="text-link" to="/book-appointment/">Arrange an appointment <ArrowRight size={16}/></Link></div>
+        </section>
+        <section className="section faq-section home-faq">
+          <SectionTitle eyebrow="BEFORE YOU ORDER" title={<>Ladies stitching questions, <em>answered.</em></>} copy="A few practical details to help you plan your stitching order with Arisha." />
+          <FAQ items={[
+            ['Where does Arisha offer stitching services?','Arisha Ladies Stitching & Boutique currently serves customers in Lahore, Pakistan.'],
+            ['Can I provide my own measurements?','Yes. You can provide your measurements, or arrange to visit the shop for measurements. Confirm the details with us before stitching begins.'],
+            ['Is doorstep fabric pickup available?','No. Doorstep fabric pickup is not available. Please contact us to discuss how to arrange your fabric and order.'],
+            ['Can my finished clothes be delivered to my home?','Yes, home delivery is available. Please confirm the delivery area, any applicable charges and the expected timing when placing your order. Collection can also be arranged.'],
+            ['How do I place a stitching order?','Share your outfit idea, reference image and service requirement on WhatsApp, or request an appointment so the design and measurements can be discussed.']
+          ]}/>
+        </section>
         <section className="section gallery-preview">
           <div className="section-heading-row">
             <SectionTitle

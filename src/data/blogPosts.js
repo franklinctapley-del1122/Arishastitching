@@ -301,4 +301,49 @@ faqs:[
 ['Can I iron directly over sequins or beads?','Avoid direct high heat over raised embellishments. Follow the care label and ask a professional if the fabric or decoration is delicate.'],
 ['What should I do about a stain on formal wear?','Avoid rubbing or applying an unfamiliar cleaner. Check the care guidance and consult a professional cleaner for delicate or valuable garments.']
 ]}
+,
+
+{
+slug:'ladies-dress-alteration-guide', category:'Fit & Alteration Guide', date:'November 09, 2026',
+title:'Ladies Dress Alteration in Lahore: What Can Be Adjusted?',
+excerpt:'Understand common ladies dress alterations, fitting checks, fabric limits and what to discuss with your tailor before approving an adjustment.',
+image:IMAGES.alterations,
+quickAnswer:'Common ladies dress alterations include adjusting garment length, sleeves, waist, side seams and some fitting details. What is possible depends on the original seam allowance, fabric condition, lining, embroidery and garment construction. Have the garment assessed and confirm the scope, price and timing before work begins.',
+sections:[
+{heading:'1. Start by identifying the fit problem',paragraphs:[
+'Describe exactly what feels wrong when you wear the garment. It may be too long, loose at the waist, tight around the armhole, uneven at the hem or uncomfortable through the sleeves. A clear description helps a tailor understand the issue before examining the garment. If possible, wear the shoes and underlayers you expect to use with the outfit, because they can affect the way the garment sits.',
+'Avoid asking for a general fitting change without explaining the result you want. For example, say whether you want a straighter silhouette, more room for movement or a shorter sleeve. Bring a reference garment that fits comfortably if it helps explain your preference. The tailor still needs to assess whether the current garment can be adjusted safely.'
+]},
+{heading:'2. Common ladies dress alterations',paragraphs:[
+'Length adjustments are often requested for shirts, trousers, sleeves and dresses. The available hem allowance, border placement and existing finish affect how much can be removed or added. Sleeve adjustments may involve shortening, narrowing or changing the opening, but embroidery, cuffs and lining can limit the options. Waist and side-seam adjustments depend on how much fabric is available inside the seams and whether the garment has a lining or shaped panels.',
+'Some garments may allow changes to the side seams, shoulder fit or overall width. Others may be difficult to alter because the seams are narrow, the fabric has been cut close to the stitching line or the design includes heavy embellishment. A tailor should inspect the actual garment rather than promise a particular result from a photograph alone.'
+]},
+{heading:'3. Fabric and construction set the limits',paragraphs:[
+'Woven fabric, stretch fabric, delicate chiffon, net, velvet and heavily embroidered material behave differently during alteration. A seam may leave visible needle marks after unpicking, and some fabrics can fray or show colour changes where the original stitching was removed. Stretch garments may need a suitable stitch and careful handling to retain their fit.',
+'Check the inside of the garment for seam allowance, lining, interfacing and previous alteration marks. Printed or patterned fabric may also need careful matching if a panel is moved. If the garment is valuable, delicate or heavily embellished, explain that before work is approved and ask what risks should be considered.'
+]},
+{heading:'4. What to check during a fitting',paragraphs:[
+'Try the garment on and check it from the front, side and back. Sit, walk and raise your arms to see whether the adjustment allows normal movement. Check that the hem hangs evenly, the shoulder seam sits comfortably and the sleeve does not pull when you move. For trousers, check the waist, rise, hip comfort and length with your usual footwear.',
+'Point out the exact area that needs attention. Avoid pinning or cutting the garment yourself unless you know how the fabric and construction will respond. Agree on the intended result with the tailor before the garment is altered, especially if more than one area needs adjustment.'
+]},
+{heading:'5. Questions to ask before approving the work',paragraphs:[
+'Ask what can realistically be changed, how the original finish may look after adjustment and whether any visible stitching or marks may remain. Confirm whether the quote includes lining, edge finishing, pressing or replacement of a closure. If the garment needs more than one change, ask for the work to be listed clearly so you understand what is included.',
+'Also confirm the expected completion date and collection arrangement. Timing depends on the garment and the work required, so do not rely on a general promise. Approve the work only after the scope, price and timing have been discussed.'
+]},
+{heading:'6. When an alteration may not be suitable',paragraphs:[
+'An adjustment may not be practical if there is too little fabric inside the seam, the garment is damaged, the fabric has weakened or the design cannot be reconstructed neatly. Shortening a garment with a wide border may change its proportions. Letting out a seam may reveal needle holes or a faded line. These limitations should be explained before work starts.',
+'If a safe alteration is not possible, ask whether a smaller adjustment or a different finishing approach could help. The final decision should be based on the actual garment, not only on the desired measurement.'
+]},
+{heading:'7. Arrange an assessment with Arisha in Lahore',paragraphs:[
+'For ladies dress alteration in Lahore, contact Arisha Ladies Stitching & Boutique to discuss the garment and the fitting issue. You can send clear photographs on WhatsApp for an initial conversation, but photographs do not replace an in-person assessment where fabric, seams and construction need to be checked. The shop is at House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road, Lahore.',
+'Ask the boutique to confirm whether the requested alteration can be accepted, the price and the expected timing before leaving the garment. You can also review the stitching rate list for context, while remembering that the final alteration quote depends on the actual work required.'
+]}
+],
+faqs:[
+['Can a ladies dress be made smaller?','Sometimes. The available seam allowance, garment shape, lining and embellishment determine whether it can be taken in neatly.'],
+['Can a dress be made bigger after stitching?','Only if enough suitable fabric is available in the seams or matching material can be added. The garment needs to be assessed first.'],
+['Can sleeves and dress length be shortened?','These are common requests, but cuffs, borders, lining and embroidery can affect what is possible.'],
+['How much does ladies dress alteration cost in Lahore?','Arisha lists alterations from Rs. 300. The final quote depends on the garment and the work required, so confirm before approving.'],
+['Can I get an alteration quote from a photo?','A photo can help start the discussion, but the garment may need an in-person assessment before a reliable quote is confirmed.']
+]}
 ];

@@ -25,6 +25,7 @@ export const IMAGES = {
   western: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=82',
   stitching: 'https://images.unsplash.com/photo-1753162659603-53b36c0c2403?auto=format&fit=crop&w=1100&q=85',
   fabric: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=82',
+  alterations: 'https://images.pexels.com/photos/7147640/pexels-photo-7147640.jpeg?auto=compress&cs=tinysrgb&w=1200',
 };
 export const PRICES = [
   { name: 'Ladies Simple Suit Stitching', price: 1000 }, { name: 'Ladies Dori Piping Suit Stitching', price: 1200 },

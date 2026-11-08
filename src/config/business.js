@@ -42,7 +42,7 @@ export const PRICES = [
   { name: 'Ladies Dress Alterations — starting from', price: 300 },
 ];
 export const SERVICES = [
- {number:'01',kicker:'EVERYDAY STYLE',title:'Ladies Suit Stitching',path:'/stitching/',description:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline and trouser style.',price:1000,image:IMAGES.stitching,alt:'Tailoring tools and stitching inspiration'},
+ {number:'01',kicker:'EVERYDAY STYLE',title:'Ladies Suit Stitching',path:'/stitching/',description:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline and trouser style.',price:1000,image:IMAGES.stitching,alt:'Female dressmaker sewing fabric on a machine — tailoring style inspiration'},
  {number:'02',kicker:'CELEBRATIONS',title:'Party Wear',path:'/party-wear/',description:'Formal suits, frocks and occasion outfits with thoughtful finishing details.',price:1500,image:IMAGES.party,alt:'Party wear dress inspiration'},
  {number:'03',kicker:'YOUR SPECIAL DAY',title:'Bridal Wear',path:'/bridal-wear/',description:'Discuss bridal lehenga, gharara, sharara and gown ideas with a custom quote.',price:8000,image:IMAGES.bridal,alt:'Bridal outfit inspiration'},
  {number:'04',kicker:'DAILY FAVOURITES',title:'Casual Wear',path:'/casual-wear/',description:'Comfortable daily suits and kurtas made around your preferred style.',price:1000,image:IMAGES.casual,alt:'Pakistani embroidered outfit inspiration'},

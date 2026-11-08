@@ -2,10 +2,9 @@ import { writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const base = 'https://arishaladiesstitching.vercel.app';
-const today = new Date().toISOString().slice(0, 10);
 
 // Keep this list aligned with the routes in src/App.jsx.
-// lastmod is the date the sitemap is generated during the build.
+// Omit lastmod unless a reliable page-specific modification date is available.
 const routes = [
   { path: '/', changefreq: 'weekly', priority: '1.0' },
   { path: '/services/', changefreq: 'monthly', priority: '0.9' },
@@ -32,7 +31,6 @@ const routes = [
 
 const urls = routes.map(({ path, changefreq, priority }) => `  <url>
     <loc>${base}${path}</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`).join('\n');
@@ -49,4 +47,4 @@ Allow: /
 
 Sitemap: ${base}/sitemap.xml
 `, 'utf8');
-console.log(`Generated SEO sitemap with ${routes.length} URLs (lastmod: ${today}) and robots.txt.`);
+console.log(`Generated SEO sitemap with ${routes.length} URLs and robots.txt.`);

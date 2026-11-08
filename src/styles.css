@@ -140,3 +140,7 @@ body{background:linear-gradient(180deg,#fcfaf7 0%,#faf7f2 45%,#fffdfa 100%);colo
  html{scroll-behavior:auto}
  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
+
+
+/* Mobile hero trust row: keep text clear of the floating WhatsApp action */
+@media(max-width:520px){.hero-trust{padding-right:58px;row-gap:12px}.hero-trust span{max-width:100%}}

@@ -18,9 +18,9 @@ export const BUSINESS = {
 export const waLink = (message='Assalam-o-Alaikum! I would like to enquire about stitching.') => `https://wa.me/${BUSINESS.phoneInternational}?text=${encodeURIComponent(message)}`;
 export const WHATSAPP_URL = waLink();
 export const IMAGES = {
-  hero: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1300&q=85',
-  casual: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=82',
-  party: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=82',
+  hero: 'https://images.unsplash.com/photo-1773439878392-74abd38c55ec?auto=format&fit=crop&w=1400&q=85',
+  casual: 'https://images.unsplash.com/photo-1773439877368-64c055ca440b?auto=format&fit=crop&w=1100&q=84',
+  party: 'https://images.unsplash.com/photo-1773439877245-79b5ac3244a8?auto=format&fit=crop&w=1100&q=84',
   bridal: 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=82',
   western: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=82',
   stitching: 'https://images.unsplash.com/photo-1583391733956-6c78276477e3?auto=format&fit=crop&w=900&q=82',
@@ -52,7 +52,7 @@ export const SERVICES = [
  {number:'01',kicker:'EVERYDAY STYLE',title:'Ladies Suit Stitching',path:'/stitching/',description:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline and trouser style.',price:1000,image:IMAGES.casual,alt:'Ladies suit stitching inspiration'},
  {number:'02',kicker:'CELEBRATIONS',title:'Party Wear',path:'/party-wear/',description:'Formal suits, frocks and occasion outfits with thoughtful finishing details.',price:1500,image:IMAGES.party,alt:'Party wear dress inspiration'},
  {number:'03',kicker:'YOUR SPECIAL DAY',title:'Bridal Wear',path:'/bridal-wear/',description:'Discuss bridal lehenga, gharara, sharara and gown ideas with a custom quote.',price:8000,image:IMAGES.bridal,alt:'Bridal outfit inspiration'},
- {number:'04',kicker:'DAILY FAVOURITES',title:'Casual Wear',path:'/casual-wear/',description:'Comfortable daily suits and kurtas made around your preferred style.',price:1000,image:IMAGES.casual,alt:'Casual Pakistani clothing inspiration'},
+ {number:'04',kicker:'DAILY FAVOURITES',title:'Casual Wear',path:'/casual-wear/',description:'Comfortable daily suits and kurtas made around your preferred style.',price:1000,image:IMAGES.casual,alt:'Pakistani embroidered outfit inspiration'},
  {number:'05',kicker:'MODERN SILHOUETTES',title:'Western Wear',path:'/western-wear/',description:'Discuss co-ords, dresses, trousers and western-inspired custom outfits.',price:1200,image:IMAGES.western,alt:'Western fashion outfit inspiration'},
  {number:'06',kicker:'FIT & FINISH',title:'Alterations',path:'/alteration/',description:'Ask about length, sleeve, waist and fit adjustments for your garment.',price:300,image:IMAGES.stitching,alt:'Tailoring and fitting inspiration'},
 ];

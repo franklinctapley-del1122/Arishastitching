@@ -9,7 +9,7 @@ import { blogPosts } from './data/blogPosts.js';
 const fade = { hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.45 } } };
 
 const pageMeta = {
-  '/': ['Ladies Tailor in Pak-Arab Housing Scheme, Lahore | Arisha', 'Female-owned ladies tailoring boutique in Pak-Arab Housing Scheme, Lahore, serving customers since 2021. Custom suit stitching, bridal wear, party wear and alterations with home delivery across Lahore.'], 
+  '/': ['Ladies Tailor in Pak-Arab Housing Scheme, Lahore | Arisha', 'Female-owned ladies tailoring boutique in Pak-Arab Housing Scheme, Lahore, serving customers since 2021. Custom suit stitching, bridal wear, party wear and alterations with home delivery in confirmed Lahore service areas.'], 
   '/services/': ['Ladies Tailoring Services in Lahore | Arisha Boutique', 'Explore ladies suit stitching, party wear, bridal wear, casual and western outfits, and alterations at Arisha in Pak-Arab Housing Scheme, Lahore. Check indicative starting prices and confirm service details on WhatsApp.'],
   '/about/': ['About Arisha Ladies Stitching & Boutique | Lahore', 'Learn about Arisha Ladies Stitching & Boutique and our personal approach to custom tailoring in Lahore.'],
   '/rate-list/': ['Stitching Rates | Arisha Ladies Stitching & Boutique Lahore', 'Explore indicative ladies tailoring prices in Lahore. Confirm current rates and final quotes on WhatsApp.'],
@@ -21,7 +21,7 @@ const pageMeta = {
   '/alteration/': ['Ladies Dress Alteration in Lahore | Arisha Boutique', 'Ladies dress alteration and fitting in Lahore. Ask about sleeve, waist, length and garment adjustments at Arisha Ladies Stitching & Boutique.'],
   '/blog/': ['Tailoring Guides & Style Tips | Arisha Ladies Stitching & Boutique', 'Fabric advice, stitching tips, outfit planning and tailoring guides from Arisha Ladies Stitching & Boutique.'],
   '/our-work/': ['Our Work | Tailoring Style Inspiration | Arisha Ladies Stitching & Boutique', 'Explore style inspiration for casual, party, bridal and custom stitching.'],
-  '/fabric-calculator/': ['Fabric Calculator | Arisha Ladies Stitching & Boutique', 'Estimate fabric requirements and approximate stitching costs for common Pakistani outfits.'],
+  '/fabric-calculator/': ['Fabric Calculator | Arisha Ladies Stitching & Boutique', 'Estimate fabric requirements for common Pakistani outfits. Actual fabric needs vary by design and measurements; confirm before cutting.'],
   '/book-appointment/': ['Book a Tailoring Appointment | Arisha Ladies Stitching & Boutique', 'Send an appointment request to Arisha Ladies Stitching & Boutique in Lahore through WhatsApp.'],
   '/location/': ['Arisha Shop Address & Lahore Delivery Areas | Pak-Arab Housing Scheme', 'Visit Arisha Ladies Stitching & Boutique at House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road, Lahore. One shop with home delivery across confirmed Lahore service areas.']
 };

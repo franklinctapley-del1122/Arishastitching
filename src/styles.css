@@ -359,3 +359,13 @@ input,select,textarea{border-color:#dfd2c6!important;background:#fffdf9!importan
  .appointment-form input,.appointment-form select,.appointment-form textarea{font-size:16px}
  .map-wrap iframe{max-width:100%}
 }
+
+
+/* Fix image relevance and remove mobile floating-action overlap */
+@media(max-width:520px){
+ .floating-wa{display:none!important}
+ .mobile-book{display:flex;align-items:center;gap:10px;padding:9px 14px calc(9px + env(safe-area-inset-bottom));}
+ .mobile-book .mobile-wa{flex:0 0 54px;min-height:46px;display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid #cbb78e;background:#f7f0e5;color:var(--maroon);font-size:9px;font-weight:700;}
+ .mobile-book>.btn{flex:1;min-width:0}
+ .footer{padding-bottom:150px}
+}

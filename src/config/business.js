@@ -10,7 +10,7 @@ export const BUSINESS = {
   hours: 'Please message us to confirm current hours',
   startingPrice: 800,
   turnaround: 'Confirm when ordering',
-  siteUrl: 'https://arishaladiesstitching.vercel.app',
+  siteUrl: 'https://arishastitching.shop',
   mapsUrl: 'https://maps.app.goo.gl/U2oJkeL3HtgZbDWbA',
   mapEmbed: 'https://www.google.com/maps?q=House%20No.%20145-E%2C%20Pak-Arab%20Housing%20Scheme%2C%20Ferozepur%20Road%2C%20Lahore&output=embed',
   serviceAreas: ['Pak-Arab Housing Scheme', 'Shadab Garden', 'Attari Saroba', 'Chandrai', 'Venus Housing Scheme', 'Qainchi', 'Chungi Amar Sidhu', 'Model Town', 'Central Park Housing Scheme', 'DHA Phase 1', 'DHA Phase 2', 'DHA Phase 3', 'DHA Phase 4', 'DHA Phase 5', 'DHA Phase 6', 'DHA Phase 7', 'DHA Phase 8'],

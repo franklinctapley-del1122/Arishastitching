@@ -1,7 +1,7 @@
 import { writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-const base = 'https://arishaladiesstitching.vercel.app';
+const base = 'https://arishastitching.shop';
 
 // Keep this list aligned with the routes in src/App.jsx.
 // Omit lastmod unless a reliable page-specific modification date is available.

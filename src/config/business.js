@@ -23,7 +23,7 @@ export const IMAGES = {
   party: 'https://images.unsplash.com/photo-1773439877245-79b5ac3244a8?auto=format&fit=crop&w=1100&q=84',
   bridal: 'https://images.unsplash.com/photo-1721324807072-784ab8ddf166?auto=format&fit=crop&w=1000&q=85',
   western: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=82',
-  stitching: 'https://images.unsplash.com/photo-1583391733956-6c78276477e3?auto=format&fit=crop&w=1100&q=85',
+  stitching: 'https://images.unsplash.com/photo-1753162659603-53b36c0c2403?auto=format&fit=crop&w=1100&q=85',
   fabric: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=82',
 };
 export const PRICES = [

@@ -10,6 +10,7 @@ const fade = { hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transiti
 
 const pageMeta = {
   '/': ['Ladies Tailor in Pak-Arab Housing Scheme, Lahore | Arisha', 'Female-owned ladies tailoring boutique in Pak-Arab Housing Scheme, Lahore, serving customers since 2021. Custom suit stitching, bridal wear, party wear and alterations with home delivery across Lahore.'], 
+  '/services/': ['Ladies Tailoring Services in Lahore | Arisha Boutique', 'Explore ladies suit stitching, party wear, bridal wear, casual and western outfits, and alterations at Arisha in Pak-Arab Housing Scheme, Lahore. Check indicative starting prices and confirm service details on WhatsApp.'],
   '/about/': ['About Arisha Ladies Stitching & Boutique | Lahore', 'Learn about Arisha Ladies Stitching & Boutique and our personal approach to custom tailoring in Lahore.'],
   '/rate-list/': ['Stitching Rates | Arisha Ladies Stitching & Boutique Lahore', 'Explore indicative ladies tailoring prices in Lahore. Confirm current rates and final quotes on WhatsApp.'],
   '/stitching/': ['Ladies Suit Stitching in Lahore | Arisha Ladies Stitching & Boutique', 'Explore ladies suit stitching, shalwar kameez, custom outfits and finishing services in Lahore.'],

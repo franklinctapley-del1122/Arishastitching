@@ -23,7 +23,7 @@ const routes = [
 const vite = await createServer({
   server: { middlewareMode: true },
   appType: 'custom',
-  ssr: { noExternal: ['react-router-dom', 'react-router', 'react-helmet-async'] }
+  ssr: { noExternal: ['react-router', 'react-helmet-async'] }
 });
 
 try {

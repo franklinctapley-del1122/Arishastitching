@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link, NavLink, Route, Routes, useLocation, useParams } from 'react-router-dom';
+import { Link, NavLink, Route, Routes, useLocation, useParams } from 'react-router';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Menu, X, MessageCircle, Scissors, MapPin, CalendarDays, Ruler, Sparkles, Heart, CheckCircle2, Clock, Phone, Instagram, ChevronDown, Filter, ExternalLink } from 'lucide-react';

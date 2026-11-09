@@ -636,3 +636,7 @@ body{background:var(--paper);color:var(--ink)}
 .category-rate-note>span:not(.eyebrow){font-size:11px;line-height:1.7;flex:1 1 260px}
 .category-rate-note a{display:inline-flex;align-items:center;gap:8px;color:var(--maroon);font-size:11px;font-weight:600}
 @media(max-width:640px){.category-rate-note{margin:0 16px 18px;padding:18px;gap:10px}.category-rate-note strong{font-size:23px}.category-rate-note>span:not(.eyebrow){flex-basis:100%}}
+
+/* Keep page-level H1 typography consistent with section headings */
+.section-title h1{font:500 clamp(32px,3.6vw,46px)/1.2 'Playfair Display',serif;letter-spacing:-.03em;color:var(--maroon);margin:13px 0}
+.section-title h1 em{font-style:italic;color:#b28a48;font-weight:500}

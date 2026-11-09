@@ -45,6 +45,15 @@ writeFileSync(resolve('public/sitemap.xml'), xml, 'utf8');
 writeFileSync(resolve('public/robots.txt'), `User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: ${base}/sitemap.xml
 `, 'utf8');
 console.log(`Generated SEO sitemap with ${routes.length} URLs and robots.txt.`);

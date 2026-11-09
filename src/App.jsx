@@ -40,8 +40,13 @@ function Navbar() {
   useEffect(()=>{
     if(!open)return;
     const closeOnEscape=e=>{if(e.key==='Escape')setOpen(false);};
+    const previousOverflow=document.body.style.overflow;
+    document.body.style.overflow='hidden';
     window.addEventListener('keydown',closeOnEscape);
-    return ()=>window.removeEventListener('keydown',closeOnEscape);
+    return ()=>{
+      document.body.style.overflow=previousOverflow;
+      window.removeEventListener('keydown',closeOnEscape);
+    };
   },[open]);
   const links=[['About','/about/'],['Services','/services/'],['Stitching','/stitching/'],['Rate List','/rate-list/'],['Party Wear','/party-wear/'],['Bridal Wear','/bridal-wear/'],['Our Work','/our-work/'],['Blog','/blog/']];
   return <><div className="topline">Made with care in Lahore <span>·</span> Har stitch mein pyaar</div><header className="navbar"><Link to="/" className="brand" onClick={()=>setOpen(false)}><span className="brand-icon"><Scissors size={23}/></span><span><strong>arisha</strong><small>LADIES STITCHING & BOUTIQUE · LAHORE</small></span></Link><button className="menu-toggle" type="button" aria-label={open?'Close navigation':'Open navigation'} aria-expanded={open} aria-controls="primary-navigation" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button><nav id="primary-navigation" aria-label="Main navigation" className={open?'nav-links nav-open':'nav-links'}>{links.map(([label,path])=><NavLink key={path} to={path} onClick={()=>setOpen(false)}>{label}</NavLink>)}<Link to="/fabric-calculator/" onClick={()=>setOpen(false)}>Fabric Calculator</Link><Link to="/location/" onClick={()=>setOpen(false)}>Location</Link><Link className="btn btn-primary nav-book" to="/book-appointment/" onClick={()=>setOpen(false)}>Book Now <ArrowRight size={15}/></Link></nav></header>{loc.pathname!=='/'&&<div className="breadcrumb"><Link to="/">Home</Link><span>/</span><span>{loc.pathname.split('/').filter(Boolean).join(' / ').replaceAll('-',' ')}</span></div>}</>;

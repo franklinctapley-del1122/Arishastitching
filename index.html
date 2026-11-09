@@ -20,7 +20,109 @@
   <link rel="preconnect" href="https://images.unsplash.com" />
   <title>Ladies Tailor in Pak-Arab Housing Scheme, Lahore | Arisha</title>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Arisha Ladies Stitching & Boutique","@id":"https://arishastitching.shop/#business","description":"Female-owned ladies tailoring boutique serving customers since 2021 from Pak-Arab Housing Scheme, Ferozepur Road, Lahore. Custom stitching, bridal wear, party wear and alterations with home delivery across confirmed Lahore service areas.","url":"https://arishastitching.shop/","telephone":"+92-308-1042020","foundingDate":"2021","priceRange":"PKR 300–8000+","address":{"@type":"PostalAddress","streetAddress":"House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road","addressLocality":"Lahore","addressRegion":"Punjab","addressCountry":"PK"},"areaServed":[{"@type":"City","name":"Lahore"},{"@type":"Place","name":"Pak-Arab Housing Scheme"},{"@type":"Place","name":"Shadab Garden"},{"@type":"Place","name":"Attari Saroba"},{"@type":"Place","name":"Chandrai"},{"@type":"Place","name":"Venus Housing Scheme"}],"hasMap":"https://maps.app.goo.gl/U2oJkeL3HtgZbDWbA","sameAs":["https://maps.app.goo.gl/U2oJkeL3HtgZbDWbA"],"knowsAbout":["Ladies suit stitching","Shalwar kameez stitching","Bridal wear stitching","Party wear stitching","Casual wear stitching","Western wear stitching","Ladies dress alterations"]}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://arishastitching.shop/#business",
+        "name": "Arisha Ladies Stitching & Boutique",
+        "description": "Female-owned ladies tailoring boutique serving customers since 2021 from Pak-Arab Housing Scheme, Ferozepur Road, Lahore. Custom stitching, bridal wear, party wear and alterations with home delivery across confirmed Lahore service areas.",
+        "url": "https://arishastitching.shop/",
+        "telephone": "+92-308-1042020",
+        "foundingDate": "2021",
+        "priceRange": "PKR 300–8000+",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road",
+          "addressLocality": "Lahore",
+          "addressRegion": "Punjab",
+          "addressCountry": "PK"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Lahore" },
+          { "@type": "Place", "name": "Pak-Arab Housing Scheme" },
+          { "@type": "Place", "name": "Shadab Garden" },
+          { "@type": "Place", "name": "Attari Saroba" },
+          { "@type": "Place", "name": "Chandrai" },
+          { "@type": "Place", "name": "Venus Housing Scheme" }
+        ],
+        "hasMap": "https://maps.app.goo.gl/U2oJkeL3HtgZbDWbA",
+        "sameAs": ["https://maps.app.goo.gl/U2oJkeL3HtgZbDWbA"],
+        "knowsAbout": [
+          "Ladies suit stitching",
+          "Shalwar kameez stitching",
+          "Bridal wear stitching",
+          "Party wear stitching",
+          "Casual wear stitching",
+          "Western wear stitching",
+          "Ladies dress alterations"
+        ],
+        "hasOfferCatalog": { "@id": "https://arishastitching.shop/#stitching-services" }
+      },
+      {
+        "@type": "OfferCatalog",
+        "@id": "https://arishastitching.shop/#stitching-services",
+        "name": "Ladies stitching and tailoring services",
+        "itemListElement": [
+          { "@type": "OfferCatalog", "name": "Ladies suit stitching", "itemListElement": [{ "@type": "Offer", "itemOffered": { "@id": "https://arishastitching.shop/#service-suit-stitching" } }] },
+          { "@type": "OfferCatalog", "name": "Party wear stitching", "itemListElement": [{ "@type": "Offer", "itemOffered": { "@id": "https://arishastitching.shop/#service-party-wear" } }] },
+          { "@type": "OfferCatalog", "name": "Bridal wear stitching", "itemListElement": [{ "@type": "Offer", "itemOffered": { "@id": "https://arishastitching.shop/#service-bridal-wear" } }] },
+          { "@type": "OfferCatalog", "name": "Casual wear stitching", "itemListElement": [{ "@type": "Offer", "itemOffered": { "@id": "https://arishastitching.shop/#service-casual-wear" } }] },
+          { "@type": "OfferCatalog", "name": "Western wear stitching", "itemListElement": [{ "@type": "Offer", "itemOffered": { "@id": "https://arishastitching.shop/#service-western-wear" } }] },
+          { "@type": "OfferCatalog", "name": "Ladies dress alterations", "itemListElement": [{ "@type": "Offer", "itemOffered": { "@id": "https://arishastitching.shop/#service-alterations" } }] }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://arishastitching.shop/#service-suit-stitching",
+        "name": "Ladies suit stitching",
+        "serviceType": "Custom ladies shalwar kameez and suit stitching",
+        "provider": { "@id": "https://arishastitching.shop/#business" },
+        "areaServed": { "@type": "City", "name": "Lahore" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://arishastitching.shop/#service-party-wear",
+        "name": "Party wear stitching",
+        "serviceType": "Ladies party wear and formal outfit stitching",
+        "provider": { "@id": "https://arishastitching.shop/#business" },
+        "areaServed": { "@type": "City", "name": "Lahore" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://arishastitching.shop/#service-bridal-wear",
+        "name": "Bridal wear stitching",
+        "serviceType": "Custom bridal outfit stitching",
+        "provider": { "@id": "https://arishastitching.shop/#business" },
+        "areaServed": { "@type": "City", "name": "Lahore" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://arishastitching.shop/#service-casual-wear",
+        "name": "Casual wear stitching",
+        "serviceType": "Ladies casual suit and kurta stitching",
+        "provider": { "@id": "https://arishastitching.shop/#business" },
+        "areaServed": { "@type": "City", "name": "Lahore" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://arishastitching.shop/#service-western-wear",
+        "name": "Western wear stitching",
+        "serviceType": "Custom western-inspired outfit stitching",
+        "provider": { "@id": "https://arishastitching.shop/#business" },
+        "areaServed": { "@type": "City", "name": "Lahore" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://arishastitching.shop/#service-alterations",
+        "name": "Ladies dress alterations",
+        "serviceType": "Ladies garment fitting and alteration services",
+        "provider": { "@id": "https://arishastitching.shop/#business" },
+        "areaServed": { "@type": "City", "name": "Lahore" }
+      }
+    ]
+  }
   </script>
 </head>
 <body>

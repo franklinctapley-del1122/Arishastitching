@@ -627,3 +627,12 @@ body{background:var(--paper);color:var(--ink)}
   .process-step h3 { font-size: 22px !important; }
   .process-step p,.section-title p,.service-card p,.faq-item > p { font-size: 13px !important; line-height: 1.8 !important; }
 }
+
+
+/* Semantic service-page price panel */
+.category-rate-note{max-width:1180px;margin:0 auto 24px;padding:22px 28px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:#f0e6d5;border:1px solid #e5d7bf;color:var(--muted)}
+.category-rate-note .eyebrow{margin:0}
+.category-rate-note strong{font:600 25px 'Playfair Display',serif;color:var(--maroon)}
+.category-rate-note>span:not(.eyebrow){font-size:11px;line-height:1.7;flex:1 1 260px}
+.category-rate-note a{display:inline-flex;align-items:center;gap:8px;color:var(--maroon);font-size:11px;font-weight:600}
+@media(max-width:640px){.category-rate-note{margin:0 16px 18px;padding:18px;gap:10px}.category-rate-note strong{font-size:23px}.category-rate-note>span:not(.eyebrow){flex-basis:100%}}

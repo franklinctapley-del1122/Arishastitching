@@ -29,6 +29,8 @@ try {
   const { HelmetProvider } = await vite.ssrLoadModule('react-helmet-async');
   const shell = readFileSync(resolve('dist/index.html'), 'utf8');
 
+  routes.push('/__404__');
+
   for (const route of routes) {
     const helmetContext = {};
     const appHtml = renderToString(
@@ -68,10 +70,10 @@ try {
 
     html = html.replace('</head>', '  ' + headTags + '\n</head>');
 
-    const outputPath = resolve('dist' + (route === '/' ? '/index.html' : route + 'index.html'));
+    const outputPath = route === '/__404__' ? resolve('dist/404.html') : resolve('dist' + (route === '/' ? '/index.html' : route + 'index.html'));
     mkdirSync(dirname(outputPath), { recursive: true });
     writeFileSync(outputPath, html, 'utf8');
-    console.log('Pre-rendered ' + route);
+    console.log('Pre-rendered ' + (route === '/__404__' ? '404.html' : route));
   }
 } finally {
   await vite.close();

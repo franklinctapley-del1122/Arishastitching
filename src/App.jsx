@@ -21,7 +21,7 @@ const pageMeta = {
   '/alteration/': ['Ladies Dress Alteration in Lahore from Rs. 300 | Arisha', 'Ask about ladies dress alterations in Lahore, including sleeve, waist, length and fitting adjustments. Alterations start from Rs. 300; each garment is assessed before quoting.'],
   '/blog/': ['Tailoring Guides & Style Tips | Arisha Ladies Stitching & Boutique', 'Fabric advice, stitching tips, outfit planning and tailoring guides from Arisha Ladies Stitching & Boutique.'],
   '/our-work/': ['Our Work | Tailoring Style Inspiration | Arisha Ladies Stitching & Boutique', 'Explore style inspiration for casual, party, bridal and custom stitching.'],
-  '/fabric-calculator/': ['Fabric Calculator | Arisha Ladies Stitching & Boutique', 'Estimate fabric requirements for common Pakistani outfits. Actual fabric needs vary by design and measurements; confirm before cutting.'],
+  '/fabric-calculator/': ['Fabric Quantity Guide | Arisha Ladies Stitching & Boutique Lahore', 'Share your outfit type, size and fabric width with Arisha to discuss fabric quantity. We confirm requirements from the actual design and measurements before cutting.'],
   '/book-appointment/': ['Book a Tailoring Appointment | Arisha Ladies Stitching & Boutique', 'Send an appointment request to Arisha Ladies Stitching & Boutique in Lahore through WhatsApp.'],
   '/location/': ['Arisha Shop Address & Lahore Delivery Areas | Pak-Arab Housing Scheme', 'Visit Arisha Ladies Stitching & Boutique at House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road, Lahore. One shop with home delivery across confirmed Lahore service areas.']
 };

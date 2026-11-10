@@ -1,0 +1,11 @@
+{
+  "name": "Arisha Ladies Stitching & Boutique",
+  "short_name": "Arisha Boutique",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf7",
+  "theme_color": "#651f32",
+  "icons": [
+    { "src": "/favicon.svg?v=4", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

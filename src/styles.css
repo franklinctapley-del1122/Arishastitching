@@ -651,3 +651,5 @@ body{background:var(--paper);color:var(--ink)}
 .unstitched-price{margin-top:0}
 .unstitched-filters button:focus-visible,.unstitched-order:focus-visible,.unstitched-stitch-link:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 @media(max-width:700px){.unstitched-filters{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding:2px 2px 10px;scrollbar-width:thin}.unstitched-filters button{flex:0 0 auto}}
+
+.unstitched-product-ref{display:block;font-size:10px;letter-spacing:.02em;color:var(--muted);margin:2px 0 8px}

@@ -205,7 +205,7 @@ faqs:[
 slug:'how-much-fabric-do-i-need', category:'Fabric Guide', date:'September 06, 2026',
 title:'How Much Fabric Do You Need for a Suit? A Pakistani Outfit Guide',
 excerpt:'Estimate fabric for shirts, trousers and three-piece suits while understanding how width, flare, size and print matching affect yardage.',
-image:IMAGES.fabric,
+image:'/Pakistani%20Outfit%20Fabric%20Guide.png',
 quickAnswer:'Fabric quantity depends on the garment style, your measurements, fabric width, sleeve design, shirt length, flare, trouser shape and print matching. Use online estimates only for initial planning. Before buying or cutting, show the exact design and fabric width to your tailor and confirm the amount needed for every part of the outfit.',
 sections:[
 {heading:'1. Why there is no single fabric amount for every suit',paragraphs:[

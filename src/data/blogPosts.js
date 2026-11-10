@@ -55,7 +55,7 @@ faqs:[
 slug:'eid-dress-stitching-tips', category:'Style Tips', date:'October 08, 2026',
 title:'Eid Dress Stitching Tips: How to Plan a Better-Fitting Outfit',
 excerpt:'A practical guide to Eid suit design, measurements, fabric selection, tailoring timelines and finishing for Pakistani festive wear.',
-image:IMAGES.casual,
+image:'/Eid%20Dress%20Stitching%20Tips%20Banner.png',
 quickAnswer:'For a well-finished Eid outfit, decide the silhouette and key design details before cutting, provide clear measurements, check fabric quantity and confirm the quote and delivery date early. Save a reference image that shows the neckline, sleeves, shirt length and trouser style, then leave time for a fitting instead of waiting until the last few days.',
 sections:[
 {heading:'1. Choose the outfit around how you will celebrate Eid',paragraphs:[

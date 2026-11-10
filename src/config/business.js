@@ -28,14 +28,14 @@ export const IMAGES = {
   alterations: 'https://images.pexels.com/photos/7147640/pexels-photo-7147640.jpeg?auto=compress&cs=tinysrgb&w=1200',
 };
 export const PRICES = [
-  { name: 'Ladies Simple Shirt Stitching', price: 800 },
-  { name: 'Ladies Simple Suit Stitching', price: 1000 },
+  { name: 'Ladies Simple Shirt Stitching', price: 1000 },
+  { name: 'Ladies Simple Suit Stitching', price: 1500 },
   { name: 'Ladies Dori Piping Suit Stitching', price: 1200 },
-  { name: 'Ladies Lining Suit / Party Wear Stitching', price: 2000 },
+  { name: 'Ladies Lining Suit / Party Wear Stitching', price: 2500, maxPrice: 4000 },
   { name: 'Ladies Frock Stitching', price: 1500 },
   { name: 'Saree Stitching', price: 12000, maxPrice: 15000 },
   { name: 'Ladies Short Frock Stitching', price: 1300 },
-  { name: 'Ladies Angrakha Suit Stitching', price: 1800 },
+  { name: 'Ladies Angrakha Suit Stitching', price: 3000, maxPrice: 6000 },
   { name: 'Casual Wear Stitching — starting from', price: 1000 },
   { name: 'Party Wear Stitching — starting from', price: 1500 },
   { name: 'Bridal Wear Stitching — starting from', price: 8000 },
@@ -43,7 +43,7 @@ export const PRICES = [
   { name: 'Ladies Dress Alterations — starting from', price: 300 },
 ];
 export const SERVICES = [
- {number:'01',kicker:'EVERYDAY STYLE',title:'Ladies Suit Stitching',path:'/stitching/',description:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline and trouser style.',price:1000,image:IMAGES.stitching,alt:'Female dressmaker sewing fabric on a machine — tailoring style inspiration'},
+ {number:'01',kicker:'EVERYDAY STYLE',title:'Ladies Suit Stitching',path:'/stitching/',description:'Custom shalwar kameez and ladies suits planned around your preferred fit, neckline and trouser style.',price:1500,image:IMAGES.stitching,alt:'Female dressmaker sewing fabric on a machine — tailoring style inspiration'},
  {number:'02',kicker:'CELEBRATIONS',title:'Party Wear',path:'/party-wear/',description:'Formal suits, frocks and occasion outfits with thoughtful finishing details.',price:1500,image:'/unnamed%20(1).webp',alt:'Party wear display at Arisha Ladies Stitching & Boutique'},
  {number:'03',kicker:'YOUR SPECIAL DAY',title:'Bridal Wear',path:'/bridal-wear/',description:'Discuss bridal lehenga, gharara, sharara and gown ideas with a custom quote.',price:8000,image:IMAGES.bridal,alt:'Bridal outfit inspiration'},
  {number:'04',kicker:'DAILY FAVOURITES',title:'Casual Wear',path:'/casual-wear/',description:'Comfortable daily suits and kurtas made around your preferred style.',price:1000,image:'/unnamed%20(3).webp',alt:'Casual simple shirt display at Arisha Ladies Stitching & Boutique'},

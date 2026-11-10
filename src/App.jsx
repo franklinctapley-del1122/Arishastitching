@@ -11,7 +11,7 @@ const fade = { hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transiti
 
 const pageMeta = {
   '/': ['Ladies Tailor in Lahore | Arisha Boutique', 'Looking for a ladies tailor in Lahore? Visit Arisha Ladies Stitching & Boutique in Pak-Arab Housing Scheme for custom suit stitching, bridal and party wear, casual outfits and alterations. Home delivery is available in confirmed Lahore areas.'], 
-  '/women-unstitched/': ['Women’s Unstitched Suits & Fabric Collection | Arisha Lahore', 'Explore selected women’s unstitched 2-piece and 3-piece suits, printed lawn, Katan silk and embroidered fabrics at Arisha. Confirm stock and current price on WhatsApp.'],
+  '/women-unstitched/': ['Women’s Unstitched Suits in Lahore | Arisha Boutique', 'Browse selected women’s 2-piece and 3-piece unstitched suits in Lahore, including printed cotton lawn, Katan silk, plain and embroidered designs. Confirm product details, stock and current price on WhatsApp.'],
   '/services/': ['Ladies Tailoring Services in Lahore | Arisha Boutique', 'Explore ladies suit stitching, party wear, bridal wear, casual and western outfits, and alterations at Arisha in Pak-Arab Housing Scheme, Lahore. Check indicative starting prices and confirm service details on WhatsApp.'],
   '/about/': ['About Arisha Ladies Stitching & Boutique | Lahore', 'Learn about Arisha Ladies Stitching & Boutique and our personal approach to custom tailoring in Lahore.'],
   '/rate-list/': ['Stitching Rates | Arisha Ladies Stitching & Boutique Lahore', 'Explore indicative ladies tailoring prices in Lahore. Confirm current rates and final quotes on WhatsApp.'],
@@ -303,27 +303,47 @@ function WomenUnstitched(){
     <section className="unstitched-seo-content">
       <div>
         <span className="eyebrow">SHOP THE COLLECTION</span>
-        <h2>Women’s 2-piece and 3-piece unstitched suits</h2>
-        <p>This collection includes selected 2-piece and 3-piece unstitched suit listings. Check each product description for the details supplied with that design. The number of pieces and included fabric components can differ, so confirm exactly what is included before placing an order.</p>
-        <h3>Printed cotton lawn and Katan silk options</h3>
-        <p>Browse the listed printed cotton lawn and Katan silk designs alongside plain and embroidered options. Fabric names and product descriptions are based on the supplied catalogue information. If you need more detail about fabric composition, width, length, colour or care, ask us to confirm it for the specific product.</p>
+        <h2>Women’s unstitched suits in Lahore: explore by style and fabric</h2>
+        <p>Choosing an unstitched suit starts with the look you want and the pieces included in the set. This collection brings together selected women’s 2-piece and 3-piece listings, with printed, plain, embroidered and applique styles. Use the filters to narrow the options, then open the product enquiry for the exact design you like. The product title and description are catalogue information; confirm the complete set contents with us before ordering.</p>
+
+        <h3>2-piece or 3-piece: what should you check?</h3>
+        <p>A 2-piece listing and a 3-piece listing do not necessarily contain the same components. Before you decide, ask which pieces are included, whether a dupatta is part of the set, and whether any pictured accessories or styling items are excluded. Do not rely on the photograph alone to determine what will arrive. We recommend confirming the product’s included components in writing on WhatsApp.</p>
+
+        <h3>Printed cotton lawn, Katan silk, plain and embroidered designs</h3>
+        <p>The current catalogue includes designs labelled cotton lawn and Katan silk, as well as plain, printed, embroidered and applique options. These labels help you browse, but they are not a substitute for a full fabric specification. If the fabric type is important to your purchase, ask about the exact material, fabric width and length, season suitability, colour and care instructions for that individual listing. These details are not assumed where the catalogue does not state them.</p>
+
+        <h3>How to choose an unstitched suit for your plan</h3>
+        <p>Start with the occasion and the outfit you have in mind. For everyday use, consider the comfort and care requirements you prefer. For a family event or formal gathering, compare the print, embroidery and overall look against your intended design. Then check whether the set includes the pieces you need and whether the fabric quantity will work for your chosen cut. If you are unsure, share a reference image and ask for clarification before purchase or cutting.</p>
+
+        <h3>Before you order: a simple product-check list</h3>
+        <ul>
+          <li>Confirm the product name or send the product card to us.</li>
+          <li>Ask whether the design is currently available and confirm the latest price.</li>
+          <li>Check the number of pieces and the exact components included.</li>
+          <li>Ask for fabric composition, width, length and care details if they matter to your choice.</li>
+          <li>Confirm delivery coverage, charges, timing and the final payable amount.</li>
+        </ul>
+        <p>The prices shown on this page are catalogue-listed amounts, not a guaranteed live quotation. Stock and prices can change, so wait for confirmation before making payment or arranging delivery.</p>
+
         <h3>Want your unstitched suit stitched?</h3>
-        <p>Arisha also offers <Link to="/stitching/">ladies suit stitching in Lahore</Link>. If you select a fabric from this collection, ask us separately about stitching charges, measurements, design requirements and appointment availability. You can also review the <Link to="/rate-list/">indicative stitching rate list</Link> before requesting a <Link to="/book-appointment/">stitching appointment</Link>.</p>
-        <h3>Ordering from Lahore</h3>
-        <p>Arisha Ladies Stitching & Boutique is based in Pak-Arab Housing Scheme, Ferozepur Road, Lahore. Check our <Link to="/location/">shop location and contact details</Link>. Product availability, delivery coverage, delivery charges and timing must be confirmed for your order before payment or dispatch.</p>
+        <p>After selecting a fabric, you can separately ask about <Link to="/stitching/">ladies suit stitching in Lahore</Link>. Share your preferred style, reference photo, measurements or fitting requirements, and ask for a quote based on the actual design. Stitching is a separate service and its charges are not included in the catalogue-listed fabric price unless confirmed. Review the <Link to="/rate-list/">indicative stitching rate list</Link> and use the <Link to="/book-appointment/">appointment request page</Link> to discuss a suitable visit.</p>
+
+        <h3>Buying from Arisha in Lahore</h3>
+        <p>Arisha Ladies Stitching & Boutique is based at House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road, Lahore. You can check the <Link to="/location/">shop location and contact details</Link> before planning a visit. Contact us first to confirm that a selected design is available. Delivery coverage, charges and timing are checked for each order; please do not assume delivery is available to every address.</p>
       </div>
     </section>
     <section className="unstitched-faq">
       <span className="eyebrow">HELP BEFORE YOU ORDER</span>
-      <h2>Unstitched fabric shopping FAQs</h2>
-      <div className="unstitched-faq-item"><h3>Are the products on this page stitched or unstitched?</h3><p>This collection lists unstitched fabric and suit options. You can separately ask Arisha about stitching a selected fabric.</p></div>
-      <div className="unstitched-faq-item"><h3>Are these 2-piece or 3-piece suits?</h3><p>The product title and description identify the listed suit type where that information is supplied. Confirm the exact included pieces before ordering.</p></div>
-      <div className="unstitched-faq-item"><h3>Are the displayed prices current and final?</h3><p>The displayed amounts are catalogue-listed prices and may change. Confirm the current price and final payable amount on WhatsApp before placing an order.</p></div>
-      <div className="unstitched-faq-item"><h3>How do I check whether a fabric design is in stock?</h3><p>Use the WhatsApp button on the product card and send the product name. Arisha must confirm current stock before the order is accepted.</p></div>
-      <div className="unstitched-faq-item"><h3>Can I filter cotton lawn and Katan silk designs?</h3><p>Yes. Use the Cotton lawn or Katan silk filter above the product collection to narrow the displayed listings.</p></div>
-      <div className="unstitched-faq-item"><h3>Can Arisha stitch a suit made from fabric I select here?</h3><p>You can ask about stitching the selected fabric. Stitching charges, design details and appointment availability are confirmed separately.</p></div>
-      <div className="unstitched-faq-item"><h3>Can I visit the boutique to ask about a product?</h3><p>Arisha’s shop is at House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road, Lahore. Contact us first to confirm product availability before visiting.</p></div>
-      <div className="unstitched-faq-item"><h3>Do you deliver unstitched suits?</h3><p>Delivery arrangements, coverage, charges and timing depend on the order. Confirm the details with Arisha before payment or dispatch.</p></div>
+      <h2>Women’s unstitched suits: buying FAQs</h2>
+      <div className="unstitched-faq-item"><h3>Where can I find women’s unstitched suits in Lahore?</h3><p>You can browse the selected listings on this page from Arisha Ladies Stitching & Boutique in Pak-Arab Housing Scheme, Lahore. Message us to confirm the availability and current price of a specific design before visiting or ordering.</p></div>
+      <div className="unstitched-faq-item"><h3>What is the difference between a 2-piece and 3-piece unstitched suit?</h3><p>The listing identifies the advertised number of pieces, but the exact components can vary by product. Ask whether the shirt, trouser and dupatta are included before you order.</p></div>
+      <div className="unstitched-faq-item"><h3>Does every 3-piece suit include a dupatta?</h3><p>Do not assume that from the title or photograph alone. Check the specific product description and confirm the included pieces with Arisha before purchase.</p></div>
+      <div className="unstitched-faq-item"><h3>Are the displayed product prices current?</h3><p>The amounts are catalogue-listed prices and may change. Ask us to confirm the latest product price and final payable amount on WhatsApp before placing an order.</p></div>
+      <div className="unstitched-faq-item"><h3>How can I check whether a design is in stock?</h3><p>Use the WhatsApp button on the product card and send the product enquiry. Arisha must confirm current availability before the order is accepted.</p></div>
+      <div className="unstitched-faq-item"><h3>What fabric details should I confirm before buying?</h3><p>Ask about the exact material, fabric width and length, colour, care instructions and the pieces included in the set. These details should be confirmed for the specific product rather than assumed from a general fabric label.</p></div>
+      <div className="unstitched-faq-item"><h3>Can Arisha stitch a suit made from fabric I select here?</h3><p>You can ask about stitching the selected fabric as a separate service. Share your design and measurements to discuss stitching charges, requirements and appointment availability.</p></div>
+      <div className="unstitched-faq-item"><h3>Can I visit the boutique to see or ask about a product?</h3><p>Arisha’s shop is at House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road, Lahore. Contact us first to confirm whether the selected product is available for viewing.</p></div>
+      <div className="unstitched-faq-item"><h3>Do you deliver unstitched suits?</h3><p>Delivery arrangements depend on the order and destination. Confirm coverage, charges and timing with Arisha before payment or dispatch.</p></div>
     </section>
     <div className="unstitched-note"><strong>Important product information</strong><p>Prices shown are supplied catalogue-listed amounts and may change. Stock, current price, fabric specifications, included pieces, delivery charges and final payable amount must be confirmed with Arisha before ordering. Product photographs are supplied catalogue images; actual shades and details may vary.</p></div>
     <CTA title="Found a fabric you love?" copy="Send us the product name to check its current availability and price, or ask about stitching your selected unstitched suit at Arisha."/>

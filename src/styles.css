@@ -645,3 +645,9 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:1000px){.unstitched-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.unstitched-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.unstitched-image{height:190px}.unstitched-card-body{padding:12px}.unstitched-card-body h2{font-size:15px}.unstitched-card-body p{font-size:10px}.unstitched-price{font-size:16px}.unstitched-order{font-size:9px;gap:5px}.unstitched-intro{padding:16px;margin-left:0;margin-right:0}}
 @media(max-width:380px){.unstitched-grid{grid-template-columns:1fr}.unstitched-image{height:260px}}
+
+/* Unstitched collection: make catalogue pricing and product filters clearer */
+.unstitched-price-label{display:block;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:auto;margin-bottom:4px}
+.unstitched-price{margin-top:0}
+.unstitched-filters button:focus-visible,.unstitched-order:focus-visible,.unstitched-stitch-link:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:700px){.unstitched-filters{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding:2px 2px 10px;scrollbar-width:thin}.unstitched-filters button{flex:0 0 auto}}

@@ -105,7 +105,7 @@ faqs:[
 slug:'shalwar-kameez-measurements', category:'Fit & Care', date:'September 29, 2026',
 title:'Shalwar Kameez Measurements: A Practical Guide Before Your Tailoring Appointment',
 excerpt:'Learn which measurements, fit preferences and design details to prepare for a better-fitting Pakistani shalwar kameez.',
-image:IMAGES.stitching,
+image:'/Shalwar%20Kameez%20Measurement%20Guide.png',
 quickAnswer:'Prepare for a shalwar kameez appointment by deciding your preferred fit, shirt length, sleeve style, neckline, trouser shape and footwear. Measurements alone do not describe how you want a suit to fit, so explain where you prefer more or less ease and bring a well-fitting outfit as a reference if possible.',
 sections:[
 {heading:'1. Measurements and fit preference are not the same thing',paragraphs:[

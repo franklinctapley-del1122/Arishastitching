@@ -252,6 +252,278 @@ faqs:[
 ['Can I trust an online fabric calculator?','Use it for an initial estimate only. Confirm the amount with your tailor before buying or cutting the fabric.']
 ]},
 {
+  "slug": "how-much-fabric-3-piece-suit-pakistan",
+  "category": "Fabric Guide",
+  "date": "November 11, 2026",
+  "title": "How Much Fabric Is Required for a 3-Piece Suit in Pakistan?",
+  "excerpt": "Find out how much fabric a Pakistani ladies' 3-piece suit needs, with estimates for kameez, shalwar or trouser, dupatta, fabric width, dress style and size.",
+  "image": "/Pakistani%20Outfit%20Fabric%20Guide.png",
+  "quickAnswer": "A standard adult women's Pakistani 3-piece suit commonly needs around 7–8 metres of 40–44-inch-wide fabric in total: approximately 2.75–3.25 metres for the kameez, 2–2.5 metres for the shalwar or trouser, and 2.25–2.5 metres for the dupatta. Wider 58–60-inch fabric may reduce the shirt and trouser length required, but the exact amount depends on measurements, cutting layout, design and dupatta dimensions. Treat these figures as planning estimates and confirm them with your tailor before buying or cutting.",
+  "sections": [
+    {
+      "heading": "1. Standard fabric requirement for a ladies' 3-piece suit",
+      "paragraphs": [
+        "A Pakistani women's 3-piece suit usually includes a kameez, a shalwar or trouser, and a dupatta. The amount of fabric is not fixed because the shirt length, body measurements, sleeve design, trouser shape and dupatta size all affect the cutting plan.",
+        "For an ordinary adult outfit with a straight or moderately shaped shirt, a practical starting estimate at 40–44-inch fabric width is around 7–8 metres in total. This is a shopping guide, not a promise that every design can be cut from that amount. A long shirt, wide sleeves, larger measurements or a flared silhouette may need more.",
+        "Use the component breakdown below to understand where the fabric goes. If you are buying a branded unstitched suit, check the printed meterage on the packet first; the dupatta or embroidered panels may already be included."
+      ],
+      "table": {
+        "headers": [
+          "Suit component",
+          "Approximate planning amount",
+          "What changes it"
+        ],
+        "rows": [
+          [
+            "Kameez / shirt",
+            "2.75–3.25 metres",
+            "Length, size, sleeves, flare and panels"
+          ],
+          [
+            "Shalwar / trouser",
+            "2–2.5 metres",
+            "Traditional shalwar, straight cut or wide leg"
+          ],
+          [
+            "Dupatta",
+            "2.25–2.5 metres",
+            "Finished length, width, border and drape"
+          ],
+          [
+            "Total",
+            "About 7–8.25 metres",
+            "Fabric width and the complete cutting layout"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "2. Fabric requirement by fabric width",
+      "paragraphs": [
+        "Fabric width affects how the tailor places the pattern pieces. A wider roll can allow some shirt and trouser pieces to sit side by side, reducing the length needed. A narrow roll may require more length because pieces have to be placed separately.",
+        "The following comparison is a broad planning guide. It assumes a standard adult outfit and a dupatta cut to a conventional size. Do not convert one width to another using a fixed percentage: usable width, selvedges, borders, print direction and body measurements can change the result."
+      ],
+      "table": {
+        "headers": [
+          "Fabric width",
+          "Typical planning range for a 3-piece suit",
+          "Important note"
+        ],
+        "rows": [
+          [
+            "40–44 inches",
+            "Around 7–8.25 metres",
+            "A common narrow-width planning reference"
+          ],
+          [
+            "52 inches",
+            "Around 5.5–6.75 metres",
+            "Wider layout may reduce shirt and trouser length"
+          ],
+          [
+            "58–60 inches",
+            "Ask for a layout-based estimate",
+            "Do not assume every design saves the same amount"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "3. How much fabric is needed for the kameez?",
+      "paragraphs": [
+        "The kameez often uses the largest share of the main garment fabric. A short, straight shirt can use less material than a knee-length or long kameez. Chest, hip and shoulder measurements also matter because the tailor must fit the front, back and sleeves across the available width.",
+        "For a standard straight or lightly shaped shirt, use approximately 2.75–3.25 metres as an initial planning range at 40–44-inch width. A longer shirt, wider hem, full sleeves, gathered sleeves or additional panels can increase the requirement. With wider fabric, the tailor may be able to arrange the pieces more efficiently.",
+        "If the fabric has a border, large motifs or directional print, show it to the tailor before buying. The placement may matter more than the nominal length printed on the roll."
+      ],
+      "table": {
+        "headers": [
+          "Kameez style",
+          "Planning guidance"
+        ],
+        "rows": [
+          [
+            "Short straight shirt",
+            "Often needs less than a standard-length shirt; confirm sleeve and size layout"
+          ],
+          [
+            "Standard straight kameez",
+            "Around 2.75–3.25 metres at 40–44-inch width"
+          ],
+          [
+            "Long kameez",
+            "Allow more for the extra length and sleeves"
+          ],
+          [
+            "A-line or flared shirt",
+            "Depends on hem circumference and panel arrangement"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "4. How much fabric is needed for shalwar or trouser?",
+      "paragraphs": [
+        "The lower garment can be a traditional shalwar, straight trouser, cigarette pant, wide-leg trouser or palazzo. Each has a different shape and cutting layout. A traditional loose shalwar or wide palazzo generally needs more material than a narrow straight trouser.",
+        "For a standard shalwar or trouser, approximately 2–2.5 metres is a useful initial estimate at 40–44-inch width. A wide-leg style, larger hip measurement, extra length or special pleating can increase the amount. Always tell the tailor which bottom style you want before purchasing the fabric."
+      ],
+      "table": {
+        "headers": [
+          "Bottom style",
+          "Planning guidance"
+        ],
+        "rows": [
+          [
+            "Straight trouser",
+            "Usually at the lower end of the range"
+          ],
+          [
+            "Traditional shalwar",
+            "Allow for the loose cut and pleats"
+          ],
+          [
+            "Wide-leg trouser",
+            "May need additional width and length"
+          ],
+          [
+            "Palazzo",
+            "Can require more fabric because of the wide legs"
+          ],
+          [
+            "Farshi shalwar",
+            "Needs a separate design-specific estimate"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "5. How much fabric is needed for the dupatta?",
+      "paragraphs": [
+        "A separate dupatta commonly uses around 2.25–2.5 metres as a starting length, but its finished width and the way it will be draped matter too. Chiffon, organza and other lightweight dupatta fabrics may be sold in different widths, so confirm both dimensions with the shop.",
+        "If you are buying an unstitched branded 3-piece set, check whether the dupatta is already included and whether it is supplied as a pre-cut piece. Do not add another dupatta length to the total unless you actually need to purchase it separately.",
+        "Lace, tassels, edging and a wide border affect finishing, but they do not automatically mean you need another full length of fabric. Ask the tailor to check the supplied piece."
+      ]
+    },
+    {
+      "heading": "6. Fabric needed for different ladies' dress designs",
+      "paragraphs": [
+        "The phrase '3-piece suit' describes the number of components, not the shape of the shirt. A simple straight shirt, A-line suit, Anarkali, maxi and heavily flared frock can use very different amounts of fabric.",
+        "For a design with a large flare or many kalis, the shirt or frock portion may need several extra metres. A maxi or Anarkali should be estimated from its finished length, hem circumference, number of panels and fabric width—not from the standard straight-shirt allowance.",
+        "Use the calculator for an initial design-based estimate, then send the reference picture to your tailor. Bridal, pishwas, lehenga-inspired and heavily embellished outfits need an individual cutting plan."
+      ],
+      "table": {
+        "headers": [
+          "Dress design",
+          "What affects fabric use"
+        ],
+        "rows": [
+          [
+            "Simple straight shirt",
+            "Shirt length, size and sleeve length"
+          ],
+          [
+            "A-line shirt",
+            "How much the hem widens"
+          ],
+          [
+            "Gherdar shirt",
+            "Desired hem circumference and panel count"
+          ],
+          [
+            "Anarkali / pishwas",
+            "Kali count, length, flare and lining"
+          ],
+          [
+            "Maxi",
+            "Floor length, skirt shape and sleeve design"
+          ],
+          [
+            "Palazzo suit",
+            "Leg width, length and body measurements"
+          ],
+          [
+            "Farshi shalwar",
+            "Drape, volume and lower-leg construction"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "7. Does body size and height change the fabric amount?",
+      "paragraphs": [
+        "Yes. Ready-made size labels such as S, M, L and XL are only broad categories. Two people who usually wear the same size may have different chest, hip, shoulder, arm and preferred-fit measurements. Those differences affect how the pattern pieces fit on the cloth.",
+        "Height mainly changes shirt, sleeve and trouser length. If you prefer a longer kameez or are taller than the standard length used by the design, ask for the extra length to be included before buying. Plus-size customers and anyone requesting a loose or oversized fit should have the layout checked using actual measurements.",
+        "Give your tailor the shirt length, chest, hip, shoulder, sleeve and trouser measurements where possible. This is more useful than relying on height or a size label alone."
+      ]
+    },
+    {
+      "heading": "8. Fabric type, embroidery, borders and shrinkage",
+      "paragraphs": [
+        "Lawn, cotton, cambric, chiffon, organza, linen and khaddar can behave differently during cutting and stitching. Fabric width and finish vary by supplier, so check the actual piece rather than assuming every fabric sold under the same name has identical dimensions.",
+        "Printed fabric may need extra care when large motifs, stripes or directional patterns must line up across seams. Embroidered panels and borders also need planned placement so important motifs are not cut through or hidden in a seam. These details can create offcuts and increase the amount required.",
+        "Some cotton fabrics may shrink after washing. Ask the seller whether the fabric is pre-shrunk and ask your tailor whether a shrinkage allowance is appropriate for that material. Do not automatically add a fixed amount to every fabric."
+      ]
+    },
+    {
+      "heading": "9. Use the Arisha fabric calculator before you buy",
+      "paragraphs": [
+        "The Arisha Fabric Quantity Calculator helps you make an initial estimate for popular Pakistani outfits. You can select a dress type, size and fabric width, then see an approximate range in metres. It also provides a WhatsApp enquiry so you can ask Arisha to review the estimate.",
+        "The calculator is a planning aid, not an automatic cutting instruction. A custom design, unusual measurements, border placement, print matching or a separately purchased dupatta may change the final quantity. When you message the boutique, share your design reference and the fabric width so the tailor can check the details.",
+        "Open the Fabric Quantity Calculator, choose the closest outfit type and send the result for confirmation before buying or cutting expensive fabric."
+      ]
+    },
+    {
+      "heading": "10. A simple checklist before purchasing fabric",
+      "paragraphs": [
+        "Before paying for fabric, confirm the complete outfit plan. Decide the shirt length, sleeve style, trouser or shalwar shape, dupatta dimensions and any extra flare. Check the width printed on the roll and whether the seller's measurement is in metres or yards.",
+        "Show your tailor the fabric and design reference together. Ask whether the dupatta is included, whether lining is separate, and whether the print or embroidery needs matching. If the fabric is from a limited collection, check whether additional matching material can be obtained before cutting begins.",
+        "Keep the receipt, fabric label and useful leftover pieces until the outfit is finished. This can help with alterations or repairs later."
+      ]
+    }
+  ],
+  "faqs": [
+    [
+      "How much fabric is required for a standard ladies' 3-piece suit in Pakistan?",
+      "A standard adult women's 3-piece suit commonly needs around 7–8 metres of 40–44-inch-wide fabric, including the kameez, shalwar or trouser and dupatta. The exact amount depends on measurements, design and cutting layout."
+    ],
+    [
+      "How much fabric is needed for just the kameez?",
+      "A standard straight kameez may need around 2.75–3.25 metres at 40–44-inch width. Longer shirts, wide sleeves and flared designs can require more."
+    ],
+    [
+      "How much fabric is needed for the trouser or shalwar?",
+      "Around 2–2.5 metres is a useful starting estimate for many standard adult styles at 40–44-inch width. Wide-leg, palazzo and farshi designs need a separate estimate."
+    ],
+    [
+      "How much fabric is needed for a dupatta?",
+      "A common planning length is around 2.25–2.5 metres, but confirm the finished width and whether the unstitched suit already includes a dupatta."
+    ],
+    [
+      "Does wider fabric reduce the amount required?",
+      "It can. Wider fabric may allow pattern pieces to fit side by side, reducing the length needed. The saving depends on the garment pattern, measurements, usable width and print direction."
+    ],
+    [
+      "Is 2 metres of fabric enough for a ladies' shirt?",
+      "It may be enough for some short shirts or smaller cutting layouts, especially with wider fabric. It is not a safe assumption for a standard long-sleeved or long-length kameez."
+    ],
+    [
+      "Is 3 metres enough for a ladies' dress?",
+      "Three metres may work for some simple shirts or dresses, but a long maxi, Anarkali or heavily flared design can require substantially more."
+    ],
+    [
+      "Do plus-size women need more fabric?",
+      "Often, yes. Larger measurements can change the cutting layout and may require extra fabric for the shirt and lower garment. Confirm using actual measurements."
+    ],
+    [
+      "Should I buy extra fabric for embroidery or printed designs?",
+      "Sometimes. Pattern matching, directional prints, embroidered motifs and continuous borders can increase cutting waste. Have your tailor inspect the actual fabric before deciding."
+    ],
+    [
+      "Can I rely on an online fabric calculator for exact cutting?",
+      "Use a calculator for an initial estimate only. The tailor should confirm the final quantity after reviewing the actual fabric, measurements and design."
+    ]
+  ]
+},
+{
 slug:'care-for-embroidered-clothes', category:'Fabric Care', date:'August 22, 2026',
 title:'How to Care for Embroidered and Formal Clothes: Storage, Cleaning and Repairs',
 excerpt:'Protect delicate Pakistani formalwear with sensible cleaning, drying, storage and handling practices for embroidery and fine fabrics.',

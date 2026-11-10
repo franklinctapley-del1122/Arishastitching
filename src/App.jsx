@@ -270,6 +270,14 @@ function WomenUnstitched(){
   };
   const visible=unstitchedProducts.filter(product=>filter==='all'||matches(product,filter));
   const enquiry=(product)=>'Assalam-o-Alaikum! I am interested in this women’s unstitched product. Product reference: '+product.id+'. Product name: '+product.name+'. Catalogue-listed price: '+product.price+'. Please confirm current stock, current price, exact included pieces, fabric details and delivery charges before I order.';
+  const breadcrumbSchema={
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":BUSINESS.siteUrl+"/"},
+      {"@type":"ListItem","position":2,"name":"Women’s Unstitched Suits","item":BUSINESS.siteUrl+"/women-unstitched/"}
+    ]
+  };
   const collectionSchema={
     "@context":"https://schema.org",
     "@type":"CollectionPage",
@@ -290,7 +298,7 @@ function WomenUnstitched(){
       }))
     }
   };
-  return <><SEO path="/women-unstitched/" title="Women’s Unstitched Suits in Lahore | Arisha Boutique" description="Browse selected women’s unstitched 2-piece and 3-piece suits, printed cotton lawn, Katan silk, plain and embroidered fabric at Arisha Lahore. Confirm stock and price on WhatsApp."/><Helmet><script type="application/ld+json">{JSON.stringify(collectionSchema)}</script></Helmet><main className="section tool-page unstitched-page">
+  return <><SEO path="/women-unstitched/" title="Women’s Unstitched Suits in Lahore | Arisha Boutique" description="Browse selected women’s unstitched 2-piece and 3-piece suits, printed cotton lawn, Katan silk, plain and embroidered fabric at Arisha Lahore. Confirm stock and price on WhatsApp."/><Helmet><script type="application/ld+json">{JSON.stringify(collectionSchema)}</script><script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script></Helmet><main className="section tool-page unstitched-page">
     <SectionTitle eyebrow="ARISHA FASHION COLLECTION · LAHORE" level="h1" title={<>Women’s unstitched <em>suits & fabrics.</em></>} copy="Browse selected 2-piece and 3-piece suits, printed cotton lawn, Katan silk, plain fabric and embroidered designs. Check the catalogue-listed price, then message us to confirm current stock and final details before ordering." center/>
     <div className="unstitched-intro"><span className="eyebrow">SELECTED FABRICS & SUITS</span><p>Looking for women’s unstitched suits in Lahore? Explore the selected designs below and use the filters to narrow the collection by suit length, print, embroidery or fabric type. Each card shows its catalogue-listed price. Availability, current price and delivery arrangements must be confirmed before purchase.</p></div>
     <div className="unstitched-filters" aria-label="Filter unstitched products">{categories.map(category=><button key={category.id} type="button" className={filter===category.id?'filter-active':''} aria-pressed={filter===category.id} onClick={()=>setFilter(category.id)}>{category.label}</button>)}</div>

@@ -653,3 +653,47 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:700px){.unstitched-filters{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding:2px 2px 10px;scrollbar-width:thin}.unstitched-filters button{flex:0 0 auto}}
 
 .unstitched-product-ref{display:block;font-size:10px;letter-spacing:.02em;color:var(--muted);margin:2px 0 8px}
+
+
+/* Women unstitched — refreshed boutique storefront design */
+.unstitched-page{max-width:1440px;margin:0 auto;padding:54px clamp(18px,4vw,64px) 76px;background:#fbf8f5}
+.unstitched-page>.section-title{max-width:920px;margin:0 auto 34px;padding:46px 28px 42px;border-radius:24px;background:linear-gradient(135deg,#321923 0%,#6f3548 58%,#9b6470 100%);color:#fff;position:relative;overflow:hidden}
+.unstitched-page>.section-title:after{content:"";position:absolute;width:280px;height:280px;border:1px solid #ffffff25;border-radius:50%;right:-90px;top:-135px;box-shadow:0 0 0 28px #ffffff0b,0 0 0 58px #ffffff08}
+.unstitched-page>.section-title .eyebrow{color:#f2d8c6;letter-spacing:.18em}
+.unstitched-page>.section-title h1{color:#fff;font-size:clamp(34px,5vw,58px);line-height:1.08;max-width:720px;margin:14px auto}
+.unstitched-page>.section-title h1 em{color:#f4cdb8}
+.unstitched-page>.section-title p{color:#f8e9e3;max-width:690px;font-size:14px;line-height:1.8;margin:16px auto 0}
+.unstitched-intro{max-width:880px;margin:0 auto 30px;padding:22px 28px;background:#fff;border:1px solid #eaded8;border-radius:16px;text-align:left;box-shadow:0 10px 30px #3c1d2408}
+.unstitched-intro .eyebrow{color:#986779;letter-spacing:.16em}
+.unstitched-intro p{font-size:13px;line-height:1.85;color:#65565a;margin:8px 0 0}
+.unstitched-filters{justify-content:center;gap:8px;margin:30px 0 14px}
+.unstitched-filters button{border:1px solid #e6d8d5;background:#fff;padding:11px 17px;border-radius:999px;color:#66565b;font-size:12px;font-weight:600;transition:background .2s,border-color .2s,transform .2s}
+.unstitched-filters button:hover{border-color:#8a5265;transform:translateY(-1px)}
+.unstitched-filters button.filter-active{background:#542536;border-color:#542536;color:#fff;box-shadow:0 5px 14px #54253625}
+.unstitched-count{font-size:12px;color:#806e73;text-align:center;margin:0 0 22px}
+.unstitched-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.unstitched-card{background:#fff;border:1px solid #eee4df;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px #39202a0a;transition:transform .25s,box-shadow .25s}
+.unstitched-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px #39202a16}
+.unstitched-image{height:auto;aspect-ratio:4/4.7;background:#f3eeeb}
+.unstitched-image img{object-fit:cover}
+.unstitched-image>span{top:14px;left:14px;border-radius:999px;padding:7px 11px;font-size:9px;background:#fffdf8ed;box-shadow:0 3px 10px #24151a12}
+.unstitched-card-body{padding:20px 21px 22px}
+.unstitched-card-body h2{font-size:18px;line-height:1.4;color:#492331;margin:0 0 8px}
+.unstitched-card-body p{font-size:12px;line-height:1.7;color:#796b6f;margin:0 0 10px}
+.unstitched-product-ref{color:#9b898e;font-size:10px}
+.unstitched-price-label{font-size:9px;letter-spacing:.12em;color:#8b777d;margin:12px 0 4px}
+.unstitched-price{font-size:21px;color:#4e2635;margin-bottom:15px}
+.unstitched-order{border-radius:999px;min-height:46px;font-size:11px;justify-content:center}
+.unstitched-stitch-link{font-size:11px;margin:13px auto 0;color:#78465a}
+.unstitched-seo-content,.unstitched-faq{max-width:1000px;margin:54px auto 0;padding:36px 40px;background:#fff;border:1px solid #eee2dd;border-radius:18px;box-shadow:0 8px 24px #39202a08}
+.unstitched-seo-content h2,.unstitched-faq h2{font-size:clamp(27px,3vw,38px);color:#492331}
+.unstitched-seo-content h3,.unstitched-faq-item h3{color:#65384a}
+.unstitched-seo-content p,.unstitched-faq-item p{font-size:13px;line-height:1.9;color:#74656a}
+.unstitched-seo-content li{font-size:13px;line-height:1.85;color:#74656a;margin:5px 0}
+.unstitched-note{max-width:1000px;border-radius:14px;background:#f2e9e5;border:1px solid #e8d9d4;padding:22px 26px}
+.unstitched-note strong{color:#542536}
+.unstitched-note p{font-size:12px;line-height:1.8;color:#74656a}
+.unstitched-page>.cta-band{border-radius:20px;margin-top:44px;overflow:hidden}
+@media(max-width:900px){.unstitched-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.unstitched-page>.section-title{padding:38px 22px}}
+@media(max-width:600px){.unstitched-page{padding:28px 14px 52px}.unstitched-page>.section-title{padding:34px 18px 32px;border-radius:18px;margin-bottom:22px}.unstitched-page>.section-title h1{font-size:35px}.unstitched-page>.section-title p{font-size:12px}.unstitched-intro{padding:18px;margin-bottom:22px}.unstitched-filters{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding:4px 2px 12px;scrollbar-width:thin}.unstitched-filters button{flex:0 0 auto}.unstitched-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.unstitched-image{aspect-ratio:4/5}.unstitched-card{border-radius:13px}.unstitched-card-body{padding:12px 11px 14px}.unstitched-card-body h2{font-size:14px}.unstitched-card-body p{font-size:10px}.unstitched-price{font-size:17px}.unstitched-order{font-size:9px;min-height:40px;padding:0 7px}.unstitched-stitch-link{font-size:9px}.unstitched-seo-content,.unstitched-faq{padding:22px 18px;margin-top:34px}.unstitched-note{padding:17px}.unstitched-page>.cta-band{padding:26px 20px}}
+@media(max-width:360px){.unstitched-grid{grid-template-columns:1fr}.unstitched-image{aspect-ratio:4/4.2}.unstitched-card-body h2{font-size:16px}}

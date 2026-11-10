@@ -5,7 +5,7 @@ export const blogPosts = [
 slug:'choose-fabric-bridal-wear', category:'Bridal Guide', date:'October 26, 2026',
 title:'How to Choose Fabric for Bridal Wear in Pakistan',
 excerpt:'A practical guide to bridal fabric, drape, weather, embroidery weight, lining, comfort and tailoring decisions before you buy.',
-image:'https://ravishingcollection.com/wp-content/uploads/2022/07/Bridal-dresses-in-Pakistan-1.jpg',
+image:'/Bridal%20Fabric%20Guide%20in%20Pakistan.png',
 quickAnswer:'Choose bridal fabric by matching it to the outfit silhouette, season, embroidery weight, event duration and the way you want the dress to move. Before buying, ask your tailor to review the fabric and design reference together, because a fabric that looks beautiful on a roll may behave differently when cut, lined or embellished.',
 sections:[
 {heading:'1. Start with the bridal silhouette, not just the fabric name',paragraphs:[

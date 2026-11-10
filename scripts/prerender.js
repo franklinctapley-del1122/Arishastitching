@@ -5,7 +5,7 @@ import { renderToString } from 'react-dom/server';
 import { createServer } from 'vite';
 
 const routes = [
-  '/', '/about/', '/services/', '/rate-list/', '/stitching/',
+  '/', '/about/', '/services/', '/women-unstitched/', '/rate-list/', '/stitching/',
   '/party-wear/', '/bridal-wear/', '/casual-wear/', '/western-wear/',
   '/alteration/', '/blog/', '/our-work/', '/fabric-calculator/',
   '/book-appointment/', '/location/',

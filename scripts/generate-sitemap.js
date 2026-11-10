@@ -27,6 +27,7 @@ const routes = [
   { path: '/blog/shalwar-kameez-measurements/', changefreq: 'yearly', priority: '0.6' },
   { path: '/blog/party-wear-design-details/', changefreq: 'yearly', priority: '0.6' },
   { path: '/blog/how-much-fabric-do-i-need/', changefreq: 'yearly', priority: '0.6' },
+  { path: '/blog/how-much-fabric-3-piece-suit-pakistan/', changefreq: 'yearly', priority: '0.7' },
   { path: '/blog/care-for-embroidered-clothes/', changefreq: 'yearly', priority: '0.6' }
 ];
 

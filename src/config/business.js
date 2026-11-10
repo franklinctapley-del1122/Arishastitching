@@ -34,6 +34,7 @@ export const PRICES = [
   { name: 'Ladies Lining Suit / Party Wear Stitching', price: 2000 },
   { name: 'Ladies Frock Stitching', price: 1500 },
   { name: 'Ladies Short Frock Stitching', price: 1300 },
+  { name: 'Saree Stitching', price: 12000, maxPrice: 15000 },
   { name: 'Ladies Angrakha Suit Stitching', price: 1800 },
   { name: 'Casual Wear Stitching — starting from', price: 1000 },
   { name: 'Party Wear Stitching — starting from', price: 1500 },

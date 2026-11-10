@@ -246,57 +246,87 @@ function About(){return <><SEO path="/about/"/><main><section className="categor
 function WomenUnstitched(){
   const [filter,setFilter]=useState('all');
   const categories=[
-    {id:'all',label:'All suits'},
+    {id:'all',label:'All fabrics'},
     {id:'two',label:'2-piece'},
     {id:'three',label:'3-piece'},
     {id:'printed',label:'Printed'},
     {id:'embroidered',label:'Embroidered'},
-    {id:'plain',label:'Plain'}
+    {id:'plain',label:'Plain'},
+    {id:'lawn',label:'Cotton lawn'},
+    {id:'katan',label:'Katan silk'}
   ];
-  const visible=unstitchedProducts.filter(p=>{
-    if(filter==='all')return true;
-    if(filter==='two')return /2-piece|2-Piece/i.test(p.name);
-    if(filter==='three')return /3-piece|3-Piece/i.test(p.name);
-    if(filter==='printed')return /printed|block print/i.test(p.name);
-    if(filter==='embroidered')return /embroidered|applique/i.test(p.name);
-    if(filter==='plain')return /plain/i.test(p.name);
+  const matches=(product,id)=>{
+    const details=(product.name+' '+product.description).toLowerCase();
+    if(id==='two')return /2-piece|2 piece|two-piece/.test(details);
+    if(id==='three')return /3-piece|3 piece|three-piece/.test(details);
+    if(id==='printed')return /printed|block print/.test(details);
+    if(id==='embroidered')return /embroidered|applique/.test(details);
+    if(id==='plain')return /plain/.test(details);
+    if(id==='lawn')return /cotton lawn|lawn/.test(details);
+    if(id==='katan')return /katan silk|katan/.test(details);
     return true;
-  });
-  const enquiry=(p)=>'Assalam-o-Alaikum! I am interested in this women’s unstitched product: '+p.name+'. Listed price: '+p.price+'. Please confirm current availability, final price and delivery details.';
-  return <><SEO path="/women-unstitched/"/><Helmet><script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Women’s unstitched suits and fabric collection at Arisha","itemListOrder":"https://schema.org/ItemListUnordered","numberOfItems":unstitchedProducts.length,"itemListElement":unstitchedProducts.map((product,index)=>({"@type":"ListItem","position":index+1,"item":{"@type":"Product","name":product.name,"image":product.image,"description":product.description,"offers":{"@type":"Offer","priceCurrency":"PKR","price":product.price.replace(/[^0-9.]/g, ""),"url":BUSINESS.siteUrl+"/women-unstitched/"}}}))})}</script></Helmet><main className="section tool-page unstitched-page">
-    <SectionTitle eyebrow="ARISHA FASHION COLLECTION · LAHORE" level="h1" title={<>Women’s unstitched <em>collection.</em></>} copy="Browse selected unstitched fabric and suit designs, including plain, printed, lawn, Katan silk and embroidered options. Message us to confirm current availability and price before ordering." center/>
-    <div className="unstitched-intro"><span className="eyebrow">SELECTED FABRICS & SUITS</span><p>Browse selected women’s unstitched suits and fabric options, including printed cotton lawn, Katan silk, plain fabric and embroidered designs. Choose a product to ask about its current stock and price. Need stitching too? Ask Arisha about tailoring your selected fabric.</p></div>
-    <div className="unstitched-filters" aria-label="Filter products">{categories.map(cat=><button key={cat.id} type="button" className={filter===cat.id?'filter-active':''} onClick={()=>setFilter(cat.id)}>{cat.label}</button>)}</div>
-    <p className="unstitched-count">Showing {visible.length} of {unstitchedProducts.length} selected products</p>
-    <div className="unstitched-grid">{visible.map((product)=> <article className="unstitched-card" key={product.id}>
-      <div className="unstitched-image"><img src={product.image} alt={product.name + ' fabric design'} loading="lazy" decoding="async"/><span>Unstitched</span></div>
-      <div className="unstitched-card-body"><h2>{product.name}</h2><p>{product.description}</p><strong className="unstitched-price">{product.price}</strong>
-        <a className="btn btn-primary unstitched-order" href={waLink(enquiry(product))} target="_blank" rel="noreferrer"><WhatsAppMark size={18}/> Enquire on WhatsApp <ArrowRight size={15}/></a>
+  };
+  const visible=unstitchedProducts.filter(product=>filter==='all'||matches(product,filter));
+  const enquiry=(product)=>'Assalam-o-Alaikum! I am interested in this women’s unstitched product: '+product.name+'. Catalogue-listed price: '+product.price+'. Please confirm current stock, current price, product details and delivery charges before I order.';
+  const collectionSchema={
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Women’s Unstitched Suits and Fabric Collection",
+    "description":"A selected collection of women’s unstitched suits and fabric options at Arisha Ladies Stitching & Boutique in Lahore.",
+    "url":BUSINESS.siteUrl+"/women-unstitched/",
+    "mainEntity":{
+      "@type":"ItemList",
+      "name":"Women’s unstitched fabric listings",
+      "itemListOrder":"https://schema.org/ItemListUnordered",
+      "numberOfItems":unstitchedProducts.length,
+      "itemListElement":unstitchedProducts.map((product,index)=>({
+        "@type":"ListItem",
+        "position":index+1,
+        "name":product.name,
+        "image":product.image,
+        "description":product.description
+      }))
+    }
+  };
+  return <><SEO path="/women-unstitched/" title="Women’s Unstitched Suits in Lahore | Arisha Boutique" description="Browse selected women’s unstitched 2-piece and 3-piece suits, printed cotton lawn, Katan silk, plain and embroidered fabric at Arisha Lahore. Confirm stock and price on WhatsApp."/><Helmet><script type="application/ld+json">{JSON.stringify(collectionSchema)}</script></Helmet><main className="section tool-page unstitched-page">
+    <SectionTitle eyebrow="ARISHA FASHION COLLECTION · LAHORE" level="h1" title={<>Women’s unstitched <em>suits & fabrics.</em></>} copy="Browse selected 2-piece and 3-piece suits, printed cotton lawn, Katan silk, plain fabric and embroidered designs. Check the catalogue-listed price, then message us to confirm current stock and final details before ordering." center/>
+    <div className="unstitched-intro"><span className="eyebrow">SELECTED FABRICS & SUITS</span><p>Looking for women’s unstitched suits in Lahore? Explore the selected designs below and use the filters to narrow the collection by suit length, print, embroidery or fabric type. Each card shows its catalogue-listed price. Availability, current price and delivery arrangements must be confirmed before purchase.</p></div>
+    <div className="unstitched-filters" aria-label="Filter unstitched products">{categories.map(category=><button key={category.id} type="button" className={filter===category.id?'filter-active':''} aria-pressed={filter===category.id} onClick={()=>setFilter(category.id)}>{category.label}</button>)}</div>
+    <p className="unstitched-count" aria-live="polite">Showing {visible.length} of {unstitchedProducts.length} selected products</p>
+    {visible.length>0?<div className="unstitched-grid">{visible.map(product=><article className="unstitched-card" key={product.id}>
+      <div className="unstitched-image"><img src={product.image} alt={product.name+' product photograph'} loading="lazy" decoding="async"/><span>Unstitched fabric</span></div>
+      <div className="unstitched-card-body"><h2>{product.name}</h2><p>{product.description}</p><span className="unstitched-price-label">Catalogue-listed price</span><strong className="unstitched-price">{product.price}</strong>
+        <a className="btn btn-primary unstitched-order" href={waLink(enquiry(product))} target="_blank" rel="noreferrer"><WhatsAppMark size={18}/> Check stock & price <ArrowRight size={15}/></a>
         <a className="unstitched-stitch-link" href={waLink('Assalam-o-Alaikum! I am interested in buying '+product.name+' and would also like to ask about stitching charges.') } target="_blank" rel="noreferrer">Ask about stitching this suit</a>
       </div>
-    </article>)}</div>
+    </article>)}</div>:<p className="unstitched-count">No products match this filter yet. Choose another fabric or suit filter.</p>}
     <section className="unstitched-seo-content">
       <div>
-        <span className="eyebrow">BROWSE THE COLLECTION</span>
-        <h2>Unstitched suits and fabric options</h2>
-        <p>Explore the available 2-piece and 3-piece options, with selected printed, plain and embroidered designs. The collection includes printed cotton lawn and Katan silk listings. Product details and prices are shown against each listing; please check the individual description and confirm the latest details with us before ordering.</p>
-        <h3>Want your fabric stitched?</h3>
-        <p>After choosing an unstitched suit, you can ask about having it stitched through <Link to="/stitching/">Arisha’s ladies suit stitching service</Link>. Review our <Link to="/rate-list/">stitching rate list</Link> for indicative starting prices, then <Link to="/book-appointment/">request an appointment</Link> or message us on WhatsApp to discuss your design.</p>
-        <h3>Shopping from Lahore?</h3>
-        <p>Arisha is based at Pak-Arab Housing Scheme, Ferozepur Road, Lahore. See our <Link to="/location/">shop location and contact details</Link> and confirm product availability, delivery arrangements and any charges before placing an order.</p>
+        <span className="eyebrow">SHOP THE COLLECTION</span>
+        <h2>Women’s 2-piece and 3-piece unstitched suits</h2>
+        <p>This collection includes selected 2-piece and 3-piece unstitched suit listings. Check each product description for the details supplied with that design. The number of pieces and included fabric components can differ, so confirm exactly what is included before placing an order.</p>
+        <h3>Printed cotton lawn and Katan silk options</h3>
+        <p>Browse the listed printed cotton lawn and Katan silk designs alongside plain and embroidered options. Fabric names and product descriptions are based on the supplied catalogue information. If you need more detail about fabric composition, width, length, colour or care, ask us to confirm it for the specific product.</p>
+        <h3>Want your unstitched suit stitched?</h3>
+        <p>Arisha also offers <Link to="/stitching/">ladies suit stitching in Lahore</Link>. If you select a fabric from this collection, ask us separately about stitching charges, measurements, design requirements and appointment availability. You can also review the <Link to="/rate-list/">indicative stitching rate list</Link> before requesting a <Link to="/book-appointment/">stitching appointment</Link>.</p>
+        <h3>Ordering from Lahore</h3>
+        <p>Arisha Ladies Stitching & Boutique is based in Pak-Arab Housing Scheme, Ferozepur Road, Lahore. Check our <Link to="/location/">shop location and contact details</Link>. Product availability, delivery coverage, delivery charges and timing must be confirmed for your order before payment or dispatch.</p>
       </div>
     </section>
     <section className="unstitched-faq">
       <span className="eyebrow">HELP BEFORE YOU ORDER</span>
-      <h2>Frequently asked questions</h2>
-      <div className="unstitched-faq-item"><h3>Are these suits stitched or unstitched?</h3><p>This page lists unstitched fabric and suit options. If you want stitching as well, contact Arisha to discuss the design and stitching charges.</p></div>
-      <div className="unstitched-faq-item"><h3>Are the listed prices final?</h3><p>No. Prices are based on the supplied catalogue listings and may change. Confirm the current price and final payable amount on WhatsApp before ordering.</p></div>
-      <div className="unstitched-faq-item"><h3>How can I check whether a design is available?</h3><p>Use the WhatsApp enquiry link on the product card. We need to confirm current stock before you place an order.</p></div>
-      <div className="unstitched-faq-item"><h3>Can I ask Arisha to stitch a suit I select?</h3><p>Yes. Use the stitching enquiry link on the product card to ask about stitching charges and requirements for your selected fabric.</p></div>
-      <div className="unstitched-faq-item"><h3>Can you confirm delivery details?</h3><p>Delivery availability, charges and timing depend on the order. Please confirm these details with us on WhatsApp before payment or dispatch.</p></div>
+      <h2>Unstitched fabric shopping FAQs</h2>
+      <div className="unstitched-faq-item"><h3>Are the products on this page stitched or unstitched?</h3><p>This collection lists unstitched fabric and suit options. You can separately ask Arisha about stitching a selected fabric.</p></div>
+      <div className="unstitched-faq-item"><h3>Are these 2-piece or 3-piece suits?</h3><p>The product title and description identify the listed suit type where that information is supplied. Confirm the exact included pieces before ordering.</p></div>
+      <div className="unstitched-faq-item"><h3>Are the displayed prices current and final?</h3><p>The displayed amounts are catalogue-listed prices and may change. Confirm the current price and final payable amount on WhatsApp before placing an order.</p></div>
+      <div className="unstitched-faq-item"><h3>How do I check whether a fabric design is in stock?</h3><p>Use the WhatsApp button on the product card and send the product name. Arisha must confirm current stock before the order is accepted.</p></div>
+      <div className="unstitched-faq-item"><h3>Can I filter cotton lawn and Katan silk designs?</h3><p>Yes. Use the Cotton lawn or Katan silk filter above the product collection to narrow the displayed listings.</p></div>
+      <div className="unstitched-faq-item"><h3>Can Arisha stitch a suit made from fabric I select here?</h3><p>You can ask about stitching the selected fabric. Stitching charges, design details and appointment availability are confirmed separately.</p></div>
+      <div className="unstitched-faq-item"><h3>Can I visit the boutique to ask about a product?</h3><p>Arisha’s shop is at House No. 145-E, Pak-Arab Housing Scheme, Ferozepur Road, Lahore. Contact us first to confirm product availability before visiting.</p></div>
+      <div className="unstitched-faq-item"><h3>Do you deliver unstitched suits?</h3><p>Delivery arrangements, coverage, charges and timing depend on the order. Confirm the details with Arisha before payment or dispatch.</p></div>
     </section>
-    <div className="unstitched-note"><strong>Before you order</strong><p>Prices shown are the supplied catalogue listing prices and may change. Product availability, delivery charges and final payable amount must be confirmed on WhatsApp. Product photos are supplied catalogue images; actual shades and details may vary.</p></div>
-    <CTA title="Found a fabric you love?" copy="Message us to confirm availability—or ask about stitching your selected unstitched suit at Arisha."/>
+    <div className="unstitched-note"><strong>Important product information</strong><p>Prices shown are supplied catalogue-listed amounts and may change. Stock, current price, fabric specifications, included pieces, delivery charges and final payable amount must be confirmed with Arisha before ordering. Product photographs are supplied catalogue images; actual shades and details may vary.</p></div>
+    <CTA title="Found a fabric you love?" copy="Send us the product name to check its current availability and price, or ask about stitching your selected unstitched suit at Arisha."/>
   </main></>;
 }
 function RateList(){const groups=[{title:'Shirts, Suits & Dresses',items:PRICES.slice(0,7)},{title:'Occasion & Custom Wear',items:PRICES.slice(7,11)},{title:'Alterations & Fitting',items:PRICES.slice(11)}];return <><SEO path="/rate-list/"/><main className="section tool-page"><SectionTitle eyebrow="ARISHA LADIES STITCHING" level="h1" title={<>Stitching <em>rate list.</em></>} copy="Indicative stitching prices in Pakistani rupees. Fabric, design complexity, lining, embellishment and finishing can affect the final quote. Please confirm current rates on WhatsApp." center/><div className="rates-groups">{groups.map(g=><section className="rates-card" key={g.title}><h2>{g.title}</h2>{g.items.map(item=><div className="rate-line" key={item.name}><span>{item.name}</span><strong>Rs. {item.price.toLocaleString()}</strong></div>)}</section>)}</div><div className="rates-disclaimer"><p>Prices are starting guides, not a final quote. Bridal work and complex designs require a custom discussion.</p><WhatsAppButton message="Assalam-o-Alaikum! Please confirm your current stitching rate list and the final price for my design.">Confirm latest rates</WhatsAppButton></div></main></>}

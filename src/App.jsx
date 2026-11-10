@@ -247,6 +247,7 @@ function WomenUnstitched(){
   const [filter,setFilter]=useState('all');
   const categories=[
     {id:'all',label:'All fabrics'},
+    {id:'single',label:'Single piece'},
     {id:'two',label:'2-piece'},
     {id:'three',label:'3-piece'},
     {id:'printed',label:'Printed'},
@@ -257,6 +258,7 @@ function WomenUnstitched(){
   ];
   const matches=(product,id)=>{
     const details=(product.name+' '+product.description).toLowerCase();
+    if(id==='single')return /single-piece|single piece/.test(details);
     if(id==='two')return /2-piece|2 piece|two-piece/.test(details);
     if(id==='three')return /3-piece|3 piece|three-piece/.test(details);
     if(id==='printed')return /printed|block print/.test(details);
@@ -267,7 +269,7 @@ function WomenUnstitched(){
     return true;
   };
   const visible=unstitchedProducts.filter(product=>filter==='all'||matches(product,filter));
-  const enquiry=(product)=>'Assalam-o-Alaikum! I am interested in this women’s unstitched product: '+product.name+'. Catalogue-listed price: '+product.price+'. Please confirm current stock, current price, product details and delivery charges before I order.';
+  const enquiry=(product)=>'Assalam-o-Alaikum! I am interested in this women’s unstitched product. Product reference: '+product.id+'. Product name: '+product.name+'. Catalogue-listed price: '+product.price+'. Please confirm current stock, current price, exact included pieces, fabric details and delivery charges before I order.';
   const collectionSchema={
     "@context":"https://schema.org",
     "@type":"CollectionPage",
@@ -295,7 +297,7 @@ function WomenUnstitched(){
     <p className="unstitched-count" aria-live="polite">Showing {visible.length} of {unstitchedProducts.length} selected products</p>
     {visible.length>0?<div className="unstitched-grid">{visible.map(product=><article className="unstitched-card" key={product.id}>
       <div className="unstitched-image"><img src={product.image} alt={product.name+' product photograph'} loading="lazy" decoding="async"/><span>Unstitched fabric</span></div>
-      <div className="unstitched-card-body"><h2>{product.name}</h2><p>{product.description}</p><span className="unstitched-price-label">Catalogue-listed price</span><strong className="unstitched-price">{product.price}</strong>
+      <div className="unstitched-card-body"><h2>{product.name}</h2><p>{product.description}</p><small className="unstitched-product-ref">Product ref: {product.id}</small><span className="unstitched-price-label">Catalogue-listed price</span><strong className="unstitched-price">{product.price}</strong>
         <a className="btn btn-primary unstitched-order" href={waLink(enquiry(product))} target="_blank" rel="noreferrer"><WhatsAppMark size={18}/> Check stock & price <ArrowRight size={15}/></a>
         <a className="unstitched-stitch-link" href={waLink('Assalam-o-Alaikum! I am interested in buying '+product.name+' and would also like to ask about stitching charges.') } target="_blank" rel="noreferrer">Ask about stitching this suit</a>
       </div>

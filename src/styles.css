@@ -610,6 +610,16 @@ body{background:var(--paper);color:var(--ink)}
 .section-title h1{font:500 clamp(32px,3.6vw,46px)/1.2 'Lora',serif;letter-spacing:-.03em;color:var(--maroon);margin:13px 0}
 .section-title h1 em{font-style:italic;color:#b28a48;font-weight:500}
 
+/* Women's unstitched SEO support content */
+.unstitched-seo-content,.unstitched-faq{max-width:940px;margin:48px auto 0;padding:30px;background:var(--paper);border:1px solid var(--line)}
+.unstitched-seo-content h2,.unstitched-faq h2{font:500 clamp(26px,3vw,35px)/1.2 'Lora',serif;color:var(--maroon);margin:10px 0 16px}
+.unstitched-seo-content h3,.unstitched-faq-item h3{font:600 18px/1.35 'Lora',serif;color:var(--maroon);margin:24px 0 8px}
+.unstitched-seo-content p,.unstitched-faq-item p{font-size:12px;line-height:1.9;color:var(--muted);margin:0}
+.unstitched-seo-content a{color:var(--maroon);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.unstitched-faq-item{padding:17px 0;border-bottom:1px solid var(--line)}
+.unstitched-faq-item:last-child{border-bottom:0;padding-bottom:0}
+.unstitched-faq-item h3{margin:0 0 7px}
+@media(max-width:700px){.unstitched-seo-content,.unstitched-faq{padding:20px 17px;margin-top:32px}}
 /* Women's unstitched product collection */
 .unstitched-intro{max-width:760px;margin:0 auto 24px;padding:20px 24px;background:#f3ebdf;border:1px solid var(--line);text-align:center}
 .unstitched-intro p{font-size:13px;line-height:1.8;color:var(--muted);margin:8px 0 0}

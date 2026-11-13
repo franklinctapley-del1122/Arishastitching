@@ -835,3 +835,15 @@ body{background:var(--paper);color:var(--ink)}
 .sharara-bottom-cta p{color:#eadbdc;max-width:650px;margin:0}
 @media(max-width:900px){.sharara-hero{gap:28px}.sharara-hero-image{height:390px}.sharara-style-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sharara-details,.sharara-process{gap:28px}}
 @media(max-width:650px){.sharara-page{padding:26px 15px 52px}.sharara-hero{grid-template-columns:1fr;padding:12px 0 38px;gap:25px}.sharara-hero-copy h1{font-size:43px}.sharara-hero-image{height:330px}.sharara-style-grid,.sharara-fabric,.sharara-details,.sharara-process{grid-template-columns:1fr}.sharara-style-grid{gap:14px}.sharara-style-grid img{height:250px}.sharara-style-grid article>div{padding:18px}.sharara-intro{padding:25px 8px 10px}.sharara-details,.sharara-process{padding:44px 0}.sharara-fabric{padding:20px;gap:18px}.sharara-fabric img{height:200px}.sharara-quote,.sharara-bottom-cta,.sharara-related{align-items:flex-start;flex-direction:column;padding:23px 19px}.sharara-related{padding:30px 0}.sharara-related>div:last-child{width:100%}.sharara-faq{padding-left:0;padding-right:0}}
+
+
+/* Lahore local SEO contact section for sharara and gharara page */
+.sharara-local{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center;padding:clamp(25px,4vw,48px);margin:30px 0;background:#f1e7d7;border:1px solid var(--line)}
+.sharara-local h2{font:500 clamp(30px,3.7vw,45px)/1.2 'Lora',serif;color:var(--maroon);margin:12px 0}
+.sharara-local h2 em{color:#b28a48;font-weight:500}
+.sharara-local>div>p,.sharara-local aside p{font-size:12px;line-height:1.95;color:var(--muted)}
+.sharara-local aside{padding:25px;background:#fffaf2;border:1px solid #e5d7c2}
+.sharara-local aside h3{font:600 22px 'Lora',serif;color:var(--maroon);margin:10px 0}
+.sharara-local-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.sharara-local-links a{display:inline-flex;align-items:center;gap:8px;padding:11px 13px;background:#fff;border:1px solid #ded2c2;color:var(--maroon);font-size:10px;font-weight:600}
+@media(max-width:650px){.sharara-local{grid-template-columns:1fr;padding:20px;gap:18px}.sharara-local-links{flex-direction:column}.sharara-local-links a{justify-content:space-between}}

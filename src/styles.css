@@ -701,3 +701,44 @@ body{background:var(--paper);color:var(--ink)}
 
 /* Responsive tables inside long-form fabric guides */
 .article-table-wrap{width:100%;overflow-x:auto;margin:22px 0 28px;border:1px solid var(--line);background:var(--paper)}.article-table{width:100%;border-collapse:collapse;min-width:520px;text-align:left}.article-table th{padding:13px 14px;background:#f1e7d7;color:var(--maroon);font-size:11px;font-weight:700;line-height:1.5}.article-table td{padding:13px 14px;border-top:1px solid var(--line);font-size:12px;line-height:1.7;color:#4f4a48;vertical-align:top}.article-table tbody tr:nth-child(even){background:#fcf8f2}@media(max-width:600px){.article-table th,.article-table td{padding:11px;font-size:11px}}
+
+/* Services landing page refresh */
+.services-page{padding-top:42px}
+.services-hero{display:grid;grid-template-columns:1fr .92fr;gap:54px;align-items:center;padding:26px 0 62px}
+.services-hero-copy h1{font:500 clamp(42px,5vw,66px)/1.1 'Lora',serif;letter-spacing:-.04em;color:var(--maroon);margin:20px 0}
+.services-hero-copy h1 em,.services-section-heading h2 em,.services-pickup h2 em,.services-measurement h2 em{color:#b28a48;font-weight:500}
+.services-hero-copy>p{max-width:570px;color:var(--muted);font-size:14px;line-height:2}
+.services-hero-note{display:flex;align-items:center;gap:9px;margin-top:24px;color:#74685e;font-size:11px}
+.services-hero-note svg{color:#9b7741}
+.services-hero-image{height:430px;position:relative;overflow:hidden;background:#eee2d6}
+.services-hero-image>img{width:100%;height:100%;object-fit:cover}
+.services-hero-image>div{position:absolute;left:18px;right:18px;bottom:18px;padding:18px 20px;background:#fffdf0ed}
+.services-hero-image>div span{display:block;font-size:9px;letter-spacing:.16em;color:#9b7741}
+.services-hero-image>div strong{display:block;margin-top:6px;font:500 23px 'Lora',serif;color:var(--maroon)}
+.services-benefits{padding:48px 0 56px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.services-section-heading{max-width:690px;margin-bottom:30px}
+.services-section-heading h2,.services-pickup h2,.services-measurement h2{font:500 clamp(29px,3.5vw,43px)/1.2 'Lora',serif;color:var(--maroon);margin:13px 0}
+.services-section-heading>p,.services-pickup-copy>p,.services-measurement>div>p{font-size:13px;line-height:1.9;color:var(--muted)}
+.services-benefit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px}
+.services-benefit-grid article{display:flex;gap:18px;padding:23px 0;border-top:1px solid var(--line)}
+.services-benefit-grid article>span,.services-process-list article>span{font:italic 24px 'Lora',serif;color:#b28a48}
+.services-benefit-grid h3,.services-process-list h3{font:600 18px 'Lora',serif;color:var(--maroon);margin:0 0 7px}
+.services-benefit-grid p,.services-process-list p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+.services-catalog{padding:66px 0 60px}
+.services-catalog .service-grid{margin-top:28px}
+.services-price-link{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-top:28px;font-size:12px;color:var(--muted)}
+.services-pickup{display:grid;grid-template-columns:1.05fr .85fr;gap:55px;align-items:center;padding:clamp(26px,5vw,58px);background:#f1e7d7;border:1px solid var(--line);margin:18px 0 65px}
+.services-pickup-copy .btn{margin-top:14px}
+.services-area-card{padding:28px;background:var(--paper);border:1px solid #e4d6c3;box-shadow:var(--shadow)}
+.services-area-icon{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#f5ead8;color:var(--maroon)}
+.services-area-card h3{font:600 23px 'Lora',serif;color:var(--maroon);margin:17px 0 9px}
+.services-area-card>p{font-size:12px;line-height:1.8;color:var(--muted)}
+.services-area-card ul{list-style:none;padding:0;margin:16px 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.services-area-card li{display:flex;align-items:center;gap:8px;font-size:11px;color:#514741}
+.services-area-card li svg{color:#9b7741;flex-shrink:0}
+.services-area-card .services-area-footnote{padding-top:13px;border-top:1px solid var(--line);font-size:11px}
+.services-measurement{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;padding:20px 0 62px}
+.services-process-list article{display:flex;gap:18px;padding:17px 0;border-bottom:1px solid var(--line)}
+.services-process-list article:first-child{border-top:1px solid var(--line)}
+@media(max-width:850px){.services-hero{gap:28px}.services-hero-image{height:360px}.services-pickup,.services-measurement{gap:28px}}
+@media(max-width:650px){.services-page{padding-top:28px}.services-hero{grid-template-columns:1fr;padding:14px 0 42px}.services-hero-copy h1{font-size:43px}.services-hero-image{height:320px}.services-benefit-grid,.services-pickup,.services-measurement{grid-template-columns:1fr}.services-benefits{padding:38px 0}.services-catalog{padding:44px 0}.services-pickup{padding:24px;margin:8px 0 45px}.services-area-card ul{grid-template-columns:1fr 1fr}.services-measurement{padding-bottom:42px}.services-price-link{align-items:flex-start;flex-direction:column}}

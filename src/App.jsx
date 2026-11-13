@@ -245,17 +245,17 @@ function CategoryPage(){const loc=useLocation();const data=categoryDetails[loc.p
 function PartyWearPage(){
  const details=[
   ['Necklines & sleeves','Round, V, square, boat, keyhole and embellished necklines; full, three-quarter, short, bell and cuff sleeves.'],
-  ['Pakistani trouser styles','Straight trousers, cigarette pants, wide-leg pants, gharara, sharara, farshi shalwar, tulip shalwar and traditional shalwar.'],
+  ['Fit & outfit proportions','Discuss shirt length, overall flare, waist fit, sleeve length and the balance between the shirt, trouser and dupatta.'],
   ['Embellishment & finishing','Discuss lace, gota, kinari, piping, borders, tassels, mirror-work, zari, dabka, sequins, pearls and handwork according to your design.'],
   ['Dupatta & layers','Plan matching dupattas, sleeves, lining, panels, can-can/flare requirements and coordinated finishing before cutting.']
  ];
  const faq=[
   ['What type of party wear stitching can I discuss with Arisha?','Arisha takes enquiries for custom party and formal outfits. Share a clear reference image, fabric details and event date so the design can be reviewed and availability confirmed before booking.'],
-  ['Do you stitch sharara, gharara and farshi shalwar suits?','You can enquire about sharara, gharara, farshi gharara and farshi shalwar combinations. The exact design, fabric and finishing need to be reviewed before confirming the order.'],
+  ['Can Arisha review a designer or social-media reference?','Yes. Send clear front, back and close-up images. Arisha will review the design requirements and confirm whether the requested work can be accepted before sharing a final quote.'],
   ['Can I bring my own fabric, lace and embellishments?','Yes, share the fabric and any lace, borders or embellishments you plan to use. We can discuss suitability and the required work before cutting.'],
   ['Which fabrics are suitable for Pakistani party wear?','Depending on the design, customers may consider chiffon, organza, silk, raw silk, tissue, velvet, net, georgette, jacquard, satin and embroidered fabrics. Fabric choice should match the fall, lining and structure needed for the outfit.'],
   ['Can you add gota, lace, mirror work or hand embellishment?','Share close-up reference pictures and explain which work is required. Gota, lace, kinari, mirror work, zari, dabka, sequins and other embellishments affect the work and quote; confirm what is included before booking.'],
-  ['How much does party wear stitching cost in Lahore?','The listed indicative rate for lining suit / party wear stitching is Rs. 2,500. More elaborate maxis, gowns, sharara, gharara or embellished designs may require a separate quote. Confirm the current price after sharing your complete design.'],
+  ['How much does party wear stitching cost in Lahore?','The listed indicative rate for lining suit / party wear stitching is Rs. 2,500. Complex silhouettes, lining, hand embellishment and special finishing may require a separate quote. Confirm the current price after sharing your complete design.'],
   ['How many days will my party dress take?','Turnaround depends on the outfit, embellishment, fittings and current workload. Share your event date before booking and wait for Arisha to confirm a realistic completion date. No fixed 5–7 day promise is made on this page.'],
   ['Can I send a Pinterest or Instagram design?','Yes. Send clear front, back and detail images on WhatsApp, along with your event date, fabric details and preferred fit.'],
   ['Can I get doorstep fabric pickup and dress delivery?','Home delivery is available in confirmed Lahore service areas. Doorstep fabric pickup is not currently listed as a confirmed service, so contact Arisha to discuss how to arrange your fabric. Confirm delivery coverage, charges and timing before ordering.']

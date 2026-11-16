@@ -13,6 +13,7 @@ const routes = [
   { path: '/rate-list/', changefreq: 'monthly', priority: '0.9' },
   { path: '/bridal-wear/', changefreq: 'monthly', priority: '0.8' },
   { path: '/party-wear/', changefreq: 'monthly', priority: '0.8' },
+  { path: '/party-wear/sharara-gharara-suits/', changefreq: 'monthly', priority: '0.7' },
   { path: '/casual-wear/', changefreq: 'monthly', priority: '0.8' },
   { path: '/western-wear/', changefreq: 'monthly', priority: '0.8' },
   { path: '/alteration/', changefreq: 'monthly', priority: '0.8' },

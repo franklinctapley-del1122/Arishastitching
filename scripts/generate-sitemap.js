@@ -13,6 +13,7 @@ const routes = [
   { path: '/rate-list/', changefreq: 'monthly', priority: '0.9' },
   { path: '/bridal-wear/', changefreq: 'monthly', priority: '0.8' },
   { path: '/party-wear/', changefreq: 'monthly', priority: '0.8' },
+  { path: '/party-wear/sharara-gharara-suits/', changefreq: 'monthly', priority: '0.7' },
   { path: '/casual-wear/', changefreq: 'monthly', priority: '0.8' },
   { path: '/western-wear/', changefreq: 'monthly', priority: '0.8' },
   { path: '/alteration/', changefreq: 'monthly', priority: '0.8' },
@@ -27,7 +28,6 @@ const routes = [
   { path: '/blog/shalwar-kameez-measurements/', changefreq: 'yearly', priority: '0.6' },
   { path: '/blog/party-wear-design-details/', changefreq: 'yearly', priority: '0.6' },
   { path: '/blog/how-much-fabric-do-i-need/', changefreq: 'yearly', priority: '0.6' },
-  { path: '/blog/how-much-fabric-3-piece-suit-pakistan/', changefreq: 'yearly', priority: '0.7' },
   { path: '/blog/care-for-embroidered-clothes/', changefreq: 'yearly', priority: '0.6' }
 ];
 

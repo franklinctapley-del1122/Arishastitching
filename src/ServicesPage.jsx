@@ -15,7 +15,7 @@ const services = [
 
 export default function ServicesPage() {
   useEffect(() => {
-    document.title = 'Ladies Tailoring Services in Lahore | Arisha Stitching Studio';
+    document.title = 'Ladies Tailoring Services in Lahore | Arisha Ladies Stitching & Boutique';
     let description = document.querySelector('meta[name="description"]');
     if (!description) {
       description = document.createElement('meta');
@@ -29,7 +29,7 @@ export default function ServicesPage() {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://arishaladiesstitching.vercel.app/services/';
+    canonical.href = 'https://arishastitching.shop/services/';
   }, []);
 
   return <div className="services-page">

@@ -6,7 +6,7 @@ import { createServer } from 'vite';
 
 const routes = [
   '/', '/about/', '/services/', '/women-unstitched/', '/rate-list/', '/stitching/',
-  '/party-wear/', '/bridal-wear/', '/casual-wear/', '/western-wear/',
+  '/party-wear/', '/party-wear/sharara-gharara-suits/', '/bridal-wear/', '/casual-wear/', '/western-wear/',
   '/alteration/', '/blog/', '/our-work/', '/fabric-calculator/',
   '/book-appointment/', '/location/',
   '/blog/choose-fabric-bridal-wear/',

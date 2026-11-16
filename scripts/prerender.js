@@ -14,7 +14,6 @@ const routes = [
   '/blog/shalwar-kameez-measurements/',
   '/blog/party-wear-design-details/',
   '/blog/how-much-fabric-do-i-need/',
-  '/blog/how-much-fabric-3-piece-suit-pakistan/',
   '/blog/care-for-embroidered-clothes/'
 ];
 

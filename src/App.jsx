@@ -525,9 +525,9 @@ function App(){
       if (!link) return;
       const href = link.getAttribute('href') || '';
       const normalizedHref = href.toLowerCase();
-      const label = (link.getAttribute('aria-label') || link.innerText || link.textContent || '').trim().replace(/\\s+/g, ' ').slice(0, 100);
+      const label = (link.getAttribute('aria-label') || link.innerText || link.textContent || '').trim().split(/\s+/).join(' ').slice(0, 100);
       let eventName = '';
-      if (/wa\\.me\\//.test(normalizedHref) || /whatsapp\\.com\\//.test(normalizedHref)) eventName = 'whatsapp_click';
+      if (normalizedHref.includes('wa.me/') || normalizedHref.includes('whatsapp.com/')) eventName = 'whatsapp_click';
       else if (normalizedHref.startsWith('tel:')) eventName = 'phone_click';
       else if (normalizedHref.includes('/book-appointment')) eventName = 'appointment_click';
       else if (normalizedHref.includes('maps.google') || normalizedHref.includes('maps.app.goo.gl') || normalizedHref.includes('google.com/maps')) eventName = 'directions_click';

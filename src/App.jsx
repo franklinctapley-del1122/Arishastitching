@@ -64,6 +64,52 @@ function PriceHighlights(){return <section className="price-strip"><div><span cl
 function HowItWorks(){const steps=[['01','Measure','We discuss measurements, fit and your preferred style.'],['02','Stitch','Your design and fabric details guide the stitching.'],['03','Fit check','Discuss whether a fitting check or adjustments are needed for your design.'],['04','Delivery','Confirm finishing and collection timing with us.']];return <section className="section process-section"><SectionTitle eyebrow="SIMPLE, PERSONAL, CLEAR" title={<>From first measure to <em>final stitch.</em></>} copy="A clear process helps your outfit feel like yours from the very beginning." center/><div className="process-grid">{steps.map(([n,t,d])=><div className="process-step" key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></div>)}</div></section>}
 function CTA({title="Have an outfit in mind?",copy="Send us your reference picture and let’s discuss your stitching requirements."}){return <section className="cta-band"><div><span className="eyebrow">LET’S MAKE SOMETHING LOVELY</span><h2>{title}</h2><p>{copy}</p></div><div className="cta-actions"><Link className="btn btn-light" to="/book-appointment/"><CalendarDays size={17}/> Book Appointment</Link><WhatsAppButton message="Assalam-o-Alaikum! I would like to discuss an outfit with Arisha Ladies Stitching & Boutique."/></div></section>}
 function ServicesIndex(){const benefits=[['01','Custom-fitted stitching','Discuss your preferred fit, neckline, sleeves and trouser style before stitching begins.'],['02','Measurement options','Visit our Lahore boutique for measurements or share your existing measurements for review.'],['03','Home delivery','Finished-outfit home delivery may be arranged in confirmed Lahore service areas. Charges and timing are confirmed at order time.'],['04','WhatsApp order updates','Keep the design, quote and delivery arrangements clear through direct communication.']];return <><SEO path="/services/"/><main><section className="section services-page"><div className="services-hero"><div className="services-hero-copy"><span className="eyebrow">ARISHA LADIES STITCHING & BOUTIQUE · LAHORE</span><h1>Ladies tailoring services in <em>Lahore.</em></h1><p>From everyday shalwar kameez to elegant party wear and bridal outfits, Arisha brings your design to life with personal measurements, careful finishing and home delivery of finished outfits in confirmed Lahore service areas. Doorstep fabric pickup is not available.</p><div className="hero-actions"><Link to="/book-appointment/" className="btn btn-primary">Book an appointment <ArrowRight size={16}/></Link><WhatsAppButton message="Assalam-o-Alaikum! I would like to enquire about Arisha's ladies stitching services and finished-outfit home delivery." >Enquire on WhatsApp</WhatsAppButton></div><div className="services-hero-note"><CheckCircle2 size={16}/> Custom stitching · Finished-outfit home delivery in confirmed Lahore areas</div></div><div className="services-hero-image"><img src={IMAGES.hero} alt="Traditional Pakistani ladies outfit inspiration"/><div><span>MADE AROUND YOUR STYLE</span><strong>Every stitch, with care.</strong></div></div></div><section className="services-benefits"><div className="services-section-heading"><span className="eyebrow">THE ARISHA EXPERIENCE</span><h2>Why choose Arisha for your <em>stitching needs?</em></h2></div><div className="services-benefit-grid">{benefits.map(([n,title,copy])=><article key={n}><span>{n}</span><div><h3>{title}</h3><p>{copy}</p></div></article>)}</div></section><section className="services-catalog"><div className="services-section-heading"><span className="eyebrow">MADE FOR YOUR OCCASION</span><h2>Our tailoring <em>services.</em></h2><p>Choose a service to explore details, indicative starting prices and custom options. Final quotes depend on your design and fabric.</p></div><div className="service-grid">{SERVICES.map(s=><ServiceCard key={s.path} service={s}/>)}</div><div className="services-price-link"><span>Want to compare stitching costs?</span><Link className="text-link" to="/rate-list/">View the complete ladies stitching rate list <ArrowRight size={15}/></Link></div></section><section className="services-pickup"><div className="services-pickup-copy"><span className="eyebrow">LAHORE DOORSTEP CONVENIENCE</span><h2>Finished outfit <em>delivery at your doorstep.</em></h2><p>Visit the boutique for measurements and fabric handover, or share your own measurements. Home delivery of finished outfits may be arranged in confirmed Lahore service areas. Delivery charges, availability and timing are confirmed on WhatsApp before ordering. Doorstep fabric pickup is not available.</p><WhatsAppButton message="Assalam-o-Alaikum! I would like to ask about finished-outfit home delivery. Please confirm availability and charges for my Lahore area." >Arrange doorstep service <ArrowRight size={15}/></WhatsAppButton></div><div className="services-area-card"><div className="services-area-icon"><MapPin size={22}/></div><h3>Areas we currently serve</h3><p>Our boutique is based in Pak-Arab Housing Scheme. Finished-outfit home delivery may be available in confirmed areas including:</p><ul>{BUSINESS.serviceAreas.map(area=><li key={area}><CheckCircle2 size={15}/>{area}</li>)}</ul><p className="services-area-footnote">Ask us on WhatsApp to confirm finished-outfit delivery availability for your exact Lahore location. Fabric pickup from your doorstep is not available.</p></div></section><section className="services-measurement"><div><span className="eyebrow">A SIMPLE ORDER PROCESS</span><h2>From your fabric to your <em>finished outfit.</em></h2><p>Share your design, measurements and location. We’ll discuss the stitching details and confirm the next steps before your order is accepted.</p></div><div className="services-process-list"><article><span>01</span><div><h3>Share your design</h3><p>Send a reference photo, outfit type and event date on WhatsApp.</p></div></article><article><span>02</span><div><h3>Confirm measurements & quote</h3><p>Discuss your measurements, stitching details and final price.</p></div></article><article><span>03</span><div><h3>Hand over your fabric</h3><p>Visit the boutique to provide fabric, or discuss your own measurements and design details.</p></div></article><article><span>04</span><div><h3>Receive your outfit</h3><p>We’ll confirm completion and delivery arrangements with you.</p></div></article></div></section><section className="services-index-cta"><div><span className="eyebrow">READY TO GET STARTED?</span><h2>Let’s plan your outfit together.</h2><p>Tell us what you want stitched, share your design and ask about finished-outfit home delivery in our confirmed Lahore service areas. Doorstep fabric pickup is not available.</p></div><div className="hero-actions"><Link to="/book-appointment/" className="btn btn-primary">Book appointment <ArrowRight size={16}/></Link><WhatsAppButton message="Assalam-o-Alaikum! I would like to discuss a ladies stitching order with Arisha." >Chat on WhatsApp</WhatsAppButton></div></section></section></main></>}
+
+function FabricToOutfit() {
+  const stages = [
+    { number: '01', title: 'Choose the fabric', copy: 'It begins with the fabric, colour and texture you love.', image: IMAGES.fabric, alt: 'Fabric material ready for a custom outfit' },
+    { number: '02', title: 'Measure & prepare', copy: 'Measurements and design details guide every cut.', image: IMAGES.stitching, alt: 'Tailoring and garment preparation process' },
+    { number: '03', title: 'Stitch with care', copy: 'The pieces come together with careful stitching and finishing.', image: IMAGES.party, alt: 'Traditional formal outfit inspiration' },
+    { number: '04', title: 'Your finished look', copy: 'A complete outfit, shaped around your personal style.', image: IMAGES.bridal, alt: 'Finished Pakistani outfit inspiration' },
+  ];
+  const stageVariants = {
+    hidden: { opacity: 0, y: 34 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: 'easeOut' } },
+  };
+  return (
+    <motion.section
+      className="fabric-journey"
+      aria-labelledby="fabric-journey-title"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.16 }}
+    >
+      <div className="fabric-journey-heading">
+        <span className="eyebrow">FROM FABRIC TO FINISHED OUTFIT</span>
+        <h2 id="fabric-journey-title">Every beautiful outfit has <em>a beginning.</em></h2>
+        <p>Follow the journey from selecting your fabric to imagining the finished outfit, made around your style.</p>
+      </div>
+      <div className="fabric-journey-track">
+        {stages.map((stage, index) => (
+          <motion.article className="fabric-stage" key={stage.number} variants={stageVariants} transition={{ delay: index * 0.12 }}>
+            <div className="fabric-stage-image">
+              <img src={stage.image} alt={stage.alt} loading="lazy" />
+              <span className="fabric-stage-number">{stage.number}</span>
+            </div>
+            <div className="fabric-stage-copy">
+              <span className="fabric-stage-kicker">THE JOURNEY · {stage.number}</span>
+              <h3>{stage.title}</h3>
+              <p>{stage.copy}</p>
+            </div>
+            {index < stages.length - 1 && <span className="fabric-stage-arrow" aria-hidden="true">→</span>}
+          </motion.article>
+        ))}
+      </div>
+      <p className="fabric-journey-note">Images are visual inspiration for the tailoring journey, not a recording of a specific customer order.</p>
+    </motion.section>
+  );
+}
+
 function Home() {
   return (
     <>
@@ -97,6 +143,7 @@ function Home() {
             </div>
           </div>
         </section>
+        <FabricToOutfit />
         <PriceHighlights />
         <section className="section rate-preview">
           <div className="section-heading-row">

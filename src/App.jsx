@@ -451,7 +451,7 @@ function WomenUnstitched(){
     <div className="unstitched-filters" aria-label="Filter unstitched products">{categories.map(category=><button key={category.id} type="button" className={filter===category.id?'filter-active':''} aria-pressed={filter===category.id} onClick={()=>setFilter(category.id)}>{category.label}</button>)}</div>
     <p className="unstitched-count" aria-live="polite">Showing {visible.length} of {unstitchedProducts.length} selected products</p>
     {visible.length>0?<div className="unstitched-grid">{visible.map(product=><article className="unstitched-card" key={product.id}>
-      <div className="unstitched-image"><img src={product.image} alt={product.name+' product photograph'} loading="lazy" decoding="async" decoding="async"/><span>Unstitched fabric</span></div>
+      <div className="unstitched-image"><img src={product.image} alt={product.name+' product photograph'} loading="lazy" decoding="async"/><span>Unstitched fabric</span></div>
       <div className="unstitched-card-body"><h2>{product.name}</h2><p>{product.description}</p><small className="unstitched-product-ref">Product ref: {product.id}</small><span className="unstitched-price-label">Catalogue-listed price</span><strong className="unstitched-price">{product.price}</strong>
         <a className="btn btn-primary unstitched-order" href={waLink(enquiry(product))} target="_blank" rel="noreferrer"><WhatsAppMark size={18}/> Check stock & price <ArrowRight size={15}/></a>
         <a className="unstitched-stitch-link" href={waLink('Assalam-o-Alaikum! I am interested in buying '+product.name+' and would also like to ask about stitching charges.') } target="_blank" rel="noreferrer">Ask about stitching this suit</a>
